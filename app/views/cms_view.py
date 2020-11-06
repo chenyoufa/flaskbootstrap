@@ -3,7 +3,7 @@
 # http://www.csdn.net/list/2/
 from flask import render_template
 from app import app
-from app.models import User
+from app.models import User,Menus
 import utils.ImageCode as ImageCodeHelper 
 from flask import make_response,session
 from io import BytesIO
@@ -31,3 +31,16 @@ def index():
         year=datetime.now().year,
         message='Your application description page.'
     )
+@app.route('/list/')
+@app.route('/list/<int:page>/')
+def list(page=1):
+    # # 每页显示的数据
+    per_page = 10
+    # 返回的是 Pagination对象
+    menusPageObj = Menus.query.paginate(page=page, per_page=per_page)
+    return render_template('cms/page.html',
+                           infos=menusPageObj
+                           )
+                            # 字典for循环数据
+ 
+    # return render_template('cms/page.html', students=students)

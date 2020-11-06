@@ -28,15 +28,4 @@ def getImgCode():
 def imgCode():
     return getImgCode()
 
-@app.route('/list/')
-@app.route('/list/<int:page>/')
-def list(page=1):
-    # 每页显示的数据
-    per_page = 10
-    # 返回的是 Pagination对象
-    userPageObj = User.query.paginate(page=page, per_page=per_page)
-     
-    return render_template('index.html',
-                           userPageObj=userPageObj
-                           )
 

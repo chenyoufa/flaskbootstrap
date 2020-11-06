@@ -24,7 +24,9 @@
                             </div>
                         </div>
                     </li>
-                    @{
+                  
+
+                    <!-- @{
                         List<MenuEntity> menuList = ViewBag.MenuList;
                         foreach (MenuEntity menu in menuList.Where(p => p.ParentId == 0).OrderBy(p => p.MenuSort))
                         {
@@ -80,7 +82,7 @@
                                 </ul>
                             </li>
                         }
-                    }
+                    } -->
                 </ul>
             </div>
         </nav>
@@ -118,7 +120,7 @@
                                 </li>
                                 <li class="divider"></li>
                                 <li>
-                                    <a href="@Url.Content("~/Home/LoginOff")">
+                                    <a href="/Home/LoginOff"">
                                         <i class="fa fa-sign-out"></i> 退出登录
                                     </a>
                                 </li>
@@ -153,11 +155,11 @@
             </div>
             <div class="row mainContent" id="content-main">
 
-                <iframe class="WMP_iframe" name="iframe0" width="100%" height="100%" data-id="/system/main" src="@Url.Content("/Home/Welcome")" frameborder="0" seamless></iframe>
+                <iframe class="WMP_iframe" name="iframe0" width="100%" height="100%" data-id="/system/main" src="/Home/Welcome" frameborder="0" seamless></iframe>
             </div>
         </div>
         <!--右侧部分结束~/Home/Welcome -->
     </div>
 
- 
+
     {% endblock %}

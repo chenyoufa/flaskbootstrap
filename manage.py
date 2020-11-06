@@ -18,7 +18,7 @@ if __name__ == '__main__':
 #  python manage.py  db init
 
 # 2.读取类的内容, 生成版本文件, 并没有真正在数据库中添加或删除;
-# python manage.py db migrate -m "添加用户性别"
+# python manage.py db migrate -m "test"
 
 # 3.在数据库中增删改, 也就是将迁移应用于数据库;
 #  python manage.py  db upgrade 
