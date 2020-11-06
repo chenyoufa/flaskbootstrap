@@ -68,3 +68,4 @@ class UserBelong(db.Model):
 
     def __repr__(self):
         return "<UserBelong %s>" % (self.UserId)
+
