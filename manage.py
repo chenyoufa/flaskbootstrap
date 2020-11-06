@@ -26,4 +26,5 @@ if __name__ == '__main__':
 # 4 返回指定的版本状态;降级数据库,不指定版本则是最老版本
 #  python manage.py  db downgrade base 
 
+# python manage.py database recreate
 # python manage.py database init_data
