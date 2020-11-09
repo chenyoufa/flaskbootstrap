@@ -80,7 +80,7 @@ class Menus(db.Model):
     MenuUrl = db.Column(db.String(100))
     MenuTarget = db.Column(db.String(50),)
     MenuSort=db.Column(db.SmallInteger)
-    MenuType=db.Column(db.SmallInteger,nullable=False)
+    MenuType=db.Column(db.SmallInteger,nullable=False) # 1目录 2页面 3按钮
     Authorize = db.Column(db.String(50))
     # 设置默认值， 位当前用户的创建时间;
     AddUserid=db.Column(db.SmallInteger,nullable=False)

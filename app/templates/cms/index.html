@@ -24,65 +24,56 @@
                             </div>
                         </div>
                     </li>
-                  
-
-                    <!-- @{
-                        List<MenuEntity> menuList = ViewBag.MenuList;
-                        foreach (MenuEntity menu in menuList.Where(p => p.ParentId == 0).OrderBy(p => p.MenuSort))
-                        {
-                            <li data-type="menu">
-                                @{
-                                    if (HttpHelper.IsUrl(menu.MenuUrl))
-                                    {
-                                        <a class="menuItem" href="@menu.MenuUrl">
-                                            <i class="@menu.MenuIcon"></i>
-                                            <span class="nav-label">@menu.MenuName</span>
-                                        </a>
-                                    }
-                                    else
-                                    {
-                                        <a href="#">
-                                            <i class="@menu.MenuIcon"></i>
-                                            <span class="nav-label">@menu.MenuName</span>
-                                            <span class="fa arrow"></span>
-                                        </a>
-                                    }
-                                }
-                                <ul class="nav nav-second-level collapse" data-type="menu">
-                                    @foreach (MenuEntity secondMenu in menuList.Where(p => p.ParentId == menu.Id).OrderBy(p => p.MenuSort))
-                                    {
-                                        <li data-type="menu">
-                                            @{
-                                                if (menuList.Where(p => p.ParentId == secondMenu.Id && p.MenuType != (int)MenuTypeEnum.Button).Count() == 0)
-                                                {
-                                                    if (HttpHelper.IsUrl(secondMenu.MenuUrl))
-                                                    {
-                                                        <a class="menuItem" href='@secondMenu.MenuUrl'>@secondMenu.MenuName</a>
-                                                    }
-                                                    else
-                                                    {
-                                                        <a class="menuItem" href="#" data-url='@Url.Content("~/" + secondMenu.MenuUrl)'>@secondMenu.MenuName</a>
-                                                    }
-                                                }
-                                                else
-                                                {
-                                                    <a href="#">@secondMenu.MenuName<span class="fa arrow"></span></a>
-                                                    <ul class="nav nav-third-level" data-type="menu">
-                                                        @foreach (MenuEntity thirdMenu in menuList.Where(p => p.ParentId == secondMenu.Id).OrderBy(p => p.MenuSort))
-                                                        {
-                                                            <li data-type="menu">
-                                                                <a class="menuItem" href="#" data-url='@Url.Content("~/" + thirdMenu.MenuUrl)'>@thirdMenu.MenuName</a>
-                                                            </li>
-                                                        }
-                                                    </ul>
-                                                }
-                                            }
-                                        </li>
-                                    }
+                    {% for menutemp in infos  %}
+                    {% if menutemp.ParentId ==0 %}
+                        {% if loop.first %}
+                          
+                            <li data-1 data-type="menu">
+                                {%if menutemp.MenuUrl|default('')!='' %}
+                                <a data-2 class="menuItem" href="{{menutemp.MenuUrl|default('')}}">
+                                    <i class="{{menutemp.MenuIcon}}"></i>
+                                    <span class="nav-label">{{menutemp.MenuName}}</span>
+                                </a>
+                                {%else %}
+                                <a data-2 href="#">
+                                    <i class="{{menutemp.MenuIcon}}"></i>
+                                    <span class="nav-label">{{menutemp.MenuName}}</span>
+                                    <span class="fa arrow"></span>
+                                </a>
+                                {% endif %}
+                                <ul data-2 class="nav nav-second-level collapse" data-type="menu">
+                        {%else %}
                                 </ul>
-                            </li>
-                        }
-                    } -->
+                            </li> 
+                            <li data-1 data-type="menu">
+                                {%if menutemp.MenuUrl|default('')!='' %}
+                                    <a data-2 class="menuItem" href="{{ menutemp.MenuUrl or ''}}">
+                                        <i class="MenuIcon"></i>
+                                        <span class="nav-label">{{menutemp.MenuName}}</span>
+                                    </a>
+                                {%else %}
+                                    <a data-2 href="#">
+                                        <i class="{{menutemp.MenuIcon}}"></i>
+                                        <span class="nav-label">{{menutemp.MenuName}}</span>
+                                        <span class="fa arrow"></span>
+                                    </a>
+                                {% endif %}
+                                <ul data-2 class="nav nav-second-level collapse" data-type="menu"> 
+                        {% endif %}
+                    {% elif  menutemp.MenuType  ==2 %}
+                   
+                                    <li data-3 data-type="menu">
+                                        {%if menutemp.MenuUrl|default('')!='' %}
+                                            <a class="menuItem" href=''>{{menutemp.MenuName}}</a>
+                                        {%else %}
+                                            <a class="menuItem" href="#" data-url=''>{{menutemp.MenuName}}</a>
+                                        {% endif %}
+                                    </li>
+        
+                    {% endif %}
+                {% endfor %}
+
+                    
                 </ul>
             </div>
         </nav>

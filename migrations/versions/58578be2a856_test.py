@@ -1,8 +1,8 @@
 """test
 
-Revision ID: 49887bd4d746
+Revision ID: 58578be2a856
 Revises: 
-Create Date: 2020-11-06 17:42:50.374108
+Create Date: 2020-11-09 11:15:50.100884
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '49887bd4d746'
+revision = '58578be2a856'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -23,11 +23,11 @@ def upgrade():
     sa.Column('ParentId', sa.SmallInteger(), nullable=False),
     sa.Column('MenuName', sa.String(length=50), nullable=False),
     sa.Column('MenuIcon', sa.String(length=50), nullable=True),
-    sa.Column('MenuUrl', sa.String(length=100), nullable=False),
-    sa.Column('MenuTarget', sa.String(length=50), nullable=False),
+    sa.Column('MenuUrl', sa.String(length=100), nullable=True),
+    sa.Column('MenuTarget', sa.String(length=50), nullable=True),
     sa.Column('MenuSort', sa.SmallInteger(), nullable=True),
     sa.Column('MenuType', sa.SmallInteger(), nullable=False),
-    sa.Column('Authorize', sa.String(length=50), nullable=False),
+    sa.Column('Authorize', sa.String(length=50), nullable=True),
     sa.Column('AddUserid', sa.SmallInteger(), nullable=False),
     sa.Column('AddTime', sa.DateTime(), nullable=True),
     sa.Column('EditTime', sa.DateTime(), nullable=True),
