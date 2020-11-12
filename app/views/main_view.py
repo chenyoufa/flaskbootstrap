@@ -12,30 +12,30 @@ app.secret_key = 'please-generate-a-random-secret_key'
 
 #####################网站页面################################
 @app.route('/')
-@app.route('/home')
+@app.route('/main/home')
 def home():
     """Renders the home page."""
     return render_template(
-        'index.html',
+        'main/index.html',
         title='Home Page',
         year=datetime.now().year,
     )
 
-@app.route('/contact')
+@app.route('/main/contact')
 def contact():
     """Renders the contact page."""
     return render_template(
-        'contact.html',
+        'main/contact.html',
         title='Contact',
         year=datetime.now().year,
         message='Your contact page.'
     )
 
-@app.route('/about')
+@app.route('/main/about')
 def about():
     """Renders the about page."""
     return render_template(
-        'about.html',
+        'main/about.html',
         title='About',
         year=datetime.now().year,
         message='Your application description page.'
