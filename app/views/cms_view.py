@@ -20,6 +20,7 @@ def sum_recu(n,outlist):
         sum_recu(menusPageObj,outlist)
     return outlist
 
+#登录
 @app.route('/cms/login')
 def login():
     """Renders the about page."""
@@ -29,6 +30,7 @@ def login():
         year=datetime.now().year,
         message='Your application description page.'
     )
+#首页
 @app.route('/cms/index')
 def index():
     menusPageObj = Menus.query.filter_by(ParentId=0)
@@ -43,7 +45,7 @@ def index():
         message='Your application description page.'
     )
     
-
+#列表分页
 @app.route("/testlist/<int:page>",methods=['GET','POST'])
 def testlist(page=1):
     Users = User.query.order_by(User.Id.asc()).paginate(page=page,per_page=10)
