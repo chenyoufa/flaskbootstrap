@@ -3,3 +3,4 @@ flask_migrate
 flask_sqlalchemy
 pymysql
 flask_bootstrap
+cryptography
