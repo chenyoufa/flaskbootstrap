@@ -13,6 +13,9 @@ git branch -M main
 git remote add origin git@github.com:chenyoufa/flaskbootstrap.git
 git push -u origin main
 
+原因是没有指定本地 master 分支和远程 origin/master 的连接，这里根据提示：
+git branch --set-upstream-to=origin/master master
+git pull origin main
 #######################
 
 # 1.创建迁移仓库
