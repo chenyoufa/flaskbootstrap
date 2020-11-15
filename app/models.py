@@ -5,6 +5,22 @@
 from datetime import datetime
 from app import db
 
+# def to_json(inst, cls):
+# 	d = dict()
+# 	'''
+# 	获取表里面的列并存到字典里面
+# 	'''
+# 	for c in cls.__table__.columns:
+# 		v = getattr(inst, c.name)
+# 		d[c.name] = v
+# 	return json.dumps(d)
+ 
+# 配合多个对象使用的函数
+def to_json(all_vendors):
+    v = [ ven.dobule_to_dict() for ven in all_vendors ]
+    return v
+	
+
 class Role(db.Model):
     __tablename__ = "SysRoles"
     # id号递增autoincrement=True
@@ -47,7 +63,21 @@ class User(db.Model):
     Belongs = db.relationship('UserBelong', backref='Belong')
     #### 重要的： 用户角色id不能随便设置， 需要从Role中查询, （外键关联）
     # RoleId = db.Column(db.Integer, db.ForeignKey('sysRole.id'))
-
+# 单个对象方法1
+    def to_dict(self):
+        model_dict = dict(self.__dict__)
+        del model_dict['_sa_instance_state']
+        return model_dict
+    def single_to_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+    def dobule_to_dict(self):
+        result = {}
+        for key in self.__mapper__.c.keys():
+            if getattr(self, key) is not None:
+                result[key] = str(getattr(self, key))
+            else:
+                result[key] = getattr(self, key)
+        return result
     # 定义了 __repr()__ 方法,返回一个具有可读性的字符串表示模型,可在调试和测试时使用。
     def __repr__(self):
         return "<User %s>" % (self.UserName)

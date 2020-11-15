@@ -1,13 +1,14 @@
 # http://www.csdn.net/list/
 # http://www.csdn.net/list/1/
 # http://www.csdn.net/list/2/
-from flask import render_template
+from flask import render_template,request,json,jsonify
 from app import app
 from app.models import User,Menus
-import utils.ImageCode as ImageCodeHelper 
+from utils import ImageCode as ImageCodeHelper ,commom
 from flask import make_response,session
 from io import BytesIO
 from datetime import datetime
+ 
 app.secret_key = 'please-generate-a-random-secret_key'
 
  
@@ -46,10 +47,31 @@ def index():
     )
     
 #列表分页
-@app.route("/testlist/<int:page>",methods=['GET','POST'])
+@app.route("/cms/test/<int:page>",methods=['GET','POST'])
 def testlist(page=1):
     Users = User.query.order_by(User.Id.asc()).paginate(page=page,per_page=10)
     return render_template('cms/test.html', infos=Users.items,pagination=Users)
+
+def to_json(all_vendors):
+    v = [ ven.dobule_to_dict() for ven in all_vendors ]
+    return v
+@app.route('/cms/GetTestListJson', methods=['GET'])
+def GetTestListJson(page=1):
+   
+    if request.method == 'POST':
+        print('post')
+    if request.method == 'GET':
+        users = User.query.paginate(page=page,per_page=10)
+        users = User.query.first()
+        # print(users.single_to_dict()) 
+        return jsonify(users.dobule_to_dict())
+
+        # return jsonify({'total': query.items})
+        # 注意total与rows是必须的两个参数，名字不能写错，total是数据的总长度，rows是每页要显示的数据,它是一个列表
+        # 前端根本不需要指定total和rows这俩参数，他们已经封装在了bootstrap table里了
+        #{'total': len(data.items), 'rows': data.items}
+ 
+
 
 
  
