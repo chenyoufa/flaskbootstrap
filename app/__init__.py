@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.ext.declarative import AbstractConcreteBase
 import pymysql
 from flask_script import  Manager
 from flask_migrate import  Migrate
