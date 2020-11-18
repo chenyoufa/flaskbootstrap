@@ -4,7 +4,7 @@
 from flask import render_template,request,json,jsonify
 from app import app
 from app.models import User,Menus,to_json
-from utils import ImageCode as ImageCodeHelper ,commom
+from utils import ImageCode as ImageCodeHelper ,commom,ServerInfo
 from flask import make_response,session
 from io import BytesIO
 from datetime import datetime
@@ -70,7 +70,26 @@ def GetTestListJson(page=1):
         #{'total': len(data.items), 'rows': data.items}
  
 
-
-
+@app.route('/cms/SeverInfo/',methods=['GET'])
+def GetServerInfo():
+    size_cpu,used_cpu  = ServerInfo.serverinfo().get_cpu_info()
+    size_memory,used_memory  = ServerInfo.serverinfo().get_memory_info()
+    host_name  = ServerInfo.serverinfo().get_hostname_info()
+    System_version,system_framework  = ServerInfo.serverinfo().get_system_info()
+    out_ip,in_ip  = ServerInfo.serverinfo().get_ip_info()
+    run_time  = ServerInfo.serverinfo().get_system_runtime()
+    context = {
+        "size_cpu":size_cpu,
+        "used_cpu":used_cpu,
+        "size_memory":size_memory,
+        "used_memory":used_memory,
+        "host_name":host_name,
+        "System_version":System_version,
+        "out_ip":out_ip,
+        "in_ip":in_ip,
+        "run_time":run_time,
+        "system_framework":system_framework
+    }
+    return render_template("cms/SeverIndex.html",**context)
  
 

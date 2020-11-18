@@ -4,3 +4,4 @@ flask_sqlalchemy
 pymysql
 flask_bootstrap
 cryptography
+psutil
