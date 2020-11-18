@@ -1,7 +1,10 @@
-import psutil,socket,re,requests,platform
+import psutil,socket,re,requests,platform,datetime
+
 class serverinfo():
     def get_cpu_info(self):
+        #获取cpu核数
         size_cpu = psutil.cpu_count()
+        #获取CPU的使用情况
         used_cpu = psutil.cpu_percent(interval=1)
 
     def get_memory_info(self):
@@ -20,5 +23,11 @@ class serverinfo():
 
     def get_system_info(self):
         System_version = platform.platform()
+
+    def get_system_runtime(self):
+        now_time = datetime.datetime.now()
+        boot_time = psutil.boot_time()
+        boot_time_obj = datetime.datetime.fromtimestamp(boot_time)
+        run_time = str(now_time - boot_time_obj).split('.')[0]
 
 
