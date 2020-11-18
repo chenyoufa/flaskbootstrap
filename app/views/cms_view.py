@@ -52,6 +52,9 @@ def testlist(page=1):
     Users = User.query.order_by(User.Id.asc()).paginate(page=page,per_page=10)
     return render_template('cms/menus.html', infos=Users.items,pagination=Users)
 
+@app.route("/cms/MenuIndex")
+def Menundex():
+    return render_template('cms/MenuIndex.html')
 
 @app.route('/cms/GetTestListJson', methods=['GET'])
 def GetTestListJson(page=1):
@@ -92,4 +95,5 @@ def GetServerInfo():
     }
     return render_template("cms/SeverIndex.html",**context)
  
+
 
