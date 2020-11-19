@@ -8,6 +8,7 @@ from utils import ImageCode as ImageCodeHelper ,commom,ServerInfo
 from flask import make_response,session
 from io import BytesIO
 from datetime import datetime
+import  config
  
 app.secret_key = 'please-generate-a-random-secret_key'
 
@@ -81,6 +82,8 @@ def GetServerInfo():
     System_version,system_framework  = ServerInfo.serverinfo().get_system_info()
     out_ip,in_ip  = ServerInfo.serverinfo().get_ip_info()
     run_time  = ServerInfo.serverinfo().get_system_runtime()
+    web_runtime,web_starttime = ServerInfo.serverinfo().get_web_runtime()
+    flask_version,web_path,flask_env,python_version = ServerInfo.serverinfo().get_flask_info()
     context = {
         "size_cpu":size_cpu,
         "used_cpu":used_cpu,
@@ -91,7 +94,14 @@ def GetServerInfo():
         "out_ip":out_ip,
         "in_ip":in_ip,
         "run_time":run_time,
-        "system_framework":system_framework
+        "system_framework":system_framework,
+        "web_runtime":web_runtime,
+        "web_starttime":web_starttime,
+        "flask_version":flask_version,
+        "web_path":web_path,
+        "flask_env":flask_env,
+        "python_version":python_version
+
     }
     return render_template("cms/SeverIndex.html",**context)
  

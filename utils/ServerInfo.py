@@ -1,4 +1,4 @@
-import psutil,socket,platform,datetime
+import psutil,socket,platform,datetime,flask,os,sys
 from urllib.request import urlopen
 class serverinfo():
     def get_cpu_info(self):
@@ -46,6 +46,31 @@ class serverinfo():
         #获取系统运行时间
         run_time = str(now_time - boot_time_obj).split('.')[0]
         return run_time
+
+    def get_web_runtime(self):
+        #读取文件内容运行时间
+        with open("./test.txt") as file_text:
+            starttime_str= file_text.read()
+        #获取webk开始运行时间
+        web_starttime = datetime.datetime.strptime(starttime_str.split(".")[0], "%Y-%m-%d %H:%M:%S")
+        #获取当前时间
+        now_time = datetime.datetime.now()
+        #计算web运行时长
+        web_runtime = str(now_time - web_starttime).split('.')[0]
+        return web_starttime,web_runtime
+
+    def get_flask_info(self):
+        #获取flask版本
+        flask_version = flask.__version__
+        #获取flask安装地址
+        flask_env = str(flask.config).split("'")[3]
+        #获取web家目录
+        web_path  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        #获取python版本
+        python_version = sys.version
+        return flask_version,web_path,flask_env,python_version
+
+
 
 
 
