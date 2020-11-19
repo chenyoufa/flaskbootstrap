@@ -34,25 +34,25 @@ git pull origin main
 # python manage.py database init_data
 
 #######################
-项目设计方案
-app 网站目录文件夹
-    forms 表单验证文件夹
-    managerUtil 数据命令封装文件夹
-        database.py 数据命令,数据初始化，迁移，更新等
-    static 静态文件 css js images
-    templates 模板文件夹
-        cms  后台管理模板文件夹
-        main 官网模板文件夹
-        share 公共模板文件夹
-    views 视图文件夹
-        cms_view.py 后台视图文件
-        api_view.py webapi视图文件
-        main_view.py 官网视图文件
-    models.py 数据库表设计文件
-migrations 数据库迁移文件夹(自动生成)
-utils 公共函数文件夹
-    ImageCode.py 生成验证码公共函数
-config.py 配置文件
-README.md 说明文档
-requirements.txt pip 安装基础包文件
-11
+***
+# 项目设计方案
+├─ app 网站目录文件夹
+│  ├─ forms 表单验证文件夹
+│  ├─ managerUtil 数据命令封装文件夹
+│  │  ├─ database.py 数据命令,数据初始化，迁移，更新等
+│  ├─ static 静态文件 css js images
+│  ├─ templates 模板文件夹
+│  │  ├─ cms  后台管理模板文件夹
+│  │  ├─ main 官网模板文件夹
+│  │  ├─ share 公共模板文件夹
+│  ├─ views 视图文件夹
+│  │  ├─ cms_view.py 后台视图文件
+│  │  ├─ api_view.py webapi视图文件
+│  │  ├─ main_view.py 官网视图文件
+│  ├─ models.py 数据库表设计文件
+├─ migrations 数据库迁移文件夹(自动生成)
+├─ utils 公共函数文件夹
+│  ├─ ImageCode.py 生成验证码公共函数
+├─ config.py 配置文件
+├─ README.md 说明文档
+├─ requirements.txt pip 安装基础包文件
