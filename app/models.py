@@ -19,10 +19,10 @@ class Entry(AbstractConcreteBase, db.Model):
     # def single_to_dict(self):
     #     return {c.name: getattr(self, c.name) for c in self.__table__.columns}
     Id = db.Column(db.Integer, primary_key=True)
-    AddUserid=db.Column(db.SmallInteger,nullable=False)
-    AddTime = db.Column(db.DateTime, default=datetime.now())
-    EditTime = db.Column(db.DateTime, default=datetime.now())
-    EditUserid=db.Column(db.SmallInteger,nullable=False)
+    CreateUserid=db.Column(db.SmallInteger,nullable=False)
+    CreateTime = db.Column(db.DateTime, default=datetime.now())
+    ModifyTime = db.Column(db.DateTime, default=datetime.now())
+    ModifyUserid=db.Column(db.SmallInteger,nullable=False)
     Status = db.Column(db.SmallInteger,default=1)
     def dobule_to_dict(self):
         result = {}
@@ -34,17 +34,17 @@ class Entry(AbstractConcreteBase, db.Model):
         return result
     def test(self):
         return self
- 
- 
- 
+
+
+
 class Role(Entry):
     __tablename__ = "SysRoles"
     # id号递增autoincrement=True
-   
+
     Name = db.Column(db.String(20))
     Sort=db.Column(db.SmallInteger,nullable=True,default=0)
     Remark= db.Column(db.String(20))
-    
+
     # 反向引用, Role表中有属性users， User类中有role这个属性;
     # Users = db.relationship('User', backref='role')
 
@@ -53,9 +53,9 @@ class Role(Entry):
 
 class User(Entry):
     __tablename__ = "SysUsers"
-  
+
     UserName = db.Column(db.String(30), unique=True, index=True, nullable=False)  # unique=True用户名不能重复,index 自增 nullable 是否可空
-    PassWord = db.Column(db.String(20), nullable=False)
+    PassWord = db.Column(db.String(150), nullable=False)
     RealName = db.Column(db.String(20), unique=False)
     Email = db.Column(db.String(50), unique=True)
     Mobile= db.Column(db.String(11), unique=False)
