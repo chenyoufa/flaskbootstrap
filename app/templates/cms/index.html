@@ -19,7 +19,7 @@
                                 <img alt="image" src='/static/image/portrait.png' class="img-circle" height="50" width="50" />
                             </div>
                             <div class="image-right">
-                                <span class="block m-t-xs">admin</span>
+                                <span class="block m-t-xs">{{ username }}</span>
                                 <span class="text-xs block">技术部</span>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                         <li class="dropdown user-menu">
                             <a href="javascript:void(0)" class="dropdown-toggle" data-hover="dropdown">
                                 <img src="/static/image/portrait.png" class="user-image">
-                                <span class="hidden-xs">admin</span>
+                                <span class="hidden-xs">{{ username }}</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="mt5">
@@ -111,7 +111,7 @@
                                 </li>
                                 <li class="divider"></li>
                                 <li>
-                                    <a href="/Home/LoginOff"">
+                                    <a href="/cms/login_out">
                                         <i class="fa fa-sign-out"></i> 退出登录
                                     </a>
                                 </li>
