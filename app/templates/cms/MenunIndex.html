@@ -42,7 +42,7 @@
   $(function () {
       initTreeGrid();
 
-      $("#menuStatus").ysComboBox({ data: ys.getJson(@Html.Raw(typeof(StatusEnum).EnumToDictionaryString())) });
+    //  $("#menuStatus").ysComboBox({ data: ys.getJson(@Html.Raw(typeof(StatusEnum).EnumToDictionaryString())) });
   });
 
   function initTreeGrid() {
@@ -53,7 +53,7 @@
           expandFirst: false,
           toolbar: '#toolbar',
           expandColumn: '1',
-          url: '/cms/GetTestListJson")',
+          url: '/cms/GetMenuListJson',
           modalName: "菜单",
           columns: [
               { field: 'selectItem', radio: true },
@@ -69,14 +69,14 @@
               {
                   field: 'MenuType', title: '类型', width: '10%', align: "left",
                   formatter: function (value, item, index) {
-                      if (item.MenuType == "@MenuTypeEnum.Directory.ParseToInt()") {
-                          return '<span class="label label-success">@MenuTypeEnum.Directory.GetDescription()</span>';
+                      if (item.MenuType == 1) {
+                          return '<span class="label label-success">目录</span>';
                       }
-                      else if (item.MenuType == "@MenuTypeEnum.Menu.ParseToInt()") {
-                          return '<span class="label label-primary">@MenuTypeEnum.Menu.GetDescription()</span>';
+                      else if (item.MenuType == 2) {
+                          return '<span class="label label-primary">页面</span>';
                       }
-                      else if (item.MenuType == "@MenuTypeEnum.Button.ParseToInt()") {
-                          return '<span class="label label-warning">@MenuTypeEnum.Button.GetDescription()</span>';
+                      else if (item.MenuType == 3) {
+                          return '<span class="label label-warning">按钮</span>';
                       }
                   }
               },
@@ -86,10 +86,10 @@
               {
                   field: 'MenuStatus', title: '状态', width: '10%', align: "left",
                   formatter: function (value, row, index) {
-                      if (row.MenuStatus == "@StatusEnum.Yes.ParseToInt()") {
-                          return '<span class="badge badge-primary">' + "@StatusEnum.Yes.GetDescription()" + '</span>';
+                      if (row.MenuStatus == 1) {
+                          return '<span class="badge badge-primary">激活</span>';
                       } else {
-                          return '<span class="badge badge-warning">' + "@StatusEnum.No.GetDescription()" + '</span>';
+                          return '<span class="badge badge-warning">冻结</span>';
                       }
                   }
               }
@@ -132,7 +132,7 @@
 
       ys.openDialog({
           title: id > 0 ? "编辑菜单" : "添加菜单",
-          content: '@Url.Content("~/SystemManage/Menu/MenuForm")' + '?id=' + id + '&parentId=' + parentId + '&parentName=' + encodeURIComponent(parentName),
+          content: '/cms/MenuForm' + '?id=' + id + '&parentId=' + parentId + '&parentName=' + encodeURIComponent(parentName),
           callback: function (index, layero) {
               var iframeWin = window[layero.find('iframe')[0]['name']];
               iframeWin.saveForm(index);
@@ -146,7 +146,7 @@
           ys.confirm("确认要删除选中的" + selectedRow.length + "条数据吗？", function () {
               var ids = ys.getIds(selectedRow);
               ys.ajax({
-                  url: '@Url.Content("~/SystemManage/Menu/DeleteFormJson")' + '?ids=' + ids,
+                  url: '/cms/DeleteFormJson")' + '?ids=' + ids,
                   type: "post",
                   error: ys.ajaxError,
                   success: function (obj) {
