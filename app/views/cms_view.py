@@ -16,13 +16,7 @@ app.secret_key = 'please-generate-a-random-secret_key'
 
  
 ######################后台###################################
-# 递归方式 
-def sum_recu(n,outlist): 
-    for item in n:
-        menusPageObj = Menus.query.filter_by(ParentId=item.Id)
-        outlist.append(item)
-        sum_recu(menusPageObj,outlist)
-    return outlist
+
 
 #哈希加盐的密码加密方法
 def enPassWord(password):#将明密码转化为hash码
@@ -74,7 +68,13 @@ def login_out():
     return redirect(index_url)
 
 
-
+# 递归方式 
+def sum_recu(n,outlist): 
+    for item in n:
+        menusPageObj = Menus.query.filter_by(ParentId=item.Id)
+        outlist.append(item)
+        sum_recu(menusPageObj,outlist)
+    return outlist
 #首页
 @app.route('/cms/index')
 @LoginDecorator.is_login
@@ -98,12 +98,15 @@ def testlist(page=1):
     Users = User.query.order_by(User.Id.asc()).paginate(page=page,per_page=10)
     return render_template('cms/menus.html', infos=Users.items,pagination=Users)
 
-@app.route("/cms/MenuIndex")
-def Menundex():
-    return render_template('cms/MenuIndex.html')
+######################菜单###################################
 
-@app.route('/cms/GetTestListJson', methods=['GET'])
-def GetTestListJson(page=1):
+#菜单首页
+@app.route("/cms/MenunIndex")
+def MenunIndex():
+    return render_template('cms/MenunIndex.html')
+#菜单首页json接口
+@app.route('/cms/GetMenuListJson', methods=['GET'])
+def MenuListJson(page=1):
    
     if request.method == 'POST':
         print('post')
@@ -117,8 +120,19 @@ def GetTestListJson(page=1):
         # 注意total与rows是必须的两个参数，名字不能写错，total是数据的总长度，rows是每页要显示的数据,它是一个列表
         # 前端根本不需要指定total和rows这俩参数，他们已经封装在了bootstrap table里了
         #{'total': len(data.items), 'rows': data.items}
- 
 
+#菜单新增修改页面
+@app.route("/cms/MenuForm")
+def MenuForm():
+    return render_template('cms/MenuForm.html')
+
+@app.route("/cms/DeleteFormJson")
+def DeleteFormJson():
+
+    return jsonify(1)
+
+ ######################菜单###################################
+ 
 @app.route('/cms/SeverInfo/',methods=['GET'])
 def GetServerInfo():
     size_cpu,used_cpu  = ServerInfo.serverinfo().get_cpu_info()

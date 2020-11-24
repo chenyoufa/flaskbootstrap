@@ -72,28 +72,28 @@ def init_data():
     """初始化数据库"""
     
     
-    user = User(UserName="admin", PassWord="123456", Email="879756530@qq.com" ,
-    Status=1,AddUserid=1,EditUserid=1)
+    user = User(UserName="fage", PassWord="123456", Email="879756530@qq.com" ,
+    Status=1,CreateUserid=1,ModifyUserid=1)
     db.session.add(user)
 
-    belong = UserBelong(Belongid=1,BelongType=1,Status=1,AddUserId=1,EditUserId=1)
+    belong = UserBelong(Belongid=1,BelongType=1,Status=1,CreateUserid=1,ModifyUserid=1)
     db.session.add(belong)
 
 
-    role = Role(Name="超级管理员",Status=1,AddUserid=1,EditUserid=1)
+    role = Role(Name="超级管理员",Status=1,CreateUserid=1,ModifyUserid=1)
     db.session.add(role)
-    role = Role(Name="普通管理员",Status=1,AddUserid=1,EditUserid=1)
+    role = Role(Name="普通管理员",Status=1,CreateUserid=1,ModifyUserid=1)
     db.session.add(role)
     for user in range(100):
         u = User(UserName="westos%s" %(user), PassWord="hello", 
-        Email="westos%s@qq.com"  %(user),Status=1,AddUserid=1,EditUserid=1)
+        Email="westos%s@qq.com"  %(user),Status=1,CreateUserid=1,ModifyUserid=1)
         db.session.add(u)
     menu = Menus(ParentId=0,MenuName='系统工具',MenuUrl="",MenuType="1",MenuTarget="",
-    Status=1,AddUserid=1,EditUserid=1,MenuIcon="")
+    Status=1,CreateUserid=1,ModifyUserid=1,MenuIcon="")
     db.session.add(menu)
     menu = Menus(ParentId=1,MenuName='通用字典',
     MenuUrl="SystemManage/DataDict/DataDictIndex",MenuType="2",MenuTarget="",
-    Status=1,AddUserid=1,EditUserid=1,Authorize="system:datadict:view",MenuIcon="")
+    Status=1,CreateUserid=1,ModifyUserid=1,Authorize="system:datadict:view",MenuIcon="")
     db.session.add(menu)
     db.session.commit()
     print("初始化完成")
