@@ -53,13 +53,33 @@ def login():
 
         if isNameExisted(userName):
             s,t= isNameExisted(userName)
-            if check_password_hash(t, password) and session['imageCode'].lower() == captchaCode.lower() :  # 查询有没有这个用户
-                session['logged_in'] = userName
-                index_url = url_for('index')
-                return redirect(index_url)
+            if check_password_hash(t, password):
+                if session['imageCode'].lower() == captchaCode.lower() :  # 查询有没有这个用户
+                    session['logged_in'] = userName
+                    index_url = url_for('index')
+                    return redirect(index_url)
+                else:
+                    erro = "captchaCode is not right "
+                    print(erro)
+                    return render_template(
+                        'cms/login.html',
+                        erros=erro
+                    )
 
             else:  # 没有用户就是新用户那么就转入注册页面
-                return redirect('/cms/login')
+                erro = "password is not right user"
+                print(erro)
+                return render_template(
+                    'cms/login.html',
+                    erros=erro
+                )
+        else:
+            erro = "%s is not right user"%userName
+            print(erro)
+            return    render_template(
+            'cms/login.html',
+                erros = erro
+        )
 #注销页
 @app.route("/cms/login_out")
 def login_out():

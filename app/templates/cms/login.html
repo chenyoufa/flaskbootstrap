@@ -28,7 +28,8 @@
                 <div class="checkbox-custom">
                     <input id="rememberMe" name="rememberMe" type="checkbox"> <label for="rememberMe">记住我</label>
                 </div>
-                <button class="btn btn-success btn-block" type="submit" onclick="loginForm(); return false;">登录</button>
+                <button id="btn" class="btn btn-success btn-block" type="submit" onclick="loginForm(); return false;">登录</button>
+                {{ erros }}
             </form>
         </div>
     </div>
