@@ -71,9 +71,9 @@
           $('#menuIcon').val($(this).attr('class'));
           $(".icon-drop").hide();
       });
-
-      // $("#menuType").ysRadioBox({ data: ys.getJson(@Html.Raw(typeof(MenuTypeEnum).EnumToDictionaryString())) });
-      // $("#menuStatus").ysRadioBox({ data: ys.getJson(@Html.Raw(typeof(StatusEnum).EnumToDictionaryString())) });
+       console.log()
+       $("#menuType").ysRadioBox({ data:  ys.getJson([{ Key: 1, Value: "目录"},{Key: 2, Value: "页面"},{Key: 3, Value: "按钮"}])});
+       $("#menuStatus").ysRadioBox({ data: ys.getJson([{ Key: 1, Value: "激活"},{Key: 2, Value: "冻结"}]) });
 
       $('input[name=menuType_radiobox]').on('ifChecked', function (event) {
           var menuType = $(event.target).val();
