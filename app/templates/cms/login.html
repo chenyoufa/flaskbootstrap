@@ -7,7 +7,7 @@
 <div class="login-panel">
     <div class="row section">
         <div class="col-sm-12">
-            <form id="form" style="background-color: rgba(255,255,255,0.5);" action="login" method="post">
+            <form id="form" style="background-color: rgba(255,255,255,0.5);"  method="post">
                 <img src="/static/image/logo.png" style="width:80%" />
                 <p class="m-t-md"></p>
                 <input id="userName" name="userName" class="form-control uname" col="UserName" type="text"
@@ -28,8 +28,9 @@
                 <div class="checkbox-custom">
                     <input id="rememberMe" name="rememberMe" type="checkbox"> <label for="rememberMe">记住我</label>
                 </div>
-                <button id="btn" class="btn btn-success btn-block" type="submit" onclick="loginForm(); return false;">登录</button>
-                {{ erros }}
+                <div id="btn" class="btn btn-success btn-block"  onclick="loginForm()">登录</div>
+                 <div id="hint" class="hint margin-top-30">&nbsp</div>
+
             </form>
         </div>
     </div>
@@ -42,4 +43,47 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" >
+    function loginForm() {
+        var usernameValue = document.getElementById('userName').value;
+        var passwordValue = document.getElementById('password').value;
+        var captchaCodeValue = document.getElementById('captchaCode').value;
+        var hint = document.getElementById('hint');
+
+        if (usernameValue == '') {
+            hint.innerText = '提示：请输入用户名'
+            return;
+        }else if (passwordValue == '') {
+            hint.innerText = '提示：请输入密码';
+            return;
+        }else if (captchaCodeValue== ''){
+            hint.innerText = '提示：请输入验证码'
+            return;
+        }else{
+            $.ajax({
+                type: 'POST',
+                url: '/cms/login',
+                data: JSON.stringify({
+                    "username": usernameValue,
+                    "password": passwordValue,
+                    "captchaCode":captchaCodeValue
+                }),
+                dataType: 'json',
+                success: function(ret) {
+                    if (ret.status == 200){
+                        window.location = ret.index_url
+                    }
+                    else {
+                        alert(ret.erros)
+                    }
+                },
+
+
+
+
+            })
+        }
+    }
+</script>
+
 {% endblock %}

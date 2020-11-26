@@ -47,39 +47,33 @@ def login():
             message='Your application description page.'
         )
     if request.method == "POST":
-        userName = request.form["userName"]
-        password = request.form["password"]
-        captchaCode = request.form["captchaCode"]
+        data = json.loads(request.get_data(as_text=True))
+        # print(data)
+        userName = data['username']
+        password = data['password']
+        captchaCode = data['captchaCode']
 
         if isNameExisted(userName):
             s,t= isNameExisted(userName)
             if check_password_hash(t, password):
                 if session['imageCode'].lower() == captchaCode.lower() :  # 查询有没有这个用户
                     session['logged_in'] = userName
-                    index_url = url_for('index')
-                    return redirect(index_url)
+                    return jsonify({"index_url":"/cms/index","status":200})
                 else:
                     erro = "captchaCode is not right "
-                    print(erro)
-                    return render_template(
-                        'cms/login.html',
-                        erros=erro
-                    )
+                    return jsonify({"erros":erro})
+                    # print(erro)
+                    # return render_template(
+                    #     'cms/login.html',
+                    #     erros=erro
+                    # )
 
             else:  # 没有用户就是新用户那么就转入注册页面
                 erro = "password is not right user"
-                print(erro)
-                return render_template(
-                    'cms/login.html',
-                    erros=erro
-                )
+                return jsonify({"erros":erro})
         else:
             erro = "%s is not right user"%userName
-            print(erro)
-            return    render_template(
-            'cms/login.html',
-                erros = erro
-        )
+            return jsonify({"erros":erro})
 #注销页
 @app.route("/cms/login_out")
 def login_out():
