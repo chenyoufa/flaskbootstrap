@@ -1,15 +1,18 @@
 ﻿ 
 {% extends "share/_FormWhite.html" %}
 {% block content %}
+ 
 <div class="wrapper animated fadeInRight">
   <form id="form" class="form-horizontal m">
-      <!-- @Html.AntiForgeryToken() -->
+       <input type="hidden" col="csrf_token" value="{{ csrf_token() }}" />
+    
       <div class="form-group">
           <label class="col-sm-3 control-label ">上级菜单</label>
           <div class="col-sm-8">
               <input id="parentId" type="hidden" col="ParentId" />
               <input id="parentName" col="ParentName" type="text" class="form-control" readonly="readonly" onclick="showChooseForm()" />
           </div>
+        
       </div>
       <div class="form-group">
           <label class="col-sm-3 control-label">菜单类型</label>
@@ -56,6 +59,7 @@
       </div>
   </form>
 </div>
+ 
 
 <script type="text/javascript">
   var id = ys.request("id");
@@ -98,29 +102,29 @@
               }
           });
       }
-      else {
-          ys.ajax({
-              url: '@Url.Content("~/SystemManage/Menu/GetMaxSortJson")' + '?parentId=' + parentId,
-              type: "get",
-              success: function (obj) {
-                  if (obj.Tag == 1) {
-                      var defaultData = {};
-                      defaultData.ParentId = parentId;
-                      if (parentName) {
-                          defaultData.ParentName = parentName;
-                      }
-                      else {
-                          defaultData.ParentName = "主目录";
-                      }
-                      defaultData.MenuStatus = "@StatusEnum.Yes.ParseToInt()";
+    //   else {
+    //       ys.ajax({
+    //           url: '@Url.Content("~/SystemManage/Menu/GetMaxSortJson")' + '?parentId=' + parentId,
+    //           type: "get",
+    //           success: function (obj) {
+    //               if (obj.Tag == 1) {
+    //                   var defaultData = {};
+    //                   defaultData.ParentId = parentId;
+    //                   if (parentName) {
+    //                       defaultData.ParentName = parentName;
+    //                   }
+    //                   else {
+    //                       defaultData.ParentName = "主目录";
+    //                   }
+    //                   defaultData.MenuStatus = "@StatusEnum.Yes.ParseToInt()";
 
-                      defaultData.MenuSort = obj.Data;
-                      console.log(defaultData)
-                      $("#form").setWebControls(defaultData);
-                  }
-              }
-          });
-      }
+    //                   defaultData.MenuSort = obj.Data;
+    //                   console.log(defaultData)
+    //                   $("#form").setWebControls(defaultData);
+    //               }
+    //           }
+    //       });
+    //   }
   }
 
   function menuVisible(menuType) {
@@ -142,10 +146,8 @@
   function saveForm(index) {
       if ($("#form").validate().form()) {
           var postData = $("#form").getWebControls({ Id: id });
-          var __RequestVerificationToken = $("input[name='__RequestVerificationToken']").val();
-          postData.__RequestVerificationToken = __RequestVerificationToken; 
           ys.ajax({
-              url: '@Url.Content("~/SystemManage/Menu/SaveFormJson")',
+              url: '/cms/AddMenuJson',
               type: "post",
               data: postData,
               success: function (obj) {

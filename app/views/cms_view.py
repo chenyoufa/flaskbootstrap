@@ -1,7 +1,7 @@
 # http://www.csdn.net/list/
 # http://www.csdn.net/list/1/
 # http://www.csdn.net/list/2/
-from flask import render_template,request,json,jsonify,redirect,url_for
+from flask import render_template,request,json,jsonify,redirect,url_for,flash
 from app import app
 from app.models import User,Menus,to_json
 from utils import ImageCode as ImageCodeHelper ,commom,ServerInfo,LoginDecorator
@@ -139,6 +139,27 @@ def MenuListJson(page=1):
 @app.route("/cms/MenuForm")
 def MenuForm():
     return render_template('cms/MenuForm.html')
+ 
+from app.forms  import menu_form
+ 
+
+@app.route("/cms/AddMenuJson", methods=['POST'])
+def AddMenuJson():
+    form =menu_form.MenuForm()
+    data={'Tag': 0,"Message":""}
+    # flash("ddd")
+    print(form.validate)
+    if form.validate_on_submit():
+        try:
+            print(form.ParentId.data)
+            data["Tag"]=1
+            data["Message"]="操作成功"
+        except:
+            data["Tag"]=-1
+            data["Message"]="异常，请刷新页面重新试试"
+    else:
+           data["Message"] =  form.errors.popitem() #[1][0]
+    return jsonify(data)
 
 @app.route("/cms/DeleteFormJson")
 def DeleteFormJson():
