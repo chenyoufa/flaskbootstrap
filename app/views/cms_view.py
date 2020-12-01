@@ -10,7 +10,7 @@ from io import BytesIO
 from datetime import datetime
 import  config
 from werkzeug.security import generate_password_hash,check_password_hash
-
+from app.forms  import menu_form,login_form
  
 app.secret_key = 'please-generate-a-random-secret_key'
 
@@ -47,11 +47,11 @@ def login():
             message='Your application description page.'
         )
     if request.method == "POST":
-        data = json.loads(request.get_data(as_text=True))
-        # print(data)
-        userName = data['username']
-        password = data['password']
-        captchaCode = data['captchaCode']
+         
+        form =login_form.LoginForm()
+        userName = form.username.data
+        password = form.password.data
+        captchaCode = form.captchaCode.data
 
         if isNameExisted(userName):
             s,t= isNameExisted(userName)
@@ -140,7 +140,7 @@ def MenuListJson(page=1):
 def MenuForm():
     return render_template('cms/MenuForm.html')
  
-from app.forms  import menu_form
+
  
 
 @app.route("/cms/AddMenuJson", methods=['POST'])

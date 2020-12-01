@@ -8,6 +8,7 @@
     <div class="row section">
         <div class="col-sm-12">
             <form id="form" style="background-color: rgba(255,255,255,0.5);"  method="post">
+                <input type="hidden" id="csrf_token" name="csrf_token" value="{{ csrf_token() }}" />
                 <img src="/static/image/logo.png" style="width:80%" />
                 <p class="m-t-md"></p>
                 <input id="userName" name="userName" class="form-control uname" col="UserName" type="text"
@@ -60,14 +61,16 @@
             hint.innerText = '提示：请输入验证码'
             return;
         }else{
+             
             $.ajax({
                 type: 'POST',
                 url: '/cms/login',
-                data: JSON.stringify({
+                data:  {
                     "username": usernameValue,
                     "password": passwordValue,
-                    "captchaCode":captchaCodeValue
-                }),
+                    "captchaCode":captchaCodeValue,
+                    "csrf_token":$("#csrf_token").val()
+                },
                 dataType: 'json',
                 success: function(ret) {
                     if (ret.status == 200){

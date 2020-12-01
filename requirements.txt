@@ -5,3 +5,4 @@ pymysql
 flask_bootstrap
 cryptography
 psutil
+flask_wtf
