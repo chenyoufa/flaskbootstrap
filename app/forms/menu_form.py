@@ -4,15 +4,16 @@ from wtforms.validators import DataRequired, Length
 
 
 class MenuForm(FlaskForm):
-   
+    Id=IntegerField()
     ParentId=IntegerField('上级菜单',default=0)
     MenuType=IntegerField('菜单类型')
-    MenuName=StringField('菜单名称', validators=[DataRequired(), Length(1, 64), ])
-    Authorize=StringField('权限标识', validators=[DataRequired(), Length(1, 64), ])
+    MenuName=StringField('菜单名称', validators=[DataRequired(), Length(1, 50), ])
+    Authorize=StringField('权限标识', validators=[DataRequired(), Length(1, 50), ])
     MenuUrl=StringField('请求地址')
     MenuSort=IntegerField(default=1)
     MenuIcon=StringField('图标')
-    MenuStatus=IntegerField(default=1)
+    Status=IntegerField(default=1)
+    Remark=StringField('备注')
     # submit = SubmitField('提交')
     
 
