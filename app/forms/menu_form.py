@@ -4,18 +4,16 @@ from wtforms.validators import DataRequired, Length
 
 
 class MenuForm(FlaskForm):
-    # username = StringField('用户名', validators=[DataRequired(), Length(1, 64), ])
-    # password = PasswordField('密码', validators=[DataRequired()])
-    # rememberme = BooleanField('记住我')
-    ParentId=IntegerField('上级菜单', validators=[DataRequired("请选择上级菜单") ])
-    menuType=IntegerField('菜单类型', validators=[DataRequired("请选择菜单类型"), Length(1) ])
+   
+    ParentId=IntegerField('上级菜单',default=0)
+    MenuType=IntegerField('菜单类型')
     MenuName=StringField('菜单名称', validators=[DataRequired(), Length(1, 64), ])
     Authorize=StringField('权限标识', validators=[DataRequired(), Length(1, 64), ])
-    MenuUrl=StringField('请求地址', validators=[DataRequired(), Length(1, 64), ])
+    MenuUrl=StringField('请求地址')
     MenuSort=IntegerField(default=1)
-    # MenuIcon=StringField('图标', validators=[DataRequired("请选择图标"), Length(0, 64), ])
-    menuStatus=IntegerField(default=1)
-    submit = SubmitField('提交')
+    MenuIcon=StringField('图标')
+    MenuStatus=IntegerField(default=1)
+    # submit = SubmitField('提交')
     
 
 # WTFroms 支持的HTML标准字段:

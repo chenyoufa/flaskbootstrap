@@ -1,4 +1,5 @@
 from flask_migrate import MigrateCommand
+from app import views
 
 from app import app, manager, db
 from app.managerUtil.database import  database_manager

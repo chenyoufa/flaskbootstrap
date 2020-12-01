@@ -2,7 +2,7 @@
 # http://www.csdn.net/list/1/
 # http://www.csdn.net/list/2/
 from flask import render_template,request,json,jsonify,redirect,url_for,flash
-from app import app
+from app import app,db
 from app.models import User,Menus,to_json
 from utils import ImageCode as ImageCodeHelper ,commom,ServerInfo,LoginDecorator
 from flask import make_response,session
@@ -140,25 +140,23 @@ def MenuListJson(page=1):
 def MenuForm():
     return render_template('cms/MenuForm.html')
  
-
- 
-
 @app.route("/cms/AddMenuJson", methods=['POST'])
 def AddMenuJson():
     form =menu_form.MenuForm()
     data={'Tag': 0,"Message":""}
-    # flash("ddd")
-    print(form.validate)
     if form.validate_on_submit():
         try:
-            print(form.ParentId.data)
+            menu = Menus(ParentId=0,MenuName=form.MenuName,MenuUrl=form.MenuUrl,MenuType=form.MenuType,
+            MenuTarget="",Status=1,CreateUserid=1,ModifyUserid=1,MenuIcon=form.MenuIcon)
+            db.session.add(menu)
+            
             data["Tag"]=1
             data["Message"]="操作成功"
-        except:
+        except Exception as err:
             data["Tag"]=-1
-            data["Message"]="异常，请刷新页面重新试试"
+            data["Message"]="异常，请刷新页面重新试试"+str(err)
     else:
-           data["Message"] =  form.errors.popitem() #[1][0]
+           data["Message"] =  form.errors.popitem()[0]+" "+form.errors.popitem()[1][0]
     return jsonify(data)
 
 @app.route("/cms/DeleteFormJson")
