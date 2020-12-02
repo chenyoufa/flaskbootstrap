@@ -86,8 +86,8 @@
         return noAuthorize;
     }
 
-    initDataDict();
-    initDataAuthority();
+   // initDataDict();
+   // initDataAuthority();
 
     // 公开方法
     window.initDataDict = initDataDict;
