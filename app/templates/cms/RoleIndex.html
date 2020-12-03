@@ -48,7 +48,7 @@
     });
 
     function initGrid() {
-        var queryUrl = '@Url.Content("~/SystemManage/Role/GetPageListJson")';
+        var queryUrl = '/cms/GetRoleListJson")';
         $('#gridTable').ysTable({
             url: queryUrl,
             sortName: 'RoleSort',
@@ -61,10 +61,10 @@
                 {
                     field: 'RoleStatus', title: '状态', width: "15%",
                     formatter: function (value, row, index) {
-                        if (value == "@StatusEnum.Yes.ParseToInt()") {
-                            return '<span class="badge badge-primary">' + "@StatusEnum.Yes.GetDescription()" + '</span>';
+                        if (value == "1") {
+                            return '<span class="badge badge-primary">' + "激活" + '</span>';
                         } else {
-                            return '<span class="badge badge-warning">' + "@StatusEnum.No.GetDescription()" + '</span>';
+                            return '<span class="badge badge-warning">' + "冻结" + '</span>';
                         }
                     }
                 },
