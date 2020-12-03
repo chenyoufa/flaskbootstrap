@@ -1,10 +1,10 @@
 # http://www.csdn.net/list/
 # http://www.csdn.net/list/1/
 # http://www.csdn.net/list/2/
-from flask import render_template,request,json,jsonify,redirect,url_for,flash
+from flask import render_template,request,json,jsonify,redirect,url_for,flash,current_app
 from app import app,db
 from app.models import User,Menus,to_json
-from utils import ImageCode as ImageCodeHelper ,commom,ServerInfo,LoginDecorator
+from utils import ImageCode as ImageCodeHelper ,commom,ServerInfo,AllDecorator
 from flask import make_response,session
 from io import BytesIO
 from datetime import datetime
@@ -53,6 +53,7 @@ def login():
         password = form.password.data
         captchaCode = form.captchaCode.data
 
+
         if isNameExisted(userName):
             s,t= isNameExisted(userName)
             if check_password_hash(t, password):
@@ -91,7 +92,7 @@ def sum_recu(n,outlist):
     return outlist
 #首页
 @app.route('/cms/index')
-@LoginDecorator.is_login
+@AllDecorator.is_login
 def index():
     menusPageObj = Menus.query.filter_by(ParentId=0)
     outlist=[]
