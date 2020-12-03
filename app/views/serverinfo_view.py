@@ -1,9 +1,5 @@
-# http://www.csdn.net/list/
-# http://www.csdn.net/list/1/
-# http://www.csdn.net/list/2/
-from flask import render_template,request,json,jsonify,redirect,url_for,flash,current_app
-from app import app,db
-from app.models import User,Menus,to_json
+from flask import render_template
+from app import app
 from utils import ServerInfo,AllDecorator
 
 
