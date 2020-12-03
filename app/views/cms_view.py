@@ -215,7 +215,13 @@ def GetMenuTreeListJson():
     return jsonify(data)
 
  ######################菜单###################################
- 
+ ######################角色
+# 
+@app.route("/cms/RoleIndex")
+def RoleIndex():
+    return render_template('cms/RoleIndex.html')
+
+ ############################
 @app.route('/cms/SeverInfo/',methods=['GET'])
 def GetServerInfo():
     size_cpu,used_cpu  = ServerInfo.serverinfo().get_cpu_info()
