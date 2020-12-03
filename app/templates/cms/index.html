@@ -29,7 +29,7 @@
                         {% if loop.first %}
                           
                             <li data-1 data-type="menu">
-                                {%if menutemp.MenuUrl|default('')!='' %}
+                                {%if menutemp.MenuUrl and  menutemp.MenuUrl != none|default('')!='' %}
                                 <a data-2 class="menuItem" href="{{menutemp.MenuUrl|default('')}}">
                                     <i class="{{menutemp.MenuIcon}}"></i>
                                     <span class="nav-label">{{menutemp.MenuName}}</span>
@@ -46,7 +46,7 @@
                                 </ul>
                             </li> 
                             <li data-1 data-type="menu">
-                                {%if menutemp.MenuUrl|default('')!='' %}
+                                {%if menutemp.MenuUrl and  menutemp.MenuUrl != none|default('')!='' %}
                                     <a data-2 class="menuItem" href="{{ menutemp.MenuUrl or ''}}">
                                         <i class="MenuIcon"></i>
                                         <span class="nav-label">{{menutemp.MenuName}}</span>
@@ -63,13 +63,13 @@
                     {% elif  menutemp.MenuType  ==2 %}
                    
                                     <li data-3 data-type="menu">
-                                        {%if menutemp.MenuUrl|default('')!='' %}
-                                            <a class="menuItem" href=''>{{menutemp.MenuName}}</a>
+                                        {%if menutemp.MenuUrl and  menutemp.MenuUrl != none |default('')!=''  %}
+                                            <a class="menuItem" href="#" data-url='{{menutemp.MenuUrl}}'>{{menutemp.MenuName}}</a>
                                         {%else %}
                                             <a class="menuItem" href="#" data-url=''>{{menutemp.MenuName}}</a>
                                         {% endif %}
                                     </li>
-        
+
                     {% endif %}
                 {% endfor %}
 

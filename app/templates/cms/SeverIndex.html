@@ -188,34 +188,7 @@
             var div_ibox = $(this).closest("div.ibox");
             div_ibox.remove()
         });
-       // GetServer()
-        //setInterval(function () { GetServer() }, 5000);
 
-       // GetServerIp();
-    });
-
-    function GetServer() {
-        $.ajax({
-            url: '@Url.Content("~/ToolManage/Server/GetServerJson")',
-            type: "get",
-            success: function (obj) {
-                if (obj.Tag == 1) {
-                    $(".wrapper").setWebControls(obj.Data);
-                }
-            }
-        });
-    }
-
-    function GetServerIp() {
-        $.ajax({
-            url: '@Url.Content("~/ToolManage/Server/GetServerIpJson")',
-            type: "get",
-            success: function (obj) {
-                if (obj.Tag == 1) {
-                    $("#wanIp").html(obj.Data);
-                }
-            }
-        });
-    }
+    })
 </script>
             {% endblock %}
