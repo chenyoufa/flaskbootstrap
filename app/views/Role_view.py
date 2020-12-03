@@ -1,13 +1,8 @@
 
-from flask import render_template,request,json,jsonify,redirect,url_for,flash,current_app
+from flask import render_template
 from app import app,db
 from app.models import User,Menus,to_json
-from utils import ImageCode as ImageCodeHelper ,commom,ServerInfo,AllDecorator
 from flask import make_response,session
-from io import BytesIO
-from datetime import datetime
-import  config
-from werkzeug.security import generate_password_hash,check_password_hash
 from app.forms  import menu_form,login_form
 
 app.secret_key = 'please-generate-a-random-secret_key'
@@ -24,7 +19,7 @@ def GetRoleListJson():
     if id!='':
         data["Tag"]=1
         data["Message"]="操作成功"
-        menu=Menus.query.all()
+        menu=Role.query.all()
         data["Data"]=menu
     return jsonify(data)
  ############################角色 ######################
