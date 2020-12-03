@@ -7,7 +7,7 @@ from app import db,AbstractConcreteBase
 
 # 配合多个对象使用的函数
 def to_json(lists):
-        print(lists)
+        # print(lists)
         v = [ ven.dobule_to_dict() for ven in lists ]
         return v
 
@@ -91,7 +91,6 @@ class UserBelong(Entry):
 
 class Menus(Entry):
     __tablename__ = "SysMenus"
-    Id = db.Column(db.Integer, primary_key=True)
     ParentId=db.Column(db.SmallInteger,nullable=False)
     MenuName = db.Column(db.String(50), nullable=False)
     MenuIcon = db.Column(db.String(50))
@@ -105,4 +104,20 @@ class Menus(Entry):
     # 定义了 __repr()__ 方法,返回一个具有可读性的字符串表示模型,可在调试和测试时使用。
     def __repr__(self):
         return "<Menus %s>" % (self.MenuName)
+
+class SysLog(Entry):
+    __tablename__ = "SysLog"
+    # UseName = db.Column(db.String(30),comment="登录名称")
+    UserId  = db.Column(db.Integer,db.ForeignKey('SysUsers.Id'))
+    IpAddress = db.Column(db.String(30),comment="ip地址")
+    IpHome = db.Column(db.String(60),comment="ip归属地")
+    AgentBrowser = db.Column(db.String(60),comment="浏览器")
+    OperatingSystem = db.Column(db.String(60),comment="操作系统")
+    LogCategory = db.Column(db.Integer,primary_key=False,comment="日志列表")#1登录日志，2操作日志
+    OperatingInfo = OperatingSystem = db.Column(db.String(60),comment="操作信息")
+    # DepartmentName = db.Column(db.String(30),comment="部门名称")
+    OperationMethod = db.Column(db.String(30),comment="操作方法")
+    TimeConsue = db.Column(db.Integer,primary_key=False,comment="耗时")
+    Parameter = db.Column(db.String(60),comment="请求参数")
+
 
