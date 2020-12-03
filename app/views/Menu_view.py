@@ -31,8 +31,8 @@ def MenuListJson(page=1):
 def MenuForm():
     return render_template('cms/MenuForm.html')
  
-@app.route("/cms/GetFormJson", methods=['GET'])
-def GetFormJson():
+@app.route("/cms/GetMenuJson", methods=['GET'])
+def GetMenuJson():
     data={'Tag': 0,"Message":"","Data":""}
     id=request.args.get("id")
     if id!='':
@@ -78,8 +78,8 @@ def AddMenuJson():
            data["Message"] =  form.errors.popitem()[0]+" "+form.errors.popitem()[1][0]
     return jsonify(data)
 
-@app.route("/cms/DeleteFormJson", methods=['POST'])
-def DeleteFormJson():
+@app.route("/cms/DeleteMenuJson", methods=['POST'])
+def DeleteMenuJson():
     data={'Tag': 0,"Message":"","Data":""}
     id=request.form["ids"]
     if id!='':

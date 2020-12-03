@@ -148,7 +148,7 @@
               var ids = ys.getIds(selectedRow);
               var csrf_token=$("#csrf_token").val()
               ys.ajax({
-                  url: '/cms/DeleteFormJson',
+                  url: '/cms/DeleteMenuJson',
                   type: "post",
                   data:{
                      ids:ids,

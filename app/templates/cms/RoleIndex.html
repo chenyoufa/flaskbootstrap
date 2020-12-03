@@ -48,7 +48,7 @@
     });
 
     function initGrid() {
-        var queryUrl = '/cms/GetRoleListJson")';
+        var queryUrl = '/cms/GetRoleListJson';
         $('#gridTable').ysTable({
             url: queryUrl,
             sortName: 'RoleSort',
@@ -100,7 +100,7 @@
         }
         ys.openDialog({
             title: id > 0 ? "编辑角色" : "添加角色",
-            content: '@Url.Content("~/SystemManage/Role/RoleForm")' + '?id=' + id,
+            content: '/cms/RoleForm")' + '?id=' + id,
             width: "780px",
             callback: function (index, layero) {
                 var iframeWin = window[layero.find('iframe')[0]['name']];
@@ -115,7 +115,7 @@
             ys.confirm("确认要删除选中的" + selectedRow.length + "条数据吗？", function () {
                 var ids = ys.getIds(selectedRow);
                 ys.ajax({
-                    url: '@Url.Content("~/SystemManage/Role/DeleteFormJson")' + '?ids=' + ids,
+                    url: '/cms/DeleteRoleJson")' + '?ids=' + ids,
                     type: "post",
                     success: function (obj) {
                         if (obj.Tag == 1) {
