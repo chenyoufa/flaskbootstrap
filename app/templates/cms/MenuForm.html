@@ -75,7 +75,7 @@
           $('#menuIcon').val($(this).attr('class'));
           $(".icon-drop").hide();
       });
-       console.log()
+      
        $("#menuType").ysRadioBox({ data:  ys.getJson([{ Key: 1, Value: "目录"},{Key: 2, Value: "页面"},{Key: 3, Value: "按钮"}])});
        $("#menuStatus").ysRadioBox({ data: ys.getJson([{ Key: 1, Value: "激活"},{Key: 2, Value: "冻结"}]) });
 
@@ -93,7 +93,7 @@
   function getForm() {
       if (id > 0) {
           ys.ajax({
-              url: '/cms/GetFormJson' + '?id=' + id,
+              url: '/cms/GetMenuJson' + '?id=' + id,
               type: "get",
               success: function (obj) {
                   if (obj.Tag == 1) {

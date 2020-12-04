@@ -1,0 +1,27 @@
+[37m2020-12-04 15:03:26,999    _internal.py:113    _log()   INFO[0m :  * Restarting with stat
+[37m2020-12-04 15:03:28,844    _internal.py:113    _log() WARNING[0m :  * Debugger is active!
+[37m2020-12-04 15:03:28,854    _internal.py:113    _log()   INFO[0m :  * Debugger PIN: 647-591-876
+[37m2020-12-04 15:03:28,886    _internal.py:113    _log()   INFO[0m :  * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)
+[37m2020-12-04 15:04:23,973    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:23] "[37mGET / HTTP/1.1[0m" 200 -
+[37m2020-12-04 15:04:24,047    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:24] "[37mGET /static/content/site.css HTTP/1.1[0m" 200 -
+[37m2020-12-04 15:04:24,183    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:24] "[37mGET /static/scripts/respond.js HTTP/1.1[0m" 200 -
+[37m2020-12-04 15:04:24,249    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:24] "[37mGET /static/scripts/modernizr-2.6.2.js HTTP/1.1[0m" 200 -
+[37m2020-12-04 15:04:24,260    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:24] "[37mGET /static/scripts/bootstrap.js HTTP/1.1[0m" 200 -
+[37m2020-12-04 15:04:24,271    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:24] "[37mGET /static/content/bootstrap.min.css HTTP/1.1[0m" 200 -
+[37m2020-12-04 15:04:24,420    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:24] "[37mGET /static/scripts/jquery-1.10.2.js HTTP/1.1[0m" 200 -
+[37m2020-12-04 15:04:25,404    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[37m2020-12-04 15:04:29,800    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:29] "[37mGET / HTTP/1.1[0m" 200 -
+[37m2020-12-04 15:04:29,983    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:29] "[36mGET /static/content/bootstrap.min.css HTTP/1.1[0m" 304 -
+[37m2020-12-04 15:04:29,992    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:29] "[36mGET /static/content/site.css HTTP/1.1[0m" 304 -
+[37m2020-12-04 15:04:30,057    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:30] "[36mGET /static/scripts/modernizr-2.6.2.js HTTP/1.1[0m" 304 -
+[37m2020-12-04 15:04:30,132    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:30] "[36mGET /static/scripts/jquery-1.10.2.js HTTP/1.1[0m" 304 -
+[37m2020-12-04 15:04:30,209    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:30] "[36mGET /static/scripts/bootstrap.js HTTP/1.1[0m" 304 -
+[37m2020-12-04 15:04:30,315    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:30] "[36mGET /static/scripts/respond.js HTTP/1.1[0m" 304 -
+[37m2020-12-04 15:04:31,534    _internal.py:113    _log()   INFO[0m : 127.0.0.1 - - [04/Dec/2020 15:04:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[37m2020-12-04 15:07:04,351    _internal.py:113    _log()   INFO[0m :  * Detected change in 'F:\\vscode\\website\\website\\app\\__init__.py', reloading
+[37m2020-12-04 15:07:04,547    _internal.py:113    _log()   INFO[0m :  * Restarting with stat
+[37m2020-12-04 15:07:06,694    _internal.py:113    _log() WARNING[0m :  * Debugger is active!
+[37m2020-12-04 15:07:06,703    _internal.py:113    _log()   INFO[0m :  * Debugger PIN: 647-591-876
+[37m2020-12-04 15:07:06,763    _internal.py:113    _log()   INFO[0m :  * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)
+[37m2020-12-04 15:09:38,015    _internal.py:113    _log()   INFO[0m :  * Detected change in 'F:\\vscode\\website\\website\\app\\__init__.py', reloading
+[37m2020-12-04 15:09:38,227    _internal.py:113    _log()   INFO[0m :  * Restarting with stat
