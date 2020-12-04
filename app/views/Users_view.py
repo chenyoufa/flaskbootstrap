@@ -21,6 +21,8 @@ def GetUsersListJson():
         data["Message"]="操作成功"
         page = request.args.get("pageIndex")
         per_page = request.args.get("pageSize")
-        menu=User.query.paginate(int(page),int(per_page)).items
-        data["Data"]=to_json(menu)
+        menu=User.query.paginate(int(page),int(per_page))
+        # print(menu.pages)
+        data["Total"]=menu.pages
+        data["Data"]=to_json(menu.items)
     return jsonify(data)

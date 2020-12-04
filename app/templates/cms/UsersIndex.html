@@ -60,11 +60,11 @@
                 { checkbox: true, visible: true },
                 { field: 'Id', title: 'Id', visible: false },
                 { field: 'UserName', title: '登录名', width: "15%",sortable: true },
-                { field: 'UserRealName', title: '姓名', width: "15%"},
+                { field: 'RealName', title: '姓名', width: "15%"},
                 { field: 'UserDepart', title: '部门', width: "15%" },
-                { field: 'UserPhone', title: '手机', width: "15%"},
+                { field: 'Mobile', title: '手机', width: "15%"},
                 {
-                    field: 'UserStatus', title: '状态', width: "15%",
+                    field: 'Status', title: '状态', width: "10%",
                     formatter: function (value, row, index) {
                         if (value == "1") {
                             return '<span class="badge badge-primary">' + "激活" + '</span>';
@@ -74,7 +74,7 @@
                     }
                 },
                 {
-                    field: 'BaseModifyTime', title: '创建时间', formatter: function (value, row, index) {
+                    field: 'CreateTime', title: '创建时间', formatter: function (value, row, index) {
                         return ys.formatDate(value, "yyyy-MM-dd HH:mm:ss");
                     }
                 },
