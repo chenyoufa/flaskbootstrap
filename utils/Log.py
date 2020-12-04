@@ -8,8 +8,7 @@ class AppLog:
     def init_log(path):
         if not os.path.exists(path):
             os.makedirs(path)
-        formatter = "\033[am %(asctime)s %(filename)15s:%(lineno)-5d %(funcName)5s() %(levelname)6s\033" \
-                    "[bm : %(message)s"
+        formatter =  "时间：%(asctime)s ;日志的文件名: %(filename)s ;行数: %(lineno)d %(funcName)s ;日志等级: %(levelname)s ;日志信息:%(message)s "
         logging.basicConfig(
             level=logging.DEBUG,
             format=formatter,
