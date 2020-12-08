@@ -5,7 +5,7 @@ import pymysql
 from flask_script import  Manager
 from flask_migrate import  Migrate
 from flask_wtf.csrf  import CSRFProtect
-from utils.Log import AppLog
+from utils.Log import Logger
 from flask import current_app
 
 pymysql.install_as_MySQLdb()
@@ -18,4 +18,4 @@ db = SQLAlchemy(app)
 manager = Manager(app)
 migrate = Migrate(app, db)
 # 日志初始化
-AppLog.init_log(current_app.config.get("LOG_PATH"))
+Logger.init_app(app)
