@@ -1,7 +1,15 @@
 from flask import render_template,jsonify,request
 from app import app
 from app.models import User,to_json
-import json
+
+def queryList(**kwargs):
+    filterlist = []
+    for item in kwargs:
+        for k in kwargs[item]:
+            if kwargs[item][k] and kwargs[item][k]!=-1:
+                filterlist.append(k.like('%'+kwargs[item][k]+'%'))
+
+    return filterlist
 
 
 
@@ -21,7 +29,13 @@ def GetUsersListJson():
         data["Message"]="操作成功"
         page = request.args.get("pageIndex")
         per_page = request.args.get("pageSize")
-        menu=User.query.paginate(int(page),int(per_page))
+        username = request.args.get("UserName")
+        userphone = request.args.get("UserPhone")
+        userstatus =request.args.get("UserStatus")
+        filterList = queryList(x1={User.UserName:username},x2={User.Mobile:userphone},x3={User.Status:userstatus})
+        print(filterList)
+        menu1=User.query.filter(*filterList)
+        menu=menu1.paginate(int(page),int(per_page))
         # print(menu.pages)
         data["Total"]=menu.pages
         data["Data"]=to_json(menu.items)
