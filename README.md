@@ -53,6 +53,11 @@ git pull origin main
 ├─ migrations 数据库迁移文件夹(自动生成)<br/>
 ├─ utils 公共函数文件夹<br/>
 │  ├─ ImageCode.py 生成验证码公共函数<br/>
+│  ├─ AllDecorator.py 装饰器公共函数<br/>
+│  ├─ common.py 公共函数<br/>
+│  ├─ Log.py 日志公共函数<br/>
+│  ├─ ConditionQuery.py 数据库条件查询公共函数<br/>
+│  ├─ ServerInfo.py 服务器信息公共函数<br/>
 ├─ config.py 配置文件<br/>
 ├─ README.md 说明文档<br/>
 ├─ requirements.txt pip 安装基础包文件<br/>
