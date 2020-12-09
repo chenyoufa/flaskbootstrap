@@ -120,4 +120,9 @@ class SysLog(Entry):
     TimeConsue = db.Column(db.Integer,primary_key=False,comment="耗时")
     Parameter = db.Column(db.String(60),comment="请求参数")
 
+class Department(Entry):
+    __tablename__ = "SysDepartment"
+    DepartName = db.column(db.String(50))
+    PersonInCharge = db.column(db.Integer,db.ForeignKey('SysUsers.Id'))
+
 
