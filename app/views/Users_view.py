@@ -1,6 +1,6 @@
 from flask import render_template,jsonify,request
 from app import app
-from app.models import User,to_json
+from app.models import User,to_json,Role
 from utils import ConditionQuery
 
 @app.route('/cms/UsersIndex')
@@ -27,3 +27,19 @@ def GetUsersListJson():
         data["Total"]=menu.pages
         data["Data"]=to_json(menu.items)
     return jsonify(data)
+
+@app.route("/cms/UserForm")
+def UserForm():
+    return render_template("cms/UserForm.html")
+
+@app.route("/cms/GetRoleJson")
+def GetRoleJson():
+    data = {'Tag': 0, "Message": "", "Data": ""}
+    if id != '':
+        data["Tag"] = 1
+        data["Message"] = "操作成功"
+        RoleList=Role.query.with_entities(Role.Id,Role.Name).all()
+        print(RoleList)
+        data["Data"] = RoleList
+
+        return jsonify(data)

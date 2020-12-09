@@ -106,7 +106,7 @@
         }
         ys.openDialog({
             title: id > 0 ? "编辑角色" : "添加角色",
-            content: '@Url.Content("~/SystemManage/Role/RoleForm")' + '?id=' + id,
+            content: "/cms/UserForm" + '?id=' + id,
             width: "780px",
             callback: function (index, layero) {
                 var iframeWin = window[layero.find('iframe')[0]['name']];
