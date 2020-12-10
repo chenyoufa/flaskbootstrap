@@ -7,7 +7,7 @@ from utils import AllDecorator
 from app import app
 from datetime import datetime
 ######################后台###################################
-
+ 
 
 # 递归方式 
 def sum_recu(n,outlist): 
@@ -20,6 +20,8 @@ def sum_recu(n,outlist):
 @app.route('/cms/index')
 @AllDecorator.is_login
 def index():
+    app.logger.error('this is a error')
+    app.logger.info("Info message")
     menusPageObj = Menus.query.filter_by(ParentId=0)
     outlist=[]
     sum_recu(menusPageObj,outlist) 
