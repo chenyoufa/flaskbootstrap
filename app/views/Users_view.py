@@ -1,6 +1,6 @@
 from flask import render_template,jsonify,request
 from app import app
-from app.models import User,to_json,Role
+from app.models import User,to_json,Role,db
 from utils import ConditionQuery
 
 @app.route('/cms/UsersIndex')
@@ -35,11 +35,39 @@ def UserForm():
 @app.route("/cms/GetRoleJson")
 def GetRoleJson():
     data = {'Tag': 0, "Message": "", "Data": ""}
+    id = request.args.get("id")
     if id != '':
         data["Tag"] = 1
         data["Message"] = "操作成功"
-        RoleList=Role.query.with_entities(Role.Id,Role.Name).all()
-        print(RoleList)
-        data["Data"] = RoleList
+        QueryList=[Role.Id,Role.Name]
+        RoleList=Role.query.filter(User.Id==id).with_entities(*QueryList).all()
+        data["Data"] = ConditionQuery.List_to_dicList(QueryList,RoleList)
 
         return jsonify(data)
+
+
+@app.route("/cms/GetUserFormJson")
+def GetUserFormJson():
+    data = {'Tag': 0, "Message": "", "Data": ""}
+    id = request.args.get("id")
+    print(id)
+    if id != '':
+        data["Tag"] = 1
+        data["Message"] = "操作成功"
+        menu = User.query.filter(User.Id == id).all()
+        print(menu)
+        data["data"] = to_json(menu)[0]
+    return jsonify(data)
+
+@app.route("/cms/DeleteUserJson",methods=['GET','POST'])
+def DeleteUserJson():
+    if request.method == "POST":
+        data = {'Tag': 0, "Message": "", "Data": ""}
+        id = request.form["ids"]
+        if id != '':
+            data["Tag"] = 1
+            data["Message"] = "操作成功"
+            menu= User.query.get(id)
+            db.session.delete(menu)
+            db.session.commit()
+    return jsonify(data)

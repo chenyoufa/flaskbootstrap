@@ -18,3 +18,18 @@ def queryList(**kwargs):
             elif kwargs[item][k] and kwargs[item][k]!="-1":
                 filterlist.append(k.like('%'+kwargs[item][k]+'%'))
     return filterlist
+
+
+def List_to_dicList(QueryList,menu):
+    """
+    parameter:
+    QueryList:Column name to query,example:QueryList=[Id,Username]
+    menu:Query results
+    """
+    tempList = []
+    for row in menu:
+        tempdic = {}
+        for (i, t) in zip(QueryList, row):
+            tempdic[str(i).split(".")[1]] = t
+        tempList.append(tempdic)
+    return tempList

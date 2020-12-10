@@ -1,13 +1,13 @@
 ﻿
- {% extends "share/_Index.html" %}
- {% block content %}
+{% extends "share/_FormWhite.html" %}
+{% block content %}
 <div class="wrapper animated fadeInRight">
     <form id="form" class="form-horizontal m">
 {#        @Html.AntiForgeryToken()#}
         <div class="form-group">
             <label class="col-sm-2 control-label ">登录名称<font class="red"> *</font></label>
             <div class="col-sm-4">
-                <input id="userName" col="UserName" type="text" class="form-control" />
+                <input id="UserName" col="UserName" type="text" class="form-control" />
             </div>
             <label class="col-sm-2 control-label ">登录密码<font class="red"> *</font></label>
             <div class="col-sm-4">
@@ -70,20 +70,20 @@
         $("#gender").ysRadioBox({ data: ys.getJson([{ Key: 1, Value: "未知"},{Key: 2, Value: "男"},{Key: 3, Value: "女"}]) });
 
         $("#role").ysCheckBox({
-            url: '/cms/GetRoleJson',
-            key: 0,
-            value: 1
+            url: '/cms/GetRoleJson'+ '?id=' + id,
+            key: "Id",
+            value: "Name"
         });
 
-        {#$("#positionId").ysComboBox({#}
-        {#    url: '@Url.Content("~/OrganizationManage/Position/GetListJson")',#}
-        {#    key: "Id",#}
-        {#    value: "PositionName",#}
-        {#    class: "form-control",#}
-        {#    multiple: true#}
+        $("#positionId").ysComboBox({
+            url: '@Url.Content("~/OrganizationManage/Position/GetListJson")',
+            key: "Id",
+            value: "PositionName",
+            class: "form-control",
+            multiple: true
+            });
 
-
-        {#$('#departmentId').ysComboBoxTree({ url: '@Url.Content("~/OrganizationManage/Department/GetDepartmentTreeListJson")' });#}
+        $('#departmentId').ysComboBoxTree({ url: '@Url.Content("~/OrganizationManage/Department/GetDepartmentTreeListJson")' });
 
         laydate.render({ elem: '#birthday', format: 'yyyy-MM-dd' });
 
@@ -111,7 +111,7 @@
             $('#password').attr("readonly", "readonly").attr("disabled", "disabled");
 
             ys.ajax({
-                url: '@Url.Content("~/OrganizationManage/User/GetFormJson")' + '?id=' + id,
+                url: '/cms/GetUserFormJson' + '?id=' + id,
                 type: "get",
                 success: function (obj) {
                     if (obj.Tag == 1) {

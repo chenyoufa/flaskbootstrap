@@ -4,6 +4,7 @@
 #   - 多对多
 from datetime import datetime
 from app import db,AbstractConcreteBase
+from sqlalchemy.orm import relationship
 
 # 配合多个对象使用的函数
 def to_json(lists):
@@ -122,7 +123,10 @@ class SysLog(Entry):
 
 class Department(Entry):
     __tablename__ = "SysDepartment"
-    DepartName = db.column(db.String(50))
-    PersonInCharge = db.column(db.Integer,db.ForeignKey('SysUsers.Id'))
+    DepartName = db.Column(db.String(50))
+    User_id = db.Column(db.Integer,db.ForeignKey('SysUsers.Id'))
+    # to_user =  relationship("User",backref = "Dep2User")
 
+    def __repr__(self):
+        return "<Department %s>" % (self.UserName)
 

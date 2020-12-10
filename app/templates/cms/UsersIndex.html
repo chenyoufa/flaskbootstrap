@@ -4,6 +4,8 @@
 <div class="container-div">
     <div class="row">
         <div id="searchDiv" class="col-sm-12 search-collapse">
+            <form>
+                <input type="hidden" id="csrf_token" value="{{ csrf_token() }}" />
             <div class="select-list">
                 <ul>
                     <li>
@@ -26,6 +28,7 @@
                     </li>
                 </ul>
             </div>
+                 </form>
         </div>
         <div class="btn-group-sm" id="toolbar">
             <a id="btnAdd" class="btn btn-success" onclick="showSaveForm(true)"><i class="fa fa-plus"></i> 新增</a>
@@ -120,9 +123,14 @@
         if (ys.checkRowDelete(selectedRow)) {
             ys.confirm("确认要删除选中的" + selectedRow.length + "条数据吗？", function () {
                 var ids = ys.getIds(selectedRow);
+                var csrf_token=$("#csrf_token").val()
                 ys.ajax({
-                    url: '@Url.Content("~/SystemManage/Role/DeleteFormJson")' + '?ids=' + ids,
+                    url: '/cms/DeleteUserJson',
                     type: "post",
+                     data:{
+                     ids:ids,
+                     csrf_token:csrf_token
+                  },
                     success: function (obj) {
                         if (obj.Tag == 1) {
                             ys.msgSuccess(obj.Message);
