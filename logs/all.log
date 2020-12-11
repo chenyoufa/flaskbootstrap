@@ -1,59 +1,633 @@
-{2020-12-11 14:19:09,395}{13240}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:19:09] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
-{2020-12-11 14:19:11,142}{11280}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:19:11] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
-{2020-12-11 14:21:46,123}{956}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:21:46] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
-{2020-12-11 14:21:47,935}{14020}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:21:47] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
-{2020-12-11 14:25:04,512}{7108}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
-{2020-12-11 14:25:04,730}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 14:25:06,719}{13412}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-11 14:25:06,727}{13412}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-11 14:25:06,743}{11352}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-11 14:25:22,813}{13412}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
-{2020-12-11 14:25:22,961}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 14:25:24,848}{8352}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-11 14:25:24,858}{8352}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-11 14:25:24,892}{11608}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-11 14:25:30,360}{8352}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\cms_view.py', reloading}
-{2020-12-11 14:25:30,541}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 14:25:32,792}{13440}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-11 14:25:32,800}{13440}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-11 14:25:32,826}{7380}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-11 14:25:33,881}{7108}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:25:33] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
-{2020-12-11 14:25:35,743}{11348}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:25:35] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
-{2020-12-11 14:25:41,562}{13440}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
-{2020-12-11 14:25:41,755}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 14:25:44,012}{12452}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-11 14:25:44,019}{12452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-11 14:25:44,036}{2784}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-11 14:25:44,434}{260}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:25:44] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
-{2020-12-11 14:25:46,223}{14124}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:25:46] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
-{2020-12-11 14:27:54,299}{12452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
-{2020-12-11 14:27:54,474}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 14:27:56,663}{2584}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-11 14:27:56,674}{2584}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-11 14:27:56,692}{5380}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-11 14:29:02,261}{2584}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
-{2020-12-11 14:29:02,482}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 14:35:07,524}{6796}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 14:35:09,103}{13220}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-11 14:35:09,109}{13220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-11 14:35:09,125}{13004}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-11 14:36:31,690}{13220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
-{2020-12-11 14:36:31,882}{6796}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 15:17:23,340}{1264}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 15:17:25,094}{7056}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-11 15:17:25,101}{7056}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-11 15:17:25,116}{11620}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-11 16:44:47,786}{14196}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 16:44:49,755}{14632}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-11 16:44:49,764}{14632}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-11 16:44:49,781}{14824}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-11 16:45:50,704}{8120}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 16:45:52,506}{264}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-11 16:45:52,514}{264}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-11 16:45:52,529}{12360}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-11 16:46:02,194}{264}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
-{2020-12-11 16:46:02,356}{8120}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 16:54:24,488}{15336}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-11 16:54:26,572}{14156}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-11 16:54:26,578}{14156}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-11 16:54:26,589}{11608}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:31:25,787}{1444}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:31:25] "[31m[1mGET /cms/MenunIndex HTTP/1.1[0m" 403 -}
+{2020-12-11 17:31:38,157}{10036}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:31:38,440}{5520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:31:41,303}{14928}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:31:41,313}{14928}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:31:41,327}{7868}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:31:41,400}{14812}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:31:41] "[31m[1mGET /cms/MenunIndex HTTP/1.1[0m" 403 -}
+{2020-12-11 17:31:56,610}{14928}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:31:56,777}{5520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:31:59,139}{12992}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:31:59,148}{12992}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:31:59,160}{5384}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:32:00,321}{12992}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:32:00,528}{5520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:32:03,432}{13148}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:32:03,440}{13148}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:32:03,454}{14360}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:32:03,680}{120}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:32:03] "[31m[1mGET /cms/MenunIndex HTTP/1.1[0m" 403 -}
+{2020-12-11 17:32:59,308}{13148}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:32:59,520}{5520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:33:01,830}{3020}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:33:01,839}{3020}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:33:01,861}{10332}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:33:04,023}{8020}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:33:04] "[31m[1mGET /cms/MenunIndex HTTP/1.1[0m" 403 -}
+{2020-12-11 17:33:11,830}{3020}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:33:12,022}{5520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:33:14,709}{12108}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:33:14,715}{12108}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:33:14,727}{12476}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:33:19,126}{12108}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:33:19,313}{5520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:33:21,478}{12980}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:33:21,486}{12980}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:33:21,498}{8368}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:33:26,952}{12980}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:33:27,160}{5520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:33:29,283}{14968}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:33:29,289}{14968}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:33:29,302}{12672}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:33:35,889}{14968}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:33:36,085}{5520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:33:38,426}{4680}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:33:38,433}{4680}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:33:38,447}{6848}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:33:40,661}{4680}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:33:40,832}{5520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:45:15,582}{14604}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:45:17,621}{14880}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:45:17,628}{14880}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:45:17,641}{12788}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:45:41,708}{14824}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:45:41] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-11 17:45:43,496}{860}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:45:43] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-11 17:45:52,550}{11724}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:45:52] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 17:45:52,599}{14552}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:45:52] "[37mGET /static/lib/bootstrap.treetable/1.0/bootstrap-treetable.min.css HTTP/1.1[0m" 200 -}
+{2020-12-11 17:45:52,601}{3108}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:45:52] "[37mGET /static/lib/bootstrap.treetable/1.0/bootstrap-treetable.min.js HTTP/1.1[0m" 200 -}
+{2020-12-11 17:45:52,813}{10740}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:45:52] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 17:46:26,254}{14880}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:46:26,519}{14604}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:47:36,130}{5840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:47:38,415}{6724}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:47:38,421}{6724}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:47:38,436}{2460}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:47:39,891}{13304}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:47:39] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 17:47:40,354}{6088}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 17:47:40] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 17:48:03,602}{6724}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\menu_view.py', reloading}
+{2020-12-11 17:48:03,778}{5840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:48:06,122}{10364}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:48:06,130}{10364}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:48:06,142}{244}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:48:33,377}{10364}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\menu_view.py', reloading}
+{2020-12-11 17:48:33,573}{5840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:48:36,091}{10348}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:48:36,101}{10348}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:48:36,112}{12904}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:48:38,311}{10348}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\menu_view.py', reloading}
+{2020-12-11 17:48:38,479}{5840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:48:40,824}{14956}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:48:40,838}{14956}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:48:40,854}{7156}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:48:55,129}{14956}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\menu_view.py', reloading}
+{2020-12-11 17:48:55,438}{5840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:48:58,099}{11520}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:48:58,108}{11520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:48:58,118}{14996}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:49:10,203}{11520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\menu_view.py', reloading}
+{2020-12-11 17:49:10,399}{5840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:49:12,722}{6368}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:49:12,731}{6368}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:49:12,752}{12420}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:49:17,341}{6368}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\menu_view.py', reloading}
+{2020-12-11 17:49:17,668}{5840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:49:19,958}{5376}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:49:19,965}{5376}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:49:19,978}{8780}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:49:28,681}{5376}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:49:28,887}{5840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:49:31,031}{3724}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:49:31,039}{3724}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:49:31,049}{4868}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 17:50:56,146}{3724}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 17:50:56,356}{5840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 17:50:58,978}{15288}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 17:50:58,989}{15288}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 17:50:59,003}{1796}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:13:25,909}{15288}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:13:26,089}{5840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:13:28,564}{15140}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:13:28,571}{15140}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:13:28,585}{14740}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:13:51,504}{15140}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:13:51,672}{5840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:14:38,629}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:14:41,391}{8768}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:14:41,402}{8768}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:14:41,417}{15224}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:14:41,839}{11652}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:14:41] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-11 18:14:43,637}{14968}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:14:43] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-11 18:14:45,351}{6256}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:14:45] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:14:45,520}{8852}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:14:45] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:16:13,156}{8768}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:16:13,349}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:16:16,398}{9092}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:16:16,407}{9092}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:16:16,423}{7252}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:16:18,466}{13564}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:16:18] "[37mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 200 -}
+{2020-12-11 18:16:39,321}{9092}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:16:39,504}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:16:41,967}{6760}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:16:41,976}{6760}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:16:41,992}{11564}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:16:50,768}{6760}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:16:50,951}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:16:53,322}{15272}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:16:53,330}{15272}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:16:53,341}{9376}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:16:58,796}{15272}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:16:58,964}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:17:01,270}{6584}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:17:01,279}{6584}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:17:01,295}{824}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:17:12,264}{6584}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:17:12,427}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:17:14,957}{3056}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:17:14,967}{3056}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:17:14,979}{6448}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:17:20,506}{3056}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:17:20,685}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:17:23,437}{6660}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:17:23,445}{6660}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:17:23,456}{14580}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:17:23,781}{10828}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:17:23] "[37mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 200 -}
+{2020-12-11 18:17:25,573}{11540}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:17:25] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:17:25,689}{6260}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:17:25] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:17:42,428}{14444}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:17:42] "[37mGET /cms/GetMenuListJson?MenuName=22&MenuStatus= HTTP/1.1[0m" 200 -}
+{2020-12-11 18:18:17,840}{6660}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:18:18,051}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:18:20,287}{9452}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:18:20,295}{9452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:18:20,305}{8956}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:18:20,569}{5524}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:18:20] "[37mGET /cms/GetMenuListJson?MenuName=22&MenuStatus= HTTP/1.1[0m" 200 -}
+{2020-12-11 18:18:20,900}{12412}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:18:20] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:18:21,066}{13376}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:18:21] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:18:36,786}{9452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:18:37,072}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:18:39,474}{13008}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:18:39,482}{13008}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:18:39,494}{14476}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:18:39,696}{6848}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:18:39] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:18:58,209}{13008}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:18:58,428}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:19:00,867}{5032}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:19:00,875}{5032}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:19:00,886}{9392}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:19:01,135}{6832}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:19:01] "[37mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 200 -}
+{2020-12-11 18:19:04,588}{10224}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:19:04] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:19:04,694}{9212}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:19:04] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:19:07,506}{5032}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:19:07,735}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:19:09,796}{14036}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:19:09,803}{14036}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:19:09,815}{1796}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:19:24,957}{14036}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:19:25,146}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:19:28,145}{14444}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:19:28,154}{14444}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:19:28,171}{14948}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:19:33,626}{14444}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:19:33,798}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:19:36,166}{6848}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:19:36,175}{6848}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:19:36,186}{15280}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:19:36,390}{12108}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:19:36] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:20:05,570}{6848}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:20:05,756}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:20:08,139}{5936}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:20:08,148}{5936}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:20:08,162}{9376}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:20:08,241}{13504}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:20:08] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:20:08,468}{13020}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:20:08] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:20:37,584}{5936}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:20:37,759}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:20:40,120}{14656}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:20:40,127}{14656}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:20:40,140}{10660}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:20:43,444}{14656}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:20:43,604}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:20:46,046}{4216}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:20:46,054}{4216}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:20:46,068}{15240}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:21:02,360}{4216}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:21:02,572}{15220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:21:04,998}{15276}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:21:05,008}{15276}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:21:05,023}{10236}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:21:09,500}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:21:12,029}{13408}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:21:12,038}{13408}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:21:12,051}{10364}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:21:12,247}{12048}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:21:12] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:21:12,505}{14844}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:21:12] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:21:39,330}{13408}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:21:39,528}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:21:42,096}{9092}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:21:42,104}{9092}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:21:42,116}{14988}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:21:44,364}{9092}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:21:44,567}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:21:47,416}{11588}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:21:47,423}{11588}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:21:47,435}{6620}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:22:08,003}{11588}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:22:08,205}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:22:11,167}{11428}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:22:11,178}{11428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:22:11,195}{1556}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:22:30,974}{11428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:22:31,139}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:22:33,617}{13640}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:22:33,626}{13640}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:22:33,638}{12184}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:22:43,397}{13640}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:22:43,585}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:22:45,979}{13360}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:22:45,986}{13360}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:22:45,997}{14788}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:22:48,211}{13360}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:22:48,467}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:22:51,263}{11152}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:22:51,271}{11152}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:22:51,284}{9856}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:22:57,809}{11152}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:22:57,978}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:23:00,550}{4756}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:23:00,562}{4756}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:23:00,578}{7744}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:24:14,277}{4756}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:24:14,501}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:24:16,999}{8748}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:24:17,007}{8748}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:24:17,019}{13892}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:24:21,496}{8748}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:24:21,765}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:24:23,868}{14724}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:24:23,879}{14724}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:24:23,893}{12844}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:24:35,553}{11220}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:35] "[35m[1mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 500 -}
+{2020-12-11 18:24:35,602}{13628}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:35] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:24:35,605}{9208}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:35] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js&_=1607682072295 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:24:35,639}{12704}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:35] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js&_=1607682072296 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:24:35,853}{10968}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:35] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:24:35,897}{13368}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:35] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:24:53,184}{14724}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:24:53,373}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:24:56,276}{9984}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:24:56,283}{9984}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:24:56,296}{10416}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:24:56,621}{11468}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:56] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:24:56,660}{13712}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:56] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:24:56,728}{14696}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:56] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:24:56,730}{9064}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:56] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:24:56,860}{7384}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:56] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:24:56,868}{13596}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:24:56] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:26:12,850}{9984}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:26:13,083}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:26:15,711}{14724}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:26:15,720}{14724}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:26:15,733}{14008}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:26:35,406}{14724}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:26:35,574}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:26:37,776}{11000}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:26:37,784}{11000}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:26:37,795}{13588}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:26:48,701}{11000}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:26:48,906}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:26:51,227}{12460}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:26:51,235}{12460}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:26:51,247}{8952}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:26:55,682}{12460}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:26:55,932}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:26:58,244}{13148}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:26:58,252}{13148}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:26:58,265}{14676}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:27:04,924}{13148}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:27:05,113}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:27:08,075}{1100}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:27:08,094}{1100}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:27:08,109}{12992}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:27:09,736}{1020}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:09] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:27:09,911}{1712}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:09] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:09,913}{7736}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:09] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:09,914}{2948}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:09] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:10,013}{5884}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:10] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:10,020}{13348}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:10] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:25,695}{1100}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:27:25,946}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:27:28,207}{9904}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:27:28,215}{9904}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:27:28,228}{4580}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:27:28,306}{6852}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:28] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:27:28,406}{12092}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:28] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:28,411}{6596}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:28] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:28,415}{15256}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:28] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:28,542}{12532}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:28] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:28,599}{8780}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:28] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:37,127}{9904}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:27:37,347}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:27:40,184}{10844}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:27:40,192}{10844}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:27:40,204}{12268}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:27:40,338}{8748}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:40] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:27:40,421}{11652}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:40] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:40,423}{7384}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:40] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:40,424}{15300}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:40] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:40,530}{9064}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:40] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:40,615}{9480}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:27:40] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:27:49,066}{10844}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:27:49,266}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:27:51,784}{15336}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:27:51,793}{15336}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:27:51,805}{2584}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:28:30,995}{15172}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:28:30] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-11 18:28:32,794}{11016}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:28:32] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-11 18:28:34,347}{13840}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:28:34] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:28:34,472}{14948}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:28:34] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:28:34,482}{13072}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:28:34] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:28:34,483}{14680}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:28:34] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:28:34,675}{14400}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:28:34] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:28:34,730}{12716}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:28:34] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:28:48,351}{15336}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:28:48,558}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:28:50,760}{5832}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:28:50,768}{5832}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:28:50,781}{2548}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:28:51,944}{5832}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:28:52,262}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:28:54,991}{14820}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:28:54,998}{14820}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:28:55,017}{12276}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:28:55,151}{14656}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:28:55] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:28:55,521}{11340}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:28:55] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:29:09,209}{14820}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:29:09,397}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:29:11,988}{2852}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:29:11,995}{2852}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:29:12,006}{15184}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:29:12,248}{12268}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:12] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:29:12,532}{9248}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:12] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:29:24,045}{2852}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:29:24,356}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:29:26,707}{9336}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:29:26,717}{9336}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:29:26,728}{10828}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:29:44,692}{11868}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:44] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-11 18:29:46,442}{5136}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:46] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-11 18:29:47,172}{11468}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:47] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:29:47,328}{14584}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:47] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:29:55,056}{9336}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:29:55,281}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:29:58,121}{780}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:29:58,129}{780}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:29:58,141}{9912}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:29:58,422}{11484}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:58] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:29:58,668}{5832}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:58] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:29:58,674}{10524}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:58] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:29:58,711}{14416}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:58] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:29:58,823}{15128}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:58] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:29:58,836}{2548}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:29:58] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:30:40,814}{780}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:30:40,992}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:30:43,943}{11396}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:30:43,951}{11396}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:30:43,965}{11344}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:30:44,200}{9228}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:30:44] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:30:44,314}{14544}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:30:44] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:30:44,316}{15200}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:30:44] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:30:44,317}{13888}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:30:44] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:30:44,414}{14744}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:30:44] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:30:44,456}{14016}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:30:44] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:30:55,957}{11396}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:30:56,157}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:30:58,491}{6140}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:30:58,498}{6140}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:30:58,513}{13704}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:30:58,746}{13640}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:30:58] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:30:59,049}{10124}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:30:59] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:31:02,674}{1712}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:31:02] "[37mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 200 -}
+{2020-12-11 18:31:16,017}{6140}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:31:16,338}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:31:18,700}{6060}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:31:18,706}{6060}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:31:18,719}{9308}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:31:19,013}{9544}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:31:19] "[35m[1mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 500 -}
+{2020-12-11 18:31:19,056}{2088}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:31:19] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:31:19,060}{10112}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:31:19] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js&_=1607682658815 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:31:19,092}{9304}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:31:19] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js&_=1607682658816 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:31:19,179}{11688}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:31:19] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:31:19,191}{14484}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:31:19] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:31:27,522}{6060}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:31:27,830}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:31:30,055}{10684}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:31:30,063}{10684}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:31:30,074}{12996}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:31:35,558}{10684}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:31:35,779}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:31:38,038}{4652}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:31:38,045}{4652}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:31:38,059}{5832}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:31:38,166}{14216}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:31:38] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:31:38,420}{12924}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:31:38] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:31:39,576}{14036}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:31:39] "[37mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 200 -}
+{2020-12-11 18:32:59,172}{4652}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:32:59,355}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:33:01,936}{14416}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:33:01,944}{14416}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:33:01,959}{11292}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:33:03,166}{8768}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:33:03] "[35m[1mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 500 -}
+{2020-12-11 18:33:03,212}{4216}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:33:03] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:33:03,214}{3336}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:33:03] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js&_=1607682698227 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:33:03,250}{13720}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:33:03] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js&_=1607682698228 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:33:03,337}{9892}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:33:03] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:33:03,376}{12644}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:33:03] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:33:46,972}{14416}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:33:47,271}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:33:50,019}{12836}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:33:50,025}{12836}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:33:50,037}{15284}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:33:53,823}{11440}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:33:53] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:33:54,160}{8184}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:33:54] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:33:56,074}{9340}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:33:56] "[37mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 200 -}
+{2020-12-11 18:35:06,166}{12836}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:35:06,375}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:35:08,846}{14580}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:35:08,853}{14580}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:35:08,865}{2028}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:35:12,193}{14580}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:35:12,456}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:35:15,006}{14828}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:35:15,017}{14828}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:35:15,035}{13756}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:35:17,262}{14828}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:35:17,434}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:35:20,583}{11700}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:35:20,595}{11700}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:35:20,608}{7048}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:35:21,324}{14776}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:21] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:35:21,431}{10684}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:21] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:35:21,437}{1336}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:21] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:35:21,441}{15276}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:21] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:35:21,572}{15064}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:21] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:35:21,622}{14328}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:21] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:35:35,803}{11700}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:35:36,017}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:35:39,193}{14956}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:35:39,200}{14956}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:35:39,211}{3616}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:35:39,577}{4196}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:39] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:35:39,631}{13408}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:39] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:35:39,635}{6140}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:39] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:35:39,637}{14568}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:39] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:35:39,745}{9984}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:39] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:35:39,804}{12844}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:35:39] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:35:46,869}{14956}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:35:47,083}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:35:49,470}{15088}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:35:49,482}{15088}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:35:49,502}{9880}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:36:00,431}{15088}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:36:00,602}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:36:03,827}{11484}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:36:03,837}{11484}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:36:03,855}{2028}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:36:05,472}{9244}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:05] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:36:05,557}{2664}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:05] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:36:05,570}{4216}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:05] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:36:05,577}{5088}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:05] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:36:05,685}{13828}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:05] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:36:05,695}{12620}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:05] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:36:19,227}{11484}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:36:19,432}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:36:22,085}{356}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:36:22,094}{356}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:36:22,104}{8304}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:36:26,543}{356}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:36:26,794}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:36:29,111}{4216}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:36:29,118}{4216}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:36:29,131}{11996}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:36:30,259}{4216}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:36:30,440}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:36:32,874}{8864}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:36:32,880}{8864}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:36:32,894}{15016}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:36:34,022}{8864}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:36:34,195}{14428}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:36:41,054}{7440}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:36:43,541}{14556}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:36:43,548}{14556}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:36:43,559}{260}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:36:43,981}{14524}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:43] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:36:44,165}{14008}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:44] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:36:44,167}{13076}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:44] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:36:44,170}{13036}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:44] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:36:44,359}{12068}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:44] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:36:44,401}{11904}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:36:44] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:15,135}{14556}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:37:15,400}{7440}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:37:18,100}{15352}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:37:18,109}{15352}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:37:18,192}{12764}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:37:18,540}{860}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:18] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:37:18,865}{14056}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:18] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:18,866}{5388}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:18] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:18,869}{15184}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:18] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:19,010}{2072}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:19] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:19,020}{3612}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:19] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:35,940}{15352}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:37:36,143}{7440}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:37:38,890}{9212}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:37:38,899}{9212}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:37:38,910}{14280}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:37:39,171}{5176}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:39] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:37:39,352}{13092}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:39] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:39,355}{4940}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:39] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:39,360}{9376}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:39] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:39,506}{11352}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:39] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:39,507}{12924}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:39] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:49,805}{9212}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:37:50,060}{7440}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:37:52,507}{11468}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:37:52,514}{11468}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:37:52,527}{14820}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:37:52,849}{4248}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:52] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:37:53,004}{11192}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:53] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:53,007}{14324}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:53] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:53,008}{15264}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:53] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:53,157}{8976}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:53] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:37:53,158}{9448}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:37:53] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:40:28,195}{11468}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\AllDecorator.py', reloading}
+{2020-12-11 18:40:28,422}{7440}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:40:30,783}{6980}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:40:30,789}{6980}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:40:30,800}{15044}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:40:31,074}{10496}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:31] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:40:31,256}{14256}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:31] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:40:31,258}{14972}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:31] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:40:31,262}{10660}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:31] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:40:31,370}{11348}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:31] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:40:31,380}{13408}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:31] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:40:47,160}{6980}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\models.py', reloading}
+{2020-12-11 18:40:47,369}{7440}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:40:49,719}{14360}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:40:49,727}{14360}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:40:49,740}{12304}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:40:50,492}{12764}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:50] "[35m[1mGET /cms/MenunIndex HTTP/1.1[0m" 500 -}
+{2020-12-11 18:40:50,835}{11912}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:50] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:40:50,837}{8352}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:50] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:40:50,854}{13228}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:50] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -}
+{2020-12-11 18:40:51,004}{13992}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:51] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:40:51,198}{15284}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:40:51] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:43:26,072}{14188}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:43:28,765}{13344}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:43:28,775}{13344}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:43:28,798}{1264}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:43:28,957}{32}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:43:28] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:43:29,209}{15172}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:43:29] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:43:45,451}{8796}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:43:45] "[35m[1mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 500 -}
+{2020-12-11 18:43:45,632}{12304}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:43:45] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:43:45,633}{9196}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:43:45] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js&_=1607683409114 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:43:45,697}{15020}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:43:45] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js&_=1607683409115 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:43:45,872}{76}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:43:45] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:43:45,886}{12528}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:43:45] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:44:09,276}{13344}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\models.py', reloading}
+{2020-12-11 18:44:09,470}{14188}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:44:11,853}{11476}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:44:11,860}{11476}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:44:11,874}{3628}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:44:13,034}{11476}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\models.py', reloading}
+{2020-12-11 18:44:13,211}{14188}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:44:15,273}{13004}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:44:15,281}{13004}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:44:15,291}{14064}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:44:22,990}{13004}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\models.py', reloading}
+{2020-12-11 18:44:23,157}{14188}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:44:25,365}{9408}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:44:25,372}{9408}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:44:25,386}{7740}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:44:26,506}{9408}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\models.py', reloading}
+{2020-12-11 18:44:26,688}{14188}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:44:29,517}{13644}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:44:29,526}{13644}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:44:29,548}{12604}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:44:31,815}{6696}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:44:31] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:44:32,118}{12836}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:44:32] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:44:34,699}{892}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:44:34] "[35m[1mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 500 -}
+{2020-12-11 18:44:34,813}{8976}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:44:34] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:44:34,815}{10204}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:44:34] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js&_=1607683471957 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:44:34,850}{13732}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:44:34] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js&_=1607683471958 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:44:35,055}{14720}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:44:35] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:44:35,070}{8320}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:44:35] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}
+{2020-12-11 18:44:55,928}{13644}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\models.py', reloading}
+{2020-12-11 18:44:56,177}{14188}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:45:29,865}{13948}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 18:45:31,902}{12652}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 18:45:31,912}{12652}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 18:45:31,926}{10116}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 18:45:32,769}{8384}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:45:32] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-11 18:45:33,024}{12232}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:45:33] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-11 18:45:34,573}{13384}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:45:34] "[35m[1mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 500 -}
+{2020-12-11 18:45:34,834}{10516}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:45:34] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -}
+{2020-12-11 18:45:34,836}{9584}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:45:34] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=jquery.js&_=1607683532880 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:45:34,855}{2924}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:45:34] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=debugger.js&_=1607683532881 HTTP/1.1[0m" 200 -}
+{2020-12-11 18:45:35,051}{6404}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:45:35] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -}
+{2020-12-11 18:45:35,061}{14776}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 18:45:35] "[37mGET /cms/MenunIndex?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -}

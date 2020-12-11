@@ -2,15 +2,15 @@ from flask import render_template,request,jsonify
 from app import curre_app,db
 from app.models import User,Menus,to_json
 from app.forms  import menu_form
-
+from utils.AllDecorator import route
 ######################菜单###################################
 
 #菜单首页
-@curre_app.route("/cms/MenunIndex")
+@route("/cms/MenunIndex")
 def MenunIndex():
     return render_template('cms/MenunIndex.html')
 #菜单首页json接口
-@curre_app.route('/cms/GetMenuListJson', methods=['GET'])
+@route('/cms/GetMenuListJson', methods=['GET'])
 def MenuListJson(page=1):
    
     if request.method == 'POST':
@@ -27,11 +27,11 @@ def MenuListJson(page=1):
         #{'total': len(data.items), 'rows': data.items}
 
 #菜单新增修改页面
-@curre_app.route("/cms/MenuForm")
+@route("/cms/MenuForm")
 def MenuForm():
     return render_template('cms/MenuForm.html')
  
-@curre_app.route("/cms/GetMenuJson", methods=['GET'])
+@route("/cms/GetMenuJson", methods=['GET'])
 def GetMenuJson():
     data={'Tag': 0,"Message":"","Data":""}
     id=request.args.get("id")
@@ -47,7 +47,7 @@ def GetMenuJson():
         data["Data"]=menujson
     return jsonify(data)
 
-@curre_app.route("/cms/AddMenuJson", methods=['POST'])
+@route("/cms/AddMenuJson", methods=['POST'])
 def AddMenuJson():
     form =menu_form.MenuForm()
     
@@ -78,7 +78,7 @@ def AddMenuJson():
            data["Message"] =  form.errors.popitem()[0]+" "+form.errors.popitem()[1][0]
     return jsonify(data)
 
-@curre_app.route("/cms/DeleteMenuJson", methods=['POST'])
+@route("/cms/DeleteMenuJson", methods=['POST'])
 def DeleteMenuJson():
     data={'Tag': 0,"Message":"","Data":""}
     id=request.form["ids"]
@@ -91,10 +91,10 @@ def DeleteMenuJson():
     return jsonify(data)
 
 
-@curre_app.route("/cms/MenuChoose")
+@route("/cms/MenuChoose")
 def MenuChoose():
     return render_template('cms/MenuChoose.html')
-@curre_app.route("/cms/GetMenuTreeListJson", methods=['GET'])
+@route("/cms/GetMenuTreeListJson", methods=['GET'])
 def GetMenuTreeListJson():
     data={'Tag': 0,"Message":"","Data":""}
     if id!='':
