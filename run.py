@@ -29,17 +29,17 @@ if __name__ == '__main__':
 #     # 创建flask.app日志器
 #     flask_logger = logging.getLogger('flask.app')
 #     # 设置全局级别
-#     flask_logger.setLevel('DEBUG')
+#     flask_logger.setLevel(logging.INFO)
 
 #     # 创建控制台处理器
-#     # console_handler = logging.StreamHandler()
+#     console_handler = logging.StreamHandler()
 
 #     # # 给处理器设置输出格式
-#     # console_formatter = logging.Formatter(fmt='%(name)s %(levelname)s %(pathname)s %(lineno)d %(message)s')
-#     # console_handler.setFormatter(console_formatter)
+#     console_formatter = logging.Formatter(fmt='%(name)s %(levelname)s %(pathname)s %(lineno)d %(message)s')
+#     console_handler.setFormatter(console_formatter)
 
 #     # # 日志器添加处理器
-#     # flask_logger.addHandler(console_handler)
+#     flask_logger.addHandler(console_handler)
 
 #     # 创建文件处理器
 #     file_handler = RotatingFileHandler(filename='flask.log', maxBytes=100 * 1024 * 1024, backupCount=10)  # 转存文件处理器  当达到限定的文件大小时, 可以将日志转存到其他文件中
@@ -48,7 +48,7 @@ if __name__ == '__main__':
 #     file_formatter = RequestFormatter(fmt='[%(asctime)s] %(remote_addr)s requested %(url)s %(name)s %(levelname)s %(pathname)s %(lineno)d %(message)s')
 #     file_handler.setFormatter(file_formatter)
 #     # 单独设置文件处理器的日志级别
-#     file_handler.setLevel('WARN')
+#     file_handler.setLevel(logging.INFO)
 
 #     # 日志器添加处理器
 #     flask_logger.addHandler(file_handler)

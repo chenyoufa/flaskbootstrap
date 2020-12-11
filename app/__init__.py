@@ -17,5 +17,5 @@ csrf = CSRFProtect(app)
 db = SQLAlchemy(app)
 manager = Manager(app)
 migrate = Migrate(app, db)
-# 日志初始化
+# # 日志初始化
 Logger.init_app(app)

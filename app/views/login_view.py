@@ -35,6 +35,7 @@ def isNameExisted(username):#检查名字是否存在
 #登录
 @app.route('/cms/login',methods=['GET', 'POST'])
 def login():
+    
     """Renders the about page."""
     if request.method == "GET":
         return render_template(
