@@ -2,14 +2,14 @@
 # http://www.csdn.net/list/1/
 # http://www.csdn.net/list/2/
 from flask import render_template,request,jsonify,redirect,url_for
-from app import app,db
+from app import curre_app,db
 from app.models import User
 from flask import session
 from datetime import datetime
 from werkzeug.security import generate_password_hash,check_password_hash
 from app.forms  import login_form
 
-app.secret_key = 'please-generate-a-random-secret_key'
+curre_app.secret_key = 'please-generate-a-random-secret_key'
 
  
 ######################后台###################################
@@ -33,7 +33,7 @@ def isNameExisted(username):#检查名字是否存在
 
 
 #登录
-@app.route('/cms/login',methods=['GET', 'POST'])
+@curre_app.route('/cms/login',methods=['GET', 'POST'])
 def login():
     
     """Renders the about page."""
@@ -74,7 +74,7 @@ def login():
             erro = "%s is not right user"%userName
             return jsonify({"erros":erro})
 #注销页
-@app.route("/cms/login_out")
+@curre_app.route("/cms/login_out")
 def login_out():
     session.clear()
     index_url = url_for('login')

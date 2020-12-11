@@ -1,13 +1,13 @@
 from flask import render_template,jsonify,request
-from app import app,db
+from app import curre_app,db
 from app.models import Department,to_json,Role,User
 from utils import ConditionQuery
 
-@app.route('/cms/DepartmentIndex')
+@curre_app.route('/cms/DepartmentIndex')
 def DepartmentIndex():
     return render_template('cms/DepartmentIndex.html')
 
-@app.route('/cms/GetDepartmentListJson')
+@curre_app.route('/cms/GetDepartmentListJson')
 def GetDepartmentListJson():
     data = {'Tag': 0, "Message": "", "Data": ""}
     if id != '':
@@ -22,11 +22,11 @@ def GetDepartmentListJson():
         data["Data"] = tempList
     return jsonify(data)
 
-@app.route('/cms/DepartmentFrom')
+@curre_app.route('/cms/DepartmentFrom')
 def DepartmentFrom():
     return render_template("cms/DepartmentForm.html")
 
-@app.route('/cms/GetDepartmentTwoJson')
+@curre_app.route('/cms/GetDepartmentTwoJson')
 def GetDepartmentTwoJson():
     data = {'Tag': 0, "Message": "", "Data": ""}
     if id != '':
@@ -41,7 +41,7 @@ def GetDepartmentTwoJson():
         data["Data"] = tempList
     return jsonify(data)
 
-@app.route('/cms/GetUserTwoJson')
+@curre_app.route('/cms/GetUserTwoJson')
 def GetUserTwoJson():
     data = {'Tag': 0, "Message": "", "Data": ""}
     if id != '':
@@ -55,7 +55,7 @@ def GetUserTwoJson():
         data["Data"] = tempList
     return jsonify(data)
 
-@app.route('/cms/GetDepartFormJson')
+@curre_app.route('/cms/GetDepartFormJson')
 def GetDepartFormJson():
     id = request.args.get("id")
     print(id)

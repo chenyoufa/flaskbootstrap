@@ -1,16 +1,55 @@
-[2020-12-11 11:16:17,693] None requested None
-INFO in _internal:  * Restarting with stat
-[2020-12-11 11:16:19,486] None requested None
-WARNING in _internal:  * Debugger is active!
-[2020-12-11 11:16:19,492] None requested None
-INFO in _internal:  * Debugger PIN: 647-591-876
-[2020-12-11 11:16:19,507] None requested None
-INFO in _internal:  * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)
-[2020-12-11 11:24:51,432] None requested None
-INFO in _internal:  * Restarting with stat
-[2020-12-11 11:24:53,185] None requested None
-WARNING in _internal:  * Debugger is active!
-[2020-12-11 11:24:53,193] None requested None
-INFO in _internal:  * Debugger PIN: 647-591-876
-[2020-12-11 11:24:53,210] None requested None
-INFO in _internal:  * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)
+{2020-12-11 14:19:09,395}{13240}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:19:09] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-11 14:19:11,142}{11280}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:19:11] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-11 14:21:46,123}{956}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:21:46] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-11 14:21:47,935}{14020}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:21:47] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-11 14:25:04,512}{7108}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
+{2020-12-11 14:25:04,730}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 14:25:06,719}{13412}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 14:25:06,727}{13412}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 14:25:06,743}{11352}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 14:25:22,813}{13412}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
+{2020-12-11 14:25:22,961}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 14:25:24,848}{8352}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 14:25:24,858}{8352}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 14:25:24,892}{11608}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 14:25:30,360}{8352}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\cms_view.py', reloading}
+{2020-12-11 14:25:30,541}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 14:25:32,792}{13440}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 14:25:32,800}{13440}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 14:25:32,826}{7380}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 14:25:33,881}{7108}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:25:33] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-11 14:25:35,743}{11348}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:25:35] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-11 14:25:41,562}{13440}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
+{2020-12-11 14:25:41,755}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 14:25:44,012}{12452}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 14:25:44,019}{12452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 14:25:44,036}{2784}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 14:25:44,434}{260}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:25:44] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-11 14:25:46,223}{14124}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [11/Dec/2020 14:25:46] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-11 14:27:54,299}{12452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
+{2020-12-11 14:27:54,474}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 14:27:56,663}{2584}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 14:27:56,674}{2584}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 14:27:56,692}{5380}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 14:29:02,261}{2584}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
+{2020-12-11 14:29:02,482}{13896}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 14:35:07,524}{6796}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 14:35:09,103}{13220}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 14:35:09,109}{13220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 14:35:09,125}{13004}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 14:36:31,690}{13220}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
+{2020-12-11 14:36:31,882}{6796}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 15:17:23,340}{1264}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 15:17:25,094}{7056}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 15:17:25,101}{7056}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 15:17:25,116}{11620}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 16:44:47,786}{14196}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 16:44:49,755}{14632}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 16:44:49,764}{14632}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 16:44:49,781}{14824}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 16:45:50,704}{8120}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 16:45:52,506}{264}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 16:45:52,514}{264}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 16:45:52,529}{12360}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-11 16:46:02,194}{264}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
+{2020-12-11 16:46:02,356}{8120}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}

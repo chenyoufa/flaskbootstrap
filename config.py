@@ -10,3 +10,5 @@ LOG_PATH= "./logs"
 filename = 'test.txt'
 with open(filename, 'w') as file_object:
     file_object.write(str(datetime.datetime.now()))
+
+ 
