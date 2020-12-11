@@ -52,6 +52,18 @@ def GetUserTwoJson():
         tempList = ConditionQuery.List_to_dicList(QueryList, menu)
         for item in tempList:
             item["name"] = item.pop("RealName")
-        print(tempList)
         data["Data"] = tempList
+    return jsonify(data)
+
+@app.route('/cms/GetDepartFormJson')
+def GetDepartFormJson():
+    id = request.args.get("id")
+    print(id)
+    data = {'Tag': 0, "Message": "", "Data": ""}
+    if id != '':
+        data["Tag"] = 1
+        data["Message"] = "操作成功"
+        menu = Department.query.filter(Department.Id == id).all()
+        data["Data"] = to_json(menu)[0]
+        data["Total"] = 0
     return jsonify(data)

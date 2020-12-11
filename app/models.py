@@ -115,7 +115,7 @@ class SysLog(Entry):
     AgentBrowser = db.Column(db.String(60),comment="浏览器")
     OperatingSystem = db.Column(db.String(60),comment="操作系统")
     LogCategory = db.Column(db.Integer,primary_key=False,comment="日志列表")#1登录日志，2操作日志
-    OperatingInfo = OperatingSystem = db.Column(db.String(60),comment="操作信息")
+    OperatingInfo  = db.Column(db.String(60),comment="操作信息")
     # DepartmentName = db.Column(db.String(30),comment="部门名称")
     OperationMethod = db.Column(db.String(30),comment="操作方法")
     TimeConsue = db.Column(db.Integer,primary_key=False,comment="耗时")
