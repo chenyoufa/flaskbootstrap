@@ -53,3 +53,7 @@
 {2020-12-11 16:45:52,529}{12360}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
 {2020-12-11 16:46:02,194}{264}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\utils\\Log.py', reloading}
 {2020-12-11 16:46:02,356}{8120}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 16:54:24,488}{15336}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-11 16:54:26,572}{14156}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-11 16:54:26,578}{14156}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-11 16:54:26,589}{11608}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
