@@ -124,7 +124,13 @@ class SysLog(Entry):
 class Department(Entry):
     __tablename__ = "SysDepartment"
     DepartName = db.Column(db.String(50))
+    ParentId =  db.Column(db.Integer)
+    DepartSort = db.Column(db.Integer)
+    Email = db.Column(db.String(50), unique=True)
+    Fax = db.Column(db.String(50), unique=True)
+    Mobile = db.Column(db.String(11), unique=False)
     User_id = db.Column(db.Integer,db.ForeignKey('SysUsers.Id'))
+    Remarks =  db.Column(db.String(200), unique=True)
     # to_user =  relationship("User",backref = "Dep2User")
 
     def __repr__(self):
