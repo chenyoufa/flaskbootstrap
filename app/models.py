@@ -134,5 +134,5 @@ class Department(Entry):
     # to_user =  relationship("User",backref = "Dep2User")
 
     def __repr__(self):
-        return "<Department %s>" % (self.UserName)
+        return "<Department %s>" % (self.DepartName)
 
