@@ -72,7 +72,7 @@ def GetDepartFormJson():
         data["Total"] = 0
     return jsonify(data)
 
-@app.route('/cms/SaveDepartFormJson', methods=['POST'])
+@curre_app.route('/cms/SaveDepartFormJson', methods=['POST'])
 def SaveDepartFormJson():
     form = depart_form.DepartForm()
     data = {'Tag': 0, "Message": ""}

@@ -1,7 +1,7 @@
 
 from flask import render_template
 from app import curre_app,db
-from app.models import User,Role,to_json
+from app.models import User,Role
 from flask import make_response,session,jsonify
 from app.forms  import menu_form,login_form
 
