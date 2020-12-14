@@ -878,3 +878,51 @@
 {2020-12-12 15:05:36,358}{140308689737472}{Thread-78}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [12/Dec/2020 15:05:36] "GET /cms/SeverInfo/ HTTP/1.1" 200 -}
 {2020-12-12 15:06:02,082}{140308689737472}{Thread-79}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [12/Dec/2020 15:06:02] "GET /cms/index HTTP/1.1" 200 -}
 {2020-12-12 15:06:04,197}{140308689737472}{Thread-80}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [12/Dec/2020 15:06:04] "GET /cms/SeverInfo/ HTTP/1.1" 200 -}
+{2020-12-14 11:19:59,435}{17496}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-14 11:20:04,005}{10800}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-14 11:20:04,016}{10800}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-14 11:20:04,030}{13368}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-14 11:20:06,873}{17760}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:06] "[37mGET /cms/login HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:07,184}{13148}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:07] "[37mGET /auth/imgCode HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:20,238}{15992}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:20] "[37mPOST /cms/login HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:20,401}{17516}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:20] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:20,534}{16228}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:20] "[36mGET /static/WMP/js/WMP-data.js HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:20,632}{10072}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:20] "[36mGET /static/image/portrait.png HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:20,661}{1364}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:20] "[36mGET /static/image/logo_2.png HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:20,778}{16152}{Thread-10}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:20] "[36mGET /static/lib/fontawesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:25,356}{14352}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:25] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:31,212}{1280}{Thread-11}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:31] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:31,316}{9964}{Thread-13}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:31] "[36mGET /static/lib/bootstrap.treetable/1.0/bootstrap-treetable.min.css HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:31,372}{5728}{Thread-12}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:31] "[36mGET /static/lib/bootstrap.treetable/1.0/bootstrap-treetable.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:31,486}{17092}{Thread-14}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:31] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:31,589}{15212}{Thread-15}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:31] "[36mGET /static/lib/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:32,595}{11972}{Thread-16}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:32] "[33mGET /cms/LogIndex HTTP/1.1[0m" 404 -}
+{2020-12-14 11:20:33,658}{7040}{Thread-17}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:33] "[37mGET /cms/RoleIndex HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:33,827}{13080}{Thread-20}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:33] "[36mGET /static/lib/select2/4.0.6/css/select2.min.css HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:33,830}{2996}{Thread-19}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:33] "[36mGET /static/lib/bootstrap.table/1.12.0/bootstrap-table.min.css HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:33,835}{5864}{Thread-18}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:33] "[36mGET /static/lib/laydate/5.0.9/laydate.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:33,892}{2220}{Thread-21}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:33] "[36mGET /static/lib/bootstrap.table/1.12.0/bootstrap-table.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:33,894}{10520}{Thread-23}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:33] "[36mGET /static/WMP/js/WMP-init.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:33,899}{8808}{Thread-22}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:33] "[36mGET /static/lib/select2/4.0.6/js/select2.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:34,016}{17732}{Thread-24}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:34] "[36mGET /static/lib/laydate/5.0.9/theme/default/laydate.css?v=5.0.9 HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:34,148}{18408}{Thread-25}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:34] "[37mGET /cms/GetRoleListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1607916033718 HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:40,662}{13552}{Thread-26}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:40] "[36mGET /static/lib/layer/3.1.1/theme/default/icon.png HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:42,163}{16404}{Thread-27}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:42] "[36mGET /static/lib/layer/3.1.1/theme/default/loading-1.gif HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:42,322}{5616}{Thread-28}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:42] "[37mGET /cms/MenuForm?id=0&parentId=0&parentName= HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:42,417}{13460}{Thread-31}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:42] "[36mGET /static/lib/zTree/v3/css/metroStyle/metroStyle.min.css HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:42,423}{14008}{Thread-29}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:42] "[36mGET /static/lib/icheck/1.0.2/skins/custom.min.css HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:42,451}{12896}{Thread-30}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:42] "[36mGET /static/lib/jquery.validation/1.14.0/jquery.validate.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:42,479}{12720}{Thread-32}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:42] "[36mGET /static/lib/icheck/1.0.2/icheck.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:42,576}{6680}{Thread-33}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:42] "[36mGET /static/lib/zTree/v3/js/ztree.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:42,678}{7056}{Thread-34}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:42] "[36mGET /static/lib/icheck/1.0.2/skins/minimal/blue.png HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:44,274}{15884}{Thread-35}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:44] "[37mGET /cms/MenuChoose?id=0 HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:44,562}{10976}{Thread-36}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:44] "[37mGET /cms/GetMenuTreeListJson HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:44,642}{5668}{Thread-37}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:44] "[36mGET /static/lib/zTree/v3/css/metroStyle/img/metro.png HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:44,648}{2376}{Thread-38}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:44] "[36mGET /static/lib/zTree/v3/css/metroStyle/img/line_conn.png HTTP/1.1[0m" 304 -}
+{2020-12-14 11:20:55,220}{13020}{Thread-39}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:55] "[37mGET /cms/MenuChoose?id=0 HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:55,465}{17188}{Thread-40}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:55] "[37mGET /cms/GetMenuTreeListJson HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:58,104}{18084}{Thread-41}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:58] "[37mGET /cms/MenuChoose?id=0 HTTP/1.1[0m" 200 -}
+{2020-12-14 11:20:58,255}{9676}{Thread-42}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:20:58] "[37mGET /cms/GetMenuTreeListJson HTTP/1.1[0m" 200 -}
+{2020-12-14 11:21:14,218}{17120}{Thread-43}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:21:14] "[37mGET /cms/MenuForm?id=0&parentId=0&parentName= HTTP/1.1[0m" 200 -}
+{2020-12-14 11:21:15,954}{14628}{Thread-44}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:21:15] "[37mGET /cms/MenuChoose?id=0 HTTP/1.1[0m" 200 -}
+{2020-12-14 11:21:16,450}{13204}{Thread-45}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 11:21:16] "[37mGET /cms/GetMenuTreeListJson HTTP/1.1[0m" 200 -}

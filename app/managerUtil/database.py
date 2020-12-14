@@ -72,7 +72,7 @@ def init_data():
     """初始化数据库"""
     
     
-    user = User(UserName="fage", PassWord="123456", Email="879756530@qq.com" ,
+    user = User(UserName="Admin", PassWord="pbkdf2:sha256:150000$lJ7sD5Gl$7f767ec92545c2988c064914810e1257549712e1f411d99605f49d8af9efbc75", Email="879756530@qq.com" ,
     Status=1,CreateUserid=1,ModifyUserid=1)
     db.session.add(user)
 
@@ -84,16 +84,40 @@ def init_data():
     db.session.add(role)
     role = Role(Name="普通管理员",Status=1,CreateUserid=1,ModifyUserid=1)
     db.session.add(role)
+    
     for user in range(100):
         u = User(UserName="westos%s" %(user), PassWord="hello", 
         Email="westos%s@qq.com"  %(user),Status=1,CreateUserid=1,ModifyUserid=1)
         db.session.add(u)
-    menu = Menus(ParentId=0,MenuName='系统工具',MenuUrl="",MenuType="1",MenuTarget="",
+
+    menu = Menus(ParentId=0,MenuName='系统管理',MenuUrl="",MenuType="1",MenuTarget="",
     Status=1,CreateUserid=1,ModifyUserid=1,MenuIcon="")
     db.session.add(menu)
-    menu = Menus(ParentId=1,MenuName='通用字典',
-    MenuUrl="SystemManage/DataDict/DataDictIndex",MenuType="2",MenuTarget="",
+
+    menu = Menus(ParentId=0,MenuName='账号管理',MenuUrl="",MenuType="1",MenuTarget="",
+    Status=1,CreateUserid=1,ModifyUserid=1,MenuIcon="")
+    db.session.add(menu)
+
+    menu = Menus(ParentId=0,MenuName='组织管理',MenuUrl="",MenuType="1",MenuTarget="",
+    Status=1,CreateUserid=1,ModifyUserid=1,MenuIcon="")
+    db.session.add(menu)
+    
+    menu = Menus(ParentId=1,MenuName='菜单管理',
+    MenuUrl="/cms/MenunIndex",MenuType="2",MenuTarget="",
     Status=1,CreateUserid=1,ModifyUserid=1,Authorize="system:datadict:view",MenuIcon="")
     db.session.add(menu)
+
+    menu = Menus(ParentId=1,MenuName='系统日志',
+    MenuUrl="/cms/LogIndex",MenuType="2",MenuTarget="",
+    Status=1,CreateUserid=1,ModifyUserid=1,Authorize="system:datadict:view",MenuIcon="")
+    db.session.add(menu)
+
+    menu = Menus(ParentId=1,MenuName='角色管理',
+    MenuUrl="/cms/RoleIndex",MenuType="2",MenuTarget="",
+    Status=1,CreateUserid=1,ModifyUserid=1,Authorize="system:datadict:view",MenuIcon="")
+    db.session.add(menu)
+
+    
+
     db.session.commit()
     print("初始化完成")
