@@ -1,14 +1,14 @@
 from flask import render_template,jsonify,request
-from app import app
+from app import curre_app
 from app.models import User,to_json,Role,db
 from utils import ConditionQuery
 
-@app.route('/cms/UsersIndex')
+@curre_app.route('/cms/UsersIndex')
 def UsersIndex():
     return render_template('cms/UsersIndex.html')
 
 
-@app.route("/cms/GetUsersListJson", methods=['GET'])
+@curre_app.route("/cms/GetUsersListJson", methods=['GET'])
 def GetUsersListJson():
     data={'Tag': 0,"Message":"","Data":""}
     if id!='':
@@ -28,11 +28,11 @@ def GetUsersListJson():
         data["Data"]=to_json(menu.items)
     return jsonify(data)
 
-@app.route("/cms/UserForm")
+@curre_app.route("/cms/UserForm")
 def UserForm():
     return render_template("cms/UserForm.html")
 
-@app.route("/cms/GetRoleJson")
+@curre_app.route("/cms/GetRoleJson")
 def GetRoleJson():
     data = {'Tag': 0, "Message": "", "Data": ""}
     id = request.args.get("id")
@@ -46,7 +46,7 @@ def GetRoleJson():
         return jsonify(data)
 
 
-@app.route("/cms/GetUserFormJson")
+@curre_app.route("/cms/GetUserFormJson")
 def GetUserFormJson():
     data = {'Tag': 0, "Message": "", "Data": ""}
     id = request.args.get("id")
@@ -59,7 +59,7 @@ def GetUserFormJson():
         data["data"] = to_json(menu)[0]
     return jsonify(data)
 
-@app.route("/cms/DeleteUserJson",methods=['GET','POST'])
+@curre_app.route("/cms/DeleteUserJson",methods=['GET','POST'])
 def DeleteUserJson():
     if request.method == "POST":
         data = {'Tag': 0, "Message": "", "Data": ""}

@@ -110,16 +110,26 @@ class SysLog(Entry):
     __tablename__ = "SysLog"
     # UseName = db.Column(db.String(30),comment="登录名称")
     UserId  = db.Column(db.Integer,db.ForeignKey('SysUsers.Id'))
+    # level_name= db.Column(db.String(10),comment="ip地址")
+    # message= db.Column(db.String(10),comment="ip地址")
+    # splilt_type= db.Column(db.String(10),comment="ip地址")
+    # split_base= db.Column(db.String(10),comment="ip地址")
+    # exc_info= db.Column(db.String(10),comment="ip地址")
+    # exc_text= db.Column(db.String(10),comment="ip地址")
+    # file_name= db.Column(db.String(10),comment="ip地址")
+    # line_no = db.Column(db.Integer,primary_key=False,comment="日志列表")#1登录日志，2操作日志
+    # func_name= db.Column(db.String(10),comment="ip地址")
+    # stack_info= db.Column(db.String(10),comment="ip地址")
     IpAddress = db.Column(db.String(30),comment="ip地址")
     IpHome = db.Column(db.String(60),comment="ip归属地")
-    AgentBrowser = db.Column(db.String(60),comment="浏览器")
+    AgentBrowser = db.Column(db.String(200),comment="浏览器")
     OperatingSystem = db.Column(db.String(60),comment="操作系统")
     LogCategory = db.Column(db.Integer,primary_key=False,comment="日志列表")#1登录日志，2操作日志
-    OperatingInfo  = db.Column(db.String(60),comment="操作信息")
+    OperatingInfo  = db.Column(db.String(200),comment="操作信息")
     # DepartmentName = db.Column(db.String(30),comment="部门名称")
     OperationMethod = db.Column(db.String(30),comment="操作方法")
     TimeConsue = db.Column(db.Integer,primary_key=False,comment="耗时")
-    Parameter = db.Column(db.String(60),comment="请求参数")
+    Parameter = db.Column(db.String(200),comment="请求参数")
 
 class Department(Entry):
     __tablename__ = "SysDepartment"

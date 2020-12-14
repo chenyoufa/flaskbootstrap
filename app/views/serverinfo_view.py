@@ -1,15 +1,15 @@
 from flask import render_template
-from app import app
+from app import curre_app
 from utils import ServerInfo,AllDecorator
 
 
-app.secret_key = 'please-generate-a-random-secret_key'
+curre_app.secret_key = 'please-generate-a-random-secret_key'
 
  
 ######################后台###################################
 
 @AllDecorator.is_login
-@app.route('/cms/SeverInfo/',methods=['GET'])
+@curre_app.route('/cms/SeverInfo/',methods=['GET'])
 def GetServerInfo():
     size_cpu,used_cpu  = ServerInfo.serverinfo().get_cpu_info()
     size_memory,used_memory  = ServerInfo.serverinfo().get_memory_info()

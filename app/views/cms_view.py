@@ -1,10 +1,10 @@
 # http://www.csdn.net/list/
 # http://www.csdn.net/list/1/
 # http://www.csdn.net/list/2/
-from flask import render_template,session
+from flask import render_template,session,request
 from app.models import User,Menus,to_json
 from utils import AllDecorator
-from app import app
+from app import curre_app
 from datetime import datetime
 ######################后台###################################
  
@@ -17,11 +17,10 @@ def sum_recu(n,outlist):
         sum_recu(menusPageObj,outlist)
     return outlist
 #首页
-@app.route('/cms/index')
+@curre_app.route('/cms/index')
 @AllDecorator.is_login
 def index():
-    app.logger.error('this is a error')
-    app.logger.info("Info message")
+    
     menusPageObj = Menus.query.filter_by(ParentId=0)
     outlist=[]
     sum_recu(menusPageObj,outlist) 

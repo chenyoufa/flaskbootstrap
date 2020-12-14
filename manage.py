@@ -1,7 +1,7 @@
 from flask_migrate import MigrateCommand
 from app import views
 
-from app import app, manager, db
+from app import curre_app, manager, db
 from app.managerUtil.database import  database_manager
 
 from flask_script import Command, prompt_bool
