@@ -2,6 +2,7 @@ from flask import render_template,jsonify,request
 from app import curre_app,db
 from app.models import Department,to_json,Role,User
 from utils import ConditionQuery
+from app.forms  import depart_form
 
 @curre_app.route('/cms/DepartmentIndex')
 def DepartmentIndex():
@@ -37,7 +38,9 @@ def GetDepartmentTwoJson():
         tempList = ConditionQuery.List_to_dicList(QueryList, menu)
         for item in tempList:
             item["name"] = item.pop("DepartName")
-        print(tempList)
+            item["id"] = item.pop("Id")
+            # item["pId"] = item["id"]
+        # print(tempList)
         data["Data"] = tempList
     return jsonify(data)
 
@@ -52,13 +55,14 @@ def GetUserTwoJson():
         tempList = ConditionQuery.List_to_dicList(QueryList, menu)
         for item in tempList:
             item["name"] = item.pop("RealName")
+            item["id"] = item.pop("Id")
         data["Data"] = tempList
     return jsonify(data)
 
 @curre_app.route('/cms/GetDepartFormJson')
 def GetDepartFormJson():
     id = request.args.get("id")
-    print(id)
+    # print(id)
     data = {'Tag': 0, "Message": "", "Data": ""}
     if id != '':
         data["Tag"] = 1
@@ -66,4 +70,47 @@ def GetDepartFormJson():
         menu = Department.query.filter(Department.Id == id).all()
         data["Data"] = to_json(menu)[0]
         data["Total"] = 0
+    return jsonify(data)
+
+@curre_app.route('/cms/SaveDepartFormJson', methods=['POST'])
+def SaveDepartFormJson():
+    form = depart_form.DepartForm()
+    data = {'Tag': 0, "Message": ""}
+    print("-------------------")
+    print(form.validate_on_submit())
+    if form.validate_on_submit():
+
+        data["Tag"] = 1
+        data["Message"] = "操作成功"
+        print("@@@@@@")
+        # print(form.ParentId.data)
+        print(form.ParentId.data,form.DepartName.data,form.Mobile.data,form.Fax.data,form.Email.data,form.Remarks.data,form.DepartSort.data)
+        # menu = Department.query.get(form.Id.data)
+        # menu.ParentId = form.ParentId.data
+        # menu.DepartName = form.DepartName.data
+        # # menu.User_id = form.User_id.data
+        # menu.Mobile = form.Mobile.data
+        # menu.Fax = form.Fax.data
+        # menu.Email = form.Email.data
+        # menu.Remarks = form.Remarks.data
+        # menu.DepartSort = form.DepartSort.data
+        # print(menu)
+    # else:
+    #     print(form.Id.data,"@@@@")
+    # id = request.form ["Id"]
+    # if request.method == "POST":
+    #     if int(id) > 0 :
+    #         data["Tag"] = 1
+    #         data["Message"] = "操作成功"
+    #         parentId = request.form["ParentId"]
+    #         departName = request.form["DepartName"]
+    #         principalId = request.form["PrincipalId"]
+    #         mobile = request.form["Mobile"]
+    #         fax = request.form["Fax"]
+    #         email = request.form["Email"]
+    #         departSort = request.form["DepartSort"]
+    #         remarks = request.form["Remarks"]
+    #         print(id,parentId,departName,principalId,mobile,fax,email,departSort,remarks)
+    #     else:
+    #         print("add")
     return jsonify(data)
