@@ -878,3 +878,44 @@
 {2020-12-12 15:05:36,358}{140308689737472}{Thread-78}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [12/Dec/2020 15:05:36] "GET /cms/SeverInfo/ HTTP/1.1" 200 -}
 {2020-12-12 15:06:02,082}{140308689737472}{Thread-79}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [12/Dec/2020 15:06:02] "GET /cms/index HTTP/1.1" 200 -}
 {2020-12-12 15:06:04,197}{140308689737472}{Thread-80}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [12/Dec/2020 15:06:04] "GET /cms/SeverInfo/ HTTP/1.1" 200 -}
+{2020-12-14 10:56:36,510}{22504}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-14 10:56:40,281}{15480}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-14 10:56:40,372}{15480}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 127-937-537}
+{2020-12-14 10:56:40,414}{16232}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-14 10:57:09,607}{23764}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[32mGET /cms/index HTTP/1.1[0m" 302 -}
+{2020-12-14 10:57:09,682}{4860}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[37mGET /cms/login HTTP/1.1[0m" 200 -}
+{2020-12-14 10:57:09,862}{22652}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/lib/fontawesome/4.7.0/css/fontawesome.min.css HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:09,866}{18920}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/WMP/css/style.min.css HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:09,871}{5772}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/lib/bootstrap/3.3.7/css/bootstrap.min.css HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:09,874}{21616}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/WMP/css/login.css HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:09,875}{18484}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/lib/jquery/2.1.4/jquery.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:09,878}{10936}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/lib/bootstrap/3.3.7/js/bootstrap.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:09,900}{26408}{Thread-10}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/lib/layer/3.1.1/layer.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:09,905}{16868}{Thread-11}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/WMP/js/WMP.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:09,913}{21132}{Thread-12}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/WMP/js/WMP-index.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:09,920}{24600}{Thread-13}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/lib/jquery.metisMenu/1.1.3/jquery.metisMenu.js HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:09,932}{2520}{Thread-14}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/lib/jquery.slimscroll/1.3.8/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:09,941}{12804}{Thread-15}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:09] "[36mGET /static/image/logo.png HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:10,063}{22088}{Thread-17}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:10] "[36mGET /static/lib/layer/3.1.1/theme/default/layer.css?v=3.1.1 HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:10,080}{13180}{Thread-18}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:10] "[36mGET /static/WMP/css/WMP.min.css HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:10,089}{25996}{Thread-16}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:10] "[37mGET /auth/imgCode HTTP/1.1[0m" 200 -}
+{2020-12-14 10:57:10,111}{22724}{Thread-19}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:10] "[36mGET /static/image/login-background.jpg HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:10,119}{6204}{Thread-20}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:10] "[36mGET /static/image/user.png HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:10,128}{2144}{Thread-21}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:10] "[36mGET /static/image/locked.png HTTP/1.1[0m" 304 -}
+{2020-12-14 10:57:10,559}{15580}{Thread-22}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:10] "[33mGET /cms/favicon.ico HTTP/1.1[0m" 404 -}
+{2020-12-14 10:57:25,378}{16240}{Thread-23}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [14/Dec/2020 10:57:25] "[35m[1mPOST /cms/login HTTP/1.1[0m" 500 -}
+{2020-12-14 11:01:19,876}{15480}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\python_web\\flaskbootstrap\\app\\views\\Users_view.py', reloading}
+{2020-12-14 11:01:20,096}{22504}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-14 11:01:24,154}{15652}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-14 11:01:24,247}{15652}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 127-937-537}
+{2020-12-14 11:01:24,287}{10600}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-14 11:01:39,921}{15652}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\python_web\\flaskbootstrap\\app\\views\\Users_view.py', reloading}
+{2020-12-14 11:01:40,980}{22504}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-14 11:01:45,853}{22312}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-14 11:01:45,939}{22312}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 127-937-537}
+{2020-12-14 11:01:45,983}{13660}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-14 11:01:58,855}{22312}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\python_web\\flaskbootstrap\\app\\views\\role_view.py', reloading}
+{2020-12-14 11:01:59,117}{22504}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-14 11:02:04,330}{12092}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-14 11:02:04,425}{12092}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 127-937-537}
+{2020-12-14 11:02:04,474}{11876}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
