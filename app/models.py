@@ -146,3 +146,15 @@ class Department(Entry):
     def __repr__(self):
         return "<Department %s>" % (self.DepartName)
 
+class Position(Entry):
+    __tablename__ = "SysPosition"
+    BaseIsDelete = db.Column(db.Integer)
+    BaseCreatorId = db.Column(db.Integer,db.ForeignKey('SysUsers.Id'))
+    BaseModifierId = db.Column(db.Integer,db.ForeignKey('SysUsers.Id'))
+    BaseVersion = db.Column(db.Integer)
+    PositionName = db.Column(db.String(10))
+    PositionSort = db.Column(db.Integer)
+    PositionStatus = db.Column(db.Integer)
+    Remark = db.Column(db.String(100))
+    def __repr__(self):
+        return "<Department %s>" % (self.BaseCreatorId)
