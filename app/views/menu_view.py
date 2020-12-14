@@ -17,7 +17,7 @@ def MenuListJson(page=1):
         print('post')
     if request.method == 'GET':
         menus = Menus.query.all()
-        # users1 = User.query.all()
+        # users = User.query.all()
         # print(users.single_to_dict()) 
         return jsonify(to_json(menus))
 
