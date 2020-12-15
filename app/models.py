@@ -154,7 +154,6 @@ class Position(Entry):
     BaseVersion = db.Column(db.Integer)
     PositionName = db.Column(db.String(10))
     PositionSort = db.Column(db.Integer)
-    PositionStatus = db.Column(db.Integer)
     Remark = db.Column(db.String(100))
     def __repr__(self):
         return "<Department %s>" % (self.BaseCreatorId)

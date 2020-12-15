@@ -74,7 +74,6 @@ def GetDepartFormJson():
             with_entities(*QueryList).filter(Department.Id == id).all()
         tempList = ConditionQuery.List_to_dicList(QueryList, menu)
         tempList[0]["PrincipalId"] = tempList[0].pop("User_id")
-        data["Data"] = tempList[0]
         data["Total"] = 0
     return jsonify(data)
 
@@ -93,11 +92,9 @@ def GetDepartMaxSortJson():
 def SaveDepartFormJson():
     form = depart_form.DepartForm()
     data = {'Tag': 0, "Message": ""}
-    print(form.validate_on_submit())
     if form.validate_on_submit():
         data["Tag"] = 1
         data["Message"] = "操作成功"
-        print("@@@@@@")
         if form.Id.data>0:
             print("修改")
             menu = Department.query.get(form.Id.data)
@@ -127,7 +124,6 @@ def DeleteDepartJson():
     if request.method == "POST":
         data = {'Tag': 0, "Message": "", "Data": ""}
         id = request.form["ids"]
-        print(id)
         if id != '':
             data["Tag"] = 1
             data["Message"] = "操作成功"

@@ -1,3 +1,4 @@
+from datetime import datetime
 def queryList(**kwargs):
     """
     parameter:
@@ -30,6 +31,8 @@ def List_to_dicList(QueryList,menu):
     for row in menu:
         tempdic = {}
         for (i, t) in zip(QueryList, row):
+            if type(t) is type(datetime.now()):
+                t = str(t)
             tempdic[str(i).split(".")[1]] = t
         tempList.append(tempdic)
     return tempList
