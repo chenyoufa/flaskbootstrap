@@ -60,13 +60,17 @@ class User(Entry):
     RealName = db.Column(db.String(20), unique=False)
     Email = db.Column(db.String(50), unique=True)
     Mobile= db.Column(db.String(11), unique=False)
-     # 1-男 2-女
+     # 1-未知 2-男 3-女
     Gender = db.Column(db.SmallInteger,default=2)
     Salt= db.Column(db.String(4), unique=False)
+    DepartmentId  = db.Column(db.Integer, db.ForeignKey('SysDepartment.Id'))
+    RoleId  = db.Column(db.Integer, db.ForeignKey('SysRoles.Id'))
     IsOnLine= db.Column(db.SmallInteger,default=0)
+    PositionId  = db.Column(db.String(10))
     LastTime= db.Column(db.DateTime, default=datetime.now())
     LastIp= db.Column(db.String(20), unique=False)
     Portrait= db.Column(db.String(200), unique=False)
+    Remark = db.Column(db.String(200), unique=True)
     # 设置默认值， 位当前用户的创建时间;
     Belongs = db.relationship('UserBelong', backref='Belong')
     #### 重要的： 用户角色id不能随便设置， 需要从Role中查询, （外键关联）
