@@ -7,3 +7,4 @@ from . import  login_view
 from . import  serverinfo_view
 from . import  Users_view
 from . import  Department_view
+from . import  Position_view

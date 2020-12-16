@@ -151,6 +151,42 @@
         </div>
         <!--右侧部分结束~/Home/Welcome -->
     </div>
+<script type="text/javascript">
+    console.log(window.navigator.userAgent)
+    if (!ys.isNullOrEmpty($.cookie('Skin'))) {
+        var skin = decodeURIComponent($.cookie('Skin'));
+        $("body").addClass(skin.split('|')[0]);
+        $("body").addClass(skin.split('|')[1]);
+    } else {
+        var sideTheme = "theme-dark";
+        var skinName = "skin-blue";
+        $("body").addClass(sideTheme);
+        $("body").addClass(skinName);
+    }
+
+    function showChangePasswordForm() {
+        ys.openDialog({
+            title: "修改密码",
+            content: '@Url.Content("~/OrganizationManage/User/ChangePassword")' + '?id=@ViewBag.OperatorInfo_UserId',
+            height: "500px",
+            callback: function (index, layero) {
+                var iframeWin = window[layero.find('iframe')[0]['name']];
+                iframeWin.saveForm(index);
+            }
+        });
+    }
+
+    function showSwitchSkinForm() {
+        ys.openDialog({
+            title: "切换主题",
+            content: '/cms/Skin',
+            width: '530px',
+            height: '390px',
+            btn: null,
+            maxmin: false
+        });
+    }
+</script>
 
 
     {% endblock %}

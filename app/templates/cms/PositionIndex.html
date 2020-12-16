@@ -1,36 +1,22 @@
- 
- {% extends "share/_Index.html" %}
- {% block content %}
+﻿{% extends "share/_Index.html" %}
+{%  block content %}
 <div class="container-div">
     <div class="row">
+        <input type="hidden" id="csrf_token" value="{{ csrf_token() }}" />
         <div id="searchDiv" class="col-sm-12 search-collapse">
-            <form>
-                <input type="hidden" id="csrf_token" value="{{ csrf_token() }}" />
             <div class="select-list">
                 <ul>
                     <li>
-                        登录名称：<input id="UserName" col="UserName" type="text" />
-                    </li>
-                    <li>
-                        手机号码：<input id="UserPhone" col="UserPhone" type="text" />
-                    </li>
-                    <li>
-                        用户状态：<span id="UserStatus" col="UserStatus"></span>
-                    </li>
-                    <li class="select-time">
-                        <label>创建时间： </label>
-                        <input id="startTime" col="StartTime" type="text" class="time-input" placeholder="开始时间" />
-                        <span>-</span>
-                        <input id="endTime" col="EndTime" type="text" class="time-input" placeholder="结束时间" />
+                        职位名称：<input id="positionName" col="PositionName" type="text" />
                     </li>
                     <li>
                         <a id="btnSearch" class="btn btn-primary btn-sm" onclick="searchGrid()"><i class="fa fa-search"></i>&nbsp;搜索</a>
                     </li>
                 </ul>
             </div>
-                 </form>
         </div>
-        <div class="btn-group-sm" id="toolbar">
+
+        <div id="toolbar" class="btn-group-sm">
             <a id="btnAdd" class="btn btn-success" onclick="showSaveForm(true)"><i class="fa fa-plus"></i> 新增</a>
             <a id="btnEdit" class="btn btn-primary disabled" onclick="showSaveForm(false)"><i class="fa fa-edit"></i> 修改</a>
             <a id="btnDelete" class="btn btn-danger disabled" onclick="deleteForm()"><i class="fa fa-remove"></i> 删除</a>
@@ -43,45 +29,26 @@
 </div>
 
 <script type="text/javascript">
-    $(function () {
+   $(function () {
         initGrid();
-
-      
-       $("#UserStatus").ysComboBox({ data: ys.getJson([{ Key: 1, Value: "激活"},{Key: 2, Value: "冻结"}]) });
-
-        laydate.render({ elem: '#startTime', format: 'yyyy-MM-dd' });
-        laydate.render({ elem: '#endTime', format: 'yyyy-MM-dd' });
     });
 
     function initGrid() {
-        var queryUrl = '/cms/GetUsersListJson';
+        var queryUrl = '/cms/GetPositionListJson';
         $('#gridTable').ysTable({
             url: queryUrl,
-            sortName: 'UserSort',
+            sortName: 'PositionSort',
             sortOrder: 'Asc',
             columns: [
                 { checkbox: true, visible: true },
                 { field: 'Id', title: 'Id', visible: false },
-                { field: 'UserName', title: '登录名', width: "15%",sortable: true },
-                { field: 'RealName', title: '姓名', width: "15%"},
-                { field: 'DepartName', title: '部门', width: "15%" },
-                { field: 'Mobile', title: '手机', width: "15%"},
-                {
-                    field: 'Status', title: '状态', width: "10%",
-                    formatter: function (value, row, index) {
-                        if (value == "1") {
-                            return '<span class="badge badge-primary">' + "激活" + '</span>';
-                        } else {
-                            return '<span class="badge badge-warning">' + "冻结" + '</span>';
-                        }
-                    }
-                },
+                { field: 'PositionName', title: '职位名称', width: "20%", sortable: true },
+                { field: 'PositionSort', title: '显示顺序', width: "15%", sortable: true },
                 {
                     field: 'CreateTime', title: '创建时间', formatter: function (value, row, index) {
                         return ys.formatDate(value, "yyyy-MM-dd HH:mm:ss");
                     }
-                },
-               { field: 'Operation', title: '操作', width: "15%" },
+                }
             ],
             queryParams: function (params) {
                 var pagination = $('#gridTable').ysTable('getPagination', params);
@@ -108,9 +75,8 @@
             }
         }
         ys.openDialog({
-            title: id > 0 ? "编辑角色" : "添加角色",
-            content: "/cms/UserForm" + '?id=' + id,
-            width: "780px",
+            title: id > 0 ? "编辑职位" : "添加职位",
+            content: '/cms/PositionForm' + '?id=' + id,
             callback: function (index, layero) {
                 var iframeWin = window[layero.find('iframe')[0]['name']];
                 iframeWin.saveForm(index);
@@ -125,9 +91,9 @@
                 var ids = ys.getIds(selectedRow);
                 var csrf_token=$("#csrf_token").val()
                 ys.ajax({
-                    url: '/cms/DeleteUserJson',
+                    url: '/cms/DeletePositionJson',
                     type: "post",
-                     data:{
+                    data:{
                      ids:ids,
                      csrf_token:csrf_token
                   },
