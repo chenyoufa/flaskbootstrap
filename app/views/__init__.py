@@ -8,3 +8,4 @@ from . import  serverinfo_view
 from . import  Users_view
 from . import  Department_view
 from . import  Position_view
+from . import  log_view
