@@ -8,28 +8,12 @@ from flask import session
 from datetime import datetime
 from werkzeug.security import generate_password_hash,check_password_hash
 from app.forms  import login_form
+from  utils import  EncToDec
 
 curre_app.secret_key = 'please-generate-a-random-secret_key'
 
  
 ######################后台###################################
-
-
-#哈希加盐的密码加密方法
-def enPassWord(password):#将明密码转化为hash码
-    return generate_password_hash(password)#返回转换的hash码
-
-def checkPassWord(enpassword,password):#第一参数是从数据查询出来的hash值，第二参数是需要检验的密码
-    return check_password_hash(enpassword,password)#如果匹配返回true
-
-def isNameExisted(username):#检查名字是否存在
-    result = User.query.filter(User.UserName == username).first()
-    # print(result)
-    if (result == None ):
-        return False
-    else:
-        return True,result.PassWord
-
 
 
 #登录
@@ -52,9 +36,9 @@ def login():
         captchaCode = form.captchaCode.data
 
 
-        if isNameExisted(userName):
-            s,t= isNameExisted(userName)
-            if check_password_hash(t, password):
+        if EncToDec.isNameExisted(userName):
+            s,t= EncToDec.isNameExisted(userName)
+            if EncToDec.check_password_hash(t, password):
                 if session['imageCode'].lower() == captchaCode.lower() :  # 查询有没有这个用户
                     session['logged_in'] = userName
                     return jsonify({"index_url":"/cms/index","status":200})

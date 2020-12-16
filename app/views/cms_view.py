@@ -33,5 +33,8 @@ def index():
         year=datetime.now().year,
         message='Your application description page.'
     )
-    
- 
+
+
+@curre_app.route('/cms/Skin')
+def Skin():
+    return render_template("cms/Skin.html")

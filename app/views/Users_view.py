@@ -103,9 +103,6 @@ def GetPositionTwoJson():
         QueryList = [Position.Id,Position.PositionName]
         menu = Position.query.with_entities(*QueryList).all()
         tempList = ConditionQuery.List_to_dicList(QueryList, menu)
-        # for item in tempList:
-        #     # item["name"] = item.pop("PositionName")
-        #     # item["id"] = item.pop("Id")
         data["Data"] = tempList
     return jsonify(data)
 
