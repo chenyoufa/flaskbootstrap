@@ -6,3 +6,4 @@ flask_bootstrap==3.3.7.1
 cryptography==3.2.1  
 psutil
 flask_wtf
+pillow

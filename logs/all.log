@@ -1,451 +1,187 @@
-{2020-12-16 17:51:41,338}{10768}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 17:51:43,800}{13828}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 17:51:43,808}{13828}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 17:51:43,819}{18720}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:36:13,731}{13624}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:36:16,257}{2672}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:36:16,264}{2672}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:36:16,278}{14580}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:36:16,507}{920}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:36:16] "[33mGET /cms/LogIndex HTTP/1.1[0m" 404 -}
-{2020-12-16 18:36:21,165}{8524}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:36:21] "[37mGET /cms/RoleIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:36:21,620}{17188}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:36:21] "[37mGET /cms/GetRoleListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608114981315 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:36:23,743}{5376}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:36:23] "[37mGET /cms/UsersIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:36:23,961}{8268}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:36:23] "[37mGET /cms/GetUsersListJson?pageSize=10&pageIndex=1&sort=UserSort&sortType=Asc&UserName=&UserPhone=&UserStatus=&StartTime=&EndTime=&_=1608114983786 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:36:25,434}{12436}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:36:25] "[37mGET /cms/DepartmentIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:36:25,540}{1624}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:36:25] "[37mGET /cms/GetDepartmentListJson HTTP/1.1[0m" 200 -}
-{2020-12-16 18:36:26,548}{19040}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:36:26] "[37mGET /cms/PositionIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:36:26,720}{15124}{Thread-10}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:36:26] "[37mGET /cms/GetPositionListJson?pageSize=10&pageIndex=1&sort=PositionSort&sortType=Asc&PositionName=&_=1608114986582 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:36:30,191}{13320}{Thread-11}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:36:30] "[33mGET /cms/LogIndex HTTP/1.1[0m" 404 -}
-{2020-12-16 18:42:06,867}{8540}{Thread-12}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:42:06] "[33mGET /cms/LogIndex HTTP/1.1[0m" 404 -}
-{2020-12-16 18:42:09,585}{4628}{Thread-13}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:42:09] "[33mGET /cms/LogIndex HTTP/1.1[0m" 404 -}
-{2020-12-16 18:43:06,469}{19120}{Thread-14}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:06] "[37mGET /cms/GetMenuListJson?MenuName=&MenuStatus= HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:14,541}{11160}{Thread-15}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:14] "[37mGET /cms/MenuForm?id=5&parentId=1&parentName=系统管理 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:14,835}{17204}{Thread-16}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:14] "[37mGET /cms/GetMenuJson?id=5 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:45,536}{13348}{Thread-17}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:45] "[33mGET /cms/LogIndex HTTP/1.1[0m" 404 -}
-{2020-12-16 18:43:47,847}{8168}{Thread-18}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:47] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:49,705}{19416}{Thread-19}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:49] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:51,184}{6084}{Thread-20}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:51] "[33mGET /cms/LogIndex HTTP/1.1[0m" 404 -}
-{2020-12-16 18:43:59,146}{7504}{Thread-21}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,297}{7080}{Thread-22}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/lib/bootstrap/3.3.7/css/bootstrap.min.css HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,313}{16152}{Thread-23}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/lib/fontawesome/4.7.0/css/fontawesome.min.css HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,335}{16760}{Thread-24}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/WMP/css/style.min.css HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,357}{1204}{Thread-25}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/lib/jquery/2.1.4/jquery.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,379}{12036}{Thread-26}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/lib/bootstrap/3.3.7/js/bootstrap.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,403}{16416}{Thread-27}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/lib/layer/3.1.1/layer.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,422}{4932}{Thread-28}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/WMP/js/WMP.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,441}{5848}{Thread-29}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/WMP/js/WMP-index.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,451}{16216}{Thread-30}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/lib/jquery.metisMenu/1.1.3/jquery.metisMenu.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,466}{9964}{Thread-31}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/lib/jquery.slimscroll/1.3.8/jquery.slimscroll.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,468}{18532}{Thread-32}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/WMP/js/WMP-data.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,629}{2192}{Thread-33}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/lib/layer/3.1.1/theme/default/layer.css?v=3.1.1 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,785}{2504}{Thread-34}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/WMP/css/WMP.min.css HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,821}{19040}{Thread-35}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/image/logo_2.png HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,835}{4596}{Thread-36}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/image/portrait.png HTTP/1.1[0m" 200 -}
-{2020-12-16 18:43:59,851}{8216}{Thread-38}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:43:59] "[37mGET /static/lib/fontawesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,437}{1256}{Thread-37}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,499}{15364}{Thread-39}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/lib/bootstrap/3.3.7/css/bootstrap.min.css HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,503}{17164}{Thread-40}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/lib/fontawesome/4.7.0/css/fontawesome.min.css HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,513}{14340}{Thread-41}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/WMP/css/style.min.css HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,518}{11928}{Thread-42}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/lib/jquery/2.1.4/jquery.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,528}{12452}{Thread-43}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/lib/bootstrap/3.3.7/js/bootstrap.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,547}{11652}{Thread-44}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/lib/layer/3.1.1/layer.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,549}{10340}{Thread-45}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/WMP/css/WMP.min.css HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,572}{6112}{Thread-46}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/WMP/js/WMP.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,580}{3396}{Thread-47}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/WMP/js/WMP-index.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,585}{6012}{Thread-48}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/lib/jquery.metisMenu/1.1.3/jquery.metisMenu.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,586}{18484}{Thread-49}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/lib/jquery.slimscroll/1.3.8/jquery.slimscroll.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,832}{19132}{Thread-50}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/lib/layer/3.1.1/theme/default/layer.css?v=3.1.1 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:01,862}{17240}{Thread-51}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:01] "[37mGET /static/lib/fontawesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:02,005}{6080}{Thread-52}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:02] "[33mGET /cms/favicon.ico HTTP/1.1[0m" 404 -}
-{2020-12-16 18:44:04,513}{18324}{Thread-53}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:04] "[37mGET /static/lib/layer/3.1.1/theme/default/loading-1.gif HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:04,515}{10756}{Thread-54}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:04] "[37mGET /static/lib/layer/3.1.1/theme/default/icon.png HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:04,526}{13996}{Thread-55}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:04] "[37mGET /cms/Skin HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:20,536}{12716}{Thread-56}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:20] "[33mGET /cms/LogIndex HTTP/1.1[0m" 404 -}
-{2020-12-16 18:44:39,552}{17192}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:44:41,821}{15732}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:44:41,827}{15732}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:44:41,838}{6852}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:44:43,213}{12392}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:43] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:45,071}{18532}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:45] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
-{2020-12-16 18:44:48,278}{19132}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:48] "[33mGET /cms/LogIndex HTTP/1.1[0m" 404 -}
-{2020-12-16 18:44:56,540}{12888}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:56] "[33mGET /cms/LogIndex HTTP/1.1[0m" 404 -}
-{2020-12-16 18:44:56,839}{14376}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:44:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -}
-{2020-12-16 18:46:25,216}{15732}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\__init__.py', reloading}
-{2020-12-16 18:46:25,410}{17192}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:46:27,855}{944}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:46:27,862}{944}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:46:27,874}{11724}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:46:31,182}{944}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\__init__.py', reloading}
-{2020-12-16 18:46:31,360}{17192}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:46:37,119}{17520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:46:40,116}{12036}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:46:40,126}{12036}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:46:40,139}{8872}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:46:40,473}{9420}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:40] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:40,622}{14676}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:40] "[37mGET /static/lib/laydate/5.0.9/laydate.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:40,637}{18984}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:40] "[37mGET /static/lib/bootstrap.table/1.12.0/bootstrap-table.min.css HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:40,647}{15764}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:40] "[37mGET /static/lib/bootstrap.table/1.12.0/bootstrap-table.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:40,652}{13840}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:40] "[37mGET /static/lib/select2/4.0.6/css/select2.min.css HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:40,654}{9780}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:40] "[37mGET /static/lib/select2/4.0.6/js/select2.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:40,655}{5308}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:40] "[37mGET /static/WMP/js/WMP-init.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:40,722}{15904}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:40] "[37mGET /static/lib/laydate/5.0.9/theme/default/laydate.css?v=5.0.9 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:40,910}{12392}{Thread-10}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:40] "[37mGET /cms/GetRoleListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608115600694 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:40,962}{588}{Thread-11}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:40] "[37mGET /static/lib/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:45,900}{18292}{Thread-12}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:45] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:47,653}{18408}{Thread-13}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:47] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:48,422}{19260}{Thread-14}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:48] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:46:48,702}{15032}{Thread-15}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:46:48] "[37mGET /cms/GetRoleListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608115608530 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:48:00,032}{12036}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\models.py', reloading}
-{2020-12-16 18:48:00,268}{17520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:48:02,992}{14364}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:48:02,998}{14364}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:48:03,009}{19000}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:50:47,069}{14364}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\models.py', reloading}
-{2020-12-16 18:50:47,263}{17520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:50:50,444}{12772}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:50:50,453}{12772}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:50:50,475}{15944}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:51:26,352}{13988}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:51:26] "[37mGET /cms/GetRoleListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608115608531 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:51:28,576}{18292}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:51:28] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:51:28,950}{14856}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:51:28] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608115888725 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:51:35,547}{15212}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:51:35] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:51:35,959}{11740}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:51:35] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608115895649 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:52:52,665}{13356}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:52:52] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:52:52,736}{12768}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:52:52] "[37mGET /static/lib/bootstrap.treetable/1.0/bootstrap-treetable.min.css HTTP/1.1[0m" 200 -}
-{2020-12-16 18:52:52,747}{16116}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:52:52] "[37mGET /static/lib/bootstrap.treetable/1.0/bootstrap-treetable.min.js HTTP/1.1[0m" 200 -}
-{2020-12-16 18:52:53,080}{17592}{Thread-10}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:52:53] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
-{2020-12-16 18:52:54,962}{17768}{Thread-11}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:52:54] "[37mGET /cms/RoleIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:52:55,378}{10732}{Thread-12}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:52:55] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608115975045 HTTP/1.1[0m" 200 -}
-{2020-12-16 18:53:05,808}{12772}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 18:53:06,010}{17520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:53:08,787}{9488}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:53:08,797}{9488}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:53:08,809}{9008}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:53:15,383}{9488}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 18:53:15,550}{17520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:53:17,812}{5308}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:53:17,821}{5308}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:53:17,835}{16340}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:53:44,046}{5308}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 18:53:44,222}{17520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:53:46,924}{10804}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:53:46,932}{10804}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:53:46,946}{6884}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:53:51,386}{10804}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 18:53:51,720}{17520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:53:54,350}{17724}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:53:54,357}{17724}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:53:54,370}{19272}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:53:54,461}{392}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:53:54] "[37mGET /cms/RoleIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:53:55,147}{9892}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:53:55] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608116034564 HTTP/1.1[0m" 500 -}
-{2020-12-16 18:54:29,243}{17724}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 18:54:29,486}{17520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:54:32,169}{6932}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:54:32,178}{6932}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:54:32,189}{14856}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:54:33,338}{6932}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 18:54:33,517}{17520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:54:35,759}{15092}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:54:35,764}{15092}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:54:35,775}{6064}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:54:44,546}{15092}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 18:54:44,726}{17520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:54:46,963}{16052}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:54:46,970}{16052}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:54:46,983}{13968}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:54:57,909}{16052}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 18:54:58,086}{17520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:56:59,613}{15568}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:57:02,578}{11616}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:57:02,588}{11616}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:57:02,601}{4596}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 18:57:02,737}{2640}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:57:02] "[37mGET /cms/RoleIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:57:03,270}{16200}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:57:03] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608116222815 HTTP/1.1[0m" 500 -}
-{2020-12-16 18:57:23,541}{8132}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:57:23] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608116222816 HTTP/1.1[0m" 500 -}
-{2020-12-16 18:57:32,219}{18180}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:57:32] "[37mGET /cms/RoleIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:57:32,705}{18668}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:57:32] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608116252306 HTTP/1.1[0m" 500 -}
-{2020-12-16 18:57:38,875}{9836}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:57:38] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:57:39,329}{17300}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:57:39] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608116258959 HTTP/1.1[0m" 500 -}
-{2020-12-16 18:57:43,691}{8692}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:57:43] "[37mGET /cms/RoleIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 18:57:44,112}{8524}{Thread-10}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 18:57:44] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608116263773 HTTP/1.1[0m" 500 -}
-{2020-12-16 18:59:20,256}{11616}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 18:59:20,475}{15568}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 18:59:22,863}{19152}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 18:59:22,871}{19152}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 18:59:22,885}{18056}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:35:46,240}{19152}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:35:46,412}{15568}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:35:49,029}{272}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:35:49,037}{272}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:35:49,049}{3096}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:35:53,103}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:35:55,674}{19380}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:35:55,691}{19380}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:35:55,713}{15560}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:36:00,885}{9108}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:36:00] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
-{2020-12-16 19:36:02,758}{16588}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:36:02] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
-{2020-12-16 19:36:07,421}{16080}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:36:07] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:36:07,805}{17096}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:36:07] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608118567510 HTTP/1.1[0m" 500 -}
-{2020-12-16 19:36:19,969}{19380}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:36:20,152}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:36:22,440}{11792}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:36:22,456}{11792}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:36:22,471}{16320}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:36:26,246}{10872}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:36:26] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608118567511 HTTP/1.1[0m" 500 -}
-{2020-12-16 19:37:27,566}{16588}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:37:27] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:37:27,910}{19444}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:37:27] "[37mGET /cms/GetRoleListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608118647677 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:37:31,338}{6276}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:37:31] "[37mGET /cms/RoleIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:37:31,767}{2256}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:37:31] "[37mGET /cms/GetRoleListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608118651433 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:37:47,584}{11792}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:37:47,777}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:37:50,283}{16520}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:37:50,290}{16520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:37:50,302}{14552}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:37:54,706}{16520}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:37:54,966}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:37:57,205}{18604}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:37:57,212}{18604}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:37:57,224}{13812}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:38:02,734}{18604}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:38:02,907}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:38:05,068}{18696}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:38:05,076}{18696}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:38:05,089}{13620}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:38:09,477}{18696}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:38:09,675}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:38:11,954}{16280}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:38:11,960}{16280}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:38:11,971}{10640}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:38:14,190}{16280}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:38:14,401}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:38:16,632}{19400}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:38:16,639}{19400}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:38:16,653}{13188}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:38:24,257}{19400}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:38:24,428}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:38:26,501}{9776}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:38:26,509}{9776}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:38:26,522}{4840}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:38:40,559}{9776}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:38:40,743}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:38:43,271}{17320}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:38:43,279}{17320}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:38:43,291}{13896}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:38:44,438}{17320}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:38:44,612}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:38:46,701}{14832}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:38:46,709}{14832}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:38:46,723}{16396}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:38:47,869}{14832}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:38:48,044}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:38:50,469}{17240}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:38:50,478}{17240}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:38:50,491}{3524}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:38:53,786}{17240}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:38:53,969}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:38:56,426}{18448}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:38:56,435}{18448}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:38:56,448}{14708}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:38:57,647}{18448}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:38:57,849}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:39:00,487}{17644}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:39:00,502}{17644}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:39:00,541}{5760}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:41:10,532}{18164}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:41:10] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:41:10,968}{18212}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:41:10] "[37mGET /cms/GetRoleListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608118870742 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:41:16,322}{6284}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:41:16] "[37mGET /cms/RoleIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:41:16,716}{17600}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:41:16] "[37mGET /cms/GetRoleListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608118876406 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:44:16,873}{17500}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:44:16] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:44:17,523}{6108}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:44:17] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608119056995 HTTP/1.1[0m" 500 -}
-{2020-12-16 19:45:02,474}{17644}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:45:02,717}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:45:05,393}{17588}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:45:05,400}{17588}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:45:05,415}{18656}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:45:07,833}{8380}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:45:07] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:45:08,323}{16360}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:45:08] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608119107922 HTTP/1.1[0m" 500 -}
-{2020-12-16 19:45:26,617}{15304}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:45:26] "[37mGET /cms/UsersIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:45:27,013}{15512}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:45:27] "[37mGET /cms/GetUsersListJson?pageSize=10&pageIndex=1&sort=UserSort&sortType=Asc&UserName=&UserPhone=&UserStatus=&StartTime=&EndTime=&_=1608119126689 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:45:32,570}{19040}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:45:32] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:45:32,989}{18192}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:45:32] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
-{2020-12-16 19:45:47,174}{18976}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:45:47] "[37mGET /cms/GetRoleListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608118876407 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:46:39,517}{17588}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:46:39,742}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:46:42,672}{18928}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:46:42,683}{18928}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:46:42,699}{15708}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:46:43,875}{18928}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:46:44,048}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:46:46,090}{16944}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:46:46,098}{16944}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:46:46,108}{16696}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:47:49,025}{16944}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:47:49,243}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:47:52,057}{17184}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:47:52,065}{17184}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:47:52,088}{2040}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:47:55,979}{10780}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:47:55] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119107923 HTTP/1.1[0m" 500 -}
-{2020-12-16 19:48:23,554}{17184}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:48:23,790}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:48:26,779}{18292}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:48:26,787}{18292}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:48:26,800}{18656}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:48:27,961}{18292}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:48:28,213}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:48:31,085}{8188}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:48:31,093}{8188}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:48:31,107}{17820}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:48:31,340}{14508}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:48:31] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:48:32,002}{3948}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:48:32] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608119311432 HTTP/1.1[0m" 500 -}
-{2020-12-16 19:49:19,921}{8188}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\models.py', reloading}
-{2020-12-16 19:49:20,170}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:49:22,664}{12948}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:49:22,670}{12948}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:49:22,684}{17364}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:49:30,372}{12948}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\models.py', reloading}
-{2020-12-16 19:49:30,558}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:49:32,859}{10072}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:49:32,873}{10072}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:49:32,890}{15764}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:49:43,863}{10072}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\models.py', reloading}
-{2020-12-16 19:49:44,081}{15964}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:49:46,682}{18840}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:49:46,690}{18840}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:49:46,708}{8736}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:49:51,100}{15304}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:49:53,584}{15032}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:49:53,590}{15032}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:49:53,602}{252}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:49:56,999}{14888}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:49:56] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:49:57,538}{14124}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:49:57] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608119397085 HTTP/1.1[0m" 500 -}
-{2020-12-16 19:50:49,115}{15032}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:50:49,366}{15304}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:50:57,134}{8672}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:51:00,325}{18308}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:51:00,334}{18308}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:51:00,349}{17024}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:51:01,853}{14144}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:51:01] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119397086 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:52:11,996}{18308}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:52:12,195}{8672}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:52:14,873}{3288}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:52:14,882}{3288}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:52:14,893}{16988}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:52:27,901}{3288}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:52:28,077}{8672}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:52:33,753}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:52:36,110}{13568}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:52:36,124}{13568}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:52:36,145}{18192}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:52:38,107}{3988}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:52:38] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119397087 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:52:48,431}{13568}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:52:48,611}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:52:51,124}{12076}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:52:51,132}{12076}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:52:51,147}{14728}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:52:52,311}{12076}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:52:52,507}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:52:55,264}{17188}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:52:55,271}{17188}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:52:55,285}{15668}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:52:55,615}{11616}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:52:55] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:52:56,115}{7316}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:52:56] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608119575749 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:54:08,351}{17188}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:54:08,618}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:54:11,701}{11484}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:54:11,708}{11484}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:54:11,722}{5308}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:54:52,087}{11484}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:54:52,294}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:54:55,235}{15968}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:54:55,246}{15968}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:54:55,263}{4628}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:54:58,509}{15704}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:54:58] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119575750 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:55:20,448}{16000}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:55:20] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=OperatingInfo&sortType=asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119575751 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:55:38,180}{14976}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:55:38] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=OperatingInfo&sortType=asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119575752 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:55:56,562}{6328}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:55:56] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=OperatingInfo&sortType=asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119575753 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:56:01,149}{5020}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:56:01] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:56:01,435}{7616}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:56:01] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608119761211 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:56:27,445}{4780}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:56:27] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:56:27,768}{12512}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:56:27] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608119787512 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:56:27,771}{272}{Thread-10}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:56:27] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:56:28,574}{13908}{Thread-11}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:56:28] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608119788337 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:57:09,527}{10864}{Thread-12}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:57:09] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119788338 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:57:28,827}{15968}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 19:57:29,099}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 19:57:31,927}{13616}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 19:57:31,934}{13616}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 19:57:31,947}{9616}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 19:57:32,204}{10792}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:57:32] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119788339 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:58:05,744}{16632}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:58:05] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:58:06,073}{5988}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:58:06] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608119885826 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:58:29,088}{18668}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:58:29] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119885827 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:58:30,411}{18956}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:58:30] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:58:30,709}{13240}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:58:30] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608119910470 HTTP/1.1[0m" 200 -}
-{2020-12-16 19:59:00,989}{9816}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:59:00] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 19:59:01,317}{14816}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 19:59:01] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608119941076 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:00:21,208}{18700}{Thread-10}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:00:21] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119941077 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:01:32,080}{9772}{Thread-11}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:01:32] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608119941078 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:01:33,256}{12976}{Thread-12}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:01:33] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 20:01:33,675}{14132}{Thread-13}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:01:33] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608120093357 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:01:36,106}{612}{Thread-14}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:01:36] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 20:01:36,387}{6108}{Thread-15}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:01:36] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608120096163 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:01:59,392}{13616}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 20:01:59,575}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 20:02:02,343}{3308}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 20:02:02,351}{3308}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 20:02:02,364}{11368}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 20:02:24,002}{3308}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 20:02:24,172}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 20:02:27,314}{18772}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 20:02:27,332}{18772}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 20:02:27,370}{13740}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 20:02:27,779}{3912}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:02:27] "[35m[1mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608120096164 HTTP/1.1[0m" 500 -}
-{2020-12-16 20:02:38,357}{18772}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 20:02:38,580}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 20:02:41,170}{10116}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 20:02:41,177}{10116}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 20:02:41,188}{12524}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 20:02:41,486}{16224}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:02:41] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 20:02:41,820}{18716}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:02:41] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608120161549 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:02:58,087}{9776}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:02:58] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608120161550 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:03:53,432}{10116}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 20:03:53,686}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 20:03:56,666}{18984}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 20:03:56,678}{18984}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 20:03:56,699}{12840}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 20:04:04,524}{18984}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 20:04:04,844}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 20:04:07,641}{3308}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 20:04:07,650}{3308}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 20:04:07,661}{8396}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 20:04:08,827}{3308}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 20:04:09,005}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 20:04:11,553}{18908}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 20:04:11,559}{18908}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 20:04:11,571}{12960}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 20:04:13,918}{18908}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'F:\\vscode\\website\\website\\app\\views\\log_view.py', reloading}
-{2020-12-16 20:04:14,119}{19452}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 20:04:16,324}{17616}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 20:04:16,333}{17616}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 20:04:16,344}{2660}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 20:04:16,508}{13564}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:04:16] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 20:04:16,847}{16684}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:04:16] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608120256585 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:04:24,217}{3948}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:04:24] "[33mPOST /cms/DeleteRoleJson%22)?ids=1 HTTP/1.1[0m" 404 -}
-{2020-12-16 20:04:26,581}{6580}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:04:26] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608120256586 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:04:49,055}{6872}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:04:49] "[33mPOST /cms/DeleteRoleJson%22)?ids=1 HTTP/1.1[0m" 404 -}
-{2020-12-16 20:04:51,202}{1368}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:04:51] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 20:04:51,495}{13036}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:04:51] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608120291264 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:06:17,156}{15860}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:06:17] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608120291265 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:06:38,215}{18244}{Thread-10}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:06:38] "[33mPOST /cms/DeleteLogJson%22)?ids=1 HTTP/1.1[0m" 404 -}
-{2020-12-16 20:06:47,180}{14044}{Thread-11}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:06:47] "[33mPOST /cms/DeleteLogJson%22)?ids=1 HTTP/1.1[0m" 404 -}
-{2020-12-16 20:07:16,222}{14976}{Thread-12}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:07:16] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 20:07:16,789}{19028}{Thread-13}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:07:16] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608120436332 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:07:20,265}{6872}{Thread-14}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:07:20] "[31m[1mPOST /cms/DeleteLogJson?ids=1 HTTP/1.1[0m" 400 -}
-{2020-12-16 20:09:33,895}{4296}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 20:09:39,317}{3088}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
-{2020-12-16 20:09:42,560}{16988}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
-{2020-12-16 20:09:42,566}{16988}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
-{2020-12-16 20:09:42,578}{8692}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
-{2020-12-16 20:09:42,881}{4156}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:09:42] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
-{2020-12-16 20:09:43,351}{15424}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:09:43] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608120582982 HTTP/1.1[0m" 200 -}
-{2020-12-16 20:09:48,017}{13732}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [16/Dec/2020 20:09:48] "[35m[1mPOST /cms/DeleteLogJson?ids=1 HTTP/1.1[0m" 500 -}
+{2020-12-17 16:09:13,888}{2052}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 16:09:16,322}{18732}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 16:09:16,337}{18732}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 158-291-794}
+{2020-12-17 16:09:16,352}{16292}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 16:09:25,287}{16000}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:25] "[37mGET / HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:25,509}{14856}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:25] "[36mGET /static/content/site.css HTTP/1.1[0m" 304 -}
+{2020-12-17 16:09:25,589}{17188}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:25] "[36mGET /static/content/bootstrap.min.css HTTP/1.1[0m" 304 -}
+{2020-12-17 16:09:25,620}{19196}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:25] "[36mGET /static/scripts/modernizr-2.6.2.js HTTP/1.1[0m" 304 -}
+{2020-12-17 16:09:25,644}{120}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:25] "[36mGET /static/scripts/bootstrap.js HTTP/1.1[0m" 304 -}
+{2020-12-17 16:09:25,698}{14332}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:25] "[36mGET /static/scripts/respond.js HTTP/1.1[0m" 304 -}
+{2020-12-17 16:09:25,821}{6808}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:25] "[36mGET /static/scripts/jquery-1.10.2.js HTTP/1.1[0m" 304 -}
+{2020-12-17 16:09:26,364}{18888}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -}
+{2020-12-17 16:09:33,333}{4352}{Thread-11}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:33] "[37mGET / HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:33,420}{16184}{Thread-12}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:33] "[37mGET /static/content/bootstrap.min.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:33,423}{12060}{Thread-13}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:33] "[37mGET /static/content/site.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:33,427}{19024}{Thread-14}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:33] "[37mGET /static/scripts/modernizr-2.6.2.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:33,433}{16744}{Thread-15}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:33] "[37mGET /static/scripts/jquery-1.10.2.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:33,441}{17680}{Thread-16}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:33] "[37mGET /static/scripts/bootstrap.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:33,446}{5000}{Thread-17}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:33] "[37mGET /static/scripts/respond.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:33,857}{16860}{Thread-18}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -}
+{2020-12-17 16:09:39,257}{20088}{Thread-19}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[32mGET /cms/index HTTP/1.1[0m" 302 -}
+{2020-12-17 16:09:39,407}{17296}{Thread-20}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /cms/login HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,549}{17804}{Thread-22}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/lib/fontawesome/4.7.0/css/fontawesome.min.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,553}{7336}{Thread-21}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/lib/bootstrap/3.3.7/css/bootstrap.min.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,563}{19288}{Thread-23}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/WMP/css/style.min.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,609}{19160}{Thread-26}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/WMP/css/login.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,633}{2020}{Thread-24}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/lib/jquery/2.1.4/jquery.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,655}{3992}{Thread-27}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/lib/layer/3.1.1/layer.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,663}{1548}{Thread-25}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/lib/bootstrap/3.3.7/js/bootstrap.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,674}{9724}{Thread-28}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/WMP/js/WMP.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,727}{14936}{Thread-29}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/WMP/js/WMP-index.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,734}{7328}{Thread-30}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/lib/jquery.metisMenu/1.1.3/jquery.metisMenu.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,741}{18552}{Thread-31}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/lib/jquery.slimscroll/1.3.8/jquery.slimscroll.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,792}{12760}{Thread-32}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/lib/layer/3.1.1/theme/default/layer.css?v=3.1.1 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,799}{18604}{Thread-33}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/WMP/css/WMP.min.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,815}{18164}{Thread-34}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /static/image/logo.png HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:39,847}{18412}{Thread-35}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:39] "[37mGET /auth/imgCode HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:40,006}{13300}{Thread-37}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:40] "[37mGET /static/image/user.png HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:40,006}{14720}{Thread-38}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:40] "[37mGET /static/image/locked.png HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:40,049}{3556}{Thread-36}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:40] "[37mGET /static/image/login-background.jpg HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:40,292}{2256}{Thread-39}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:40] "[33mGET /cms/favicon.ico HTTP/1.1[0m" 404 -}
+{2020-12-17 16:09:46,877}{19272}{Thread-40}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:46] "[37mPOST /cms/login HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:47,021}{19212}{Thread-41}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:47] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:47,113}{12880}{Thread-42}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:47] "[37mGET /static/WMP/js/WMP-data.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:47,202}{7440}{Thread-44}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:47] "[37mGET /static/image/logo_2.png HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:47,208}{12444}{Thread-43}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:47] "[37mGET /static/image/portrait.png HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:47,329}{5100}{Thread-46}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:47] "[37mGET /static/lib/fontawesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:49,917}{1428}{Thread-47}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:49] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:49,974}{9700}{Thread-48}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:49] "[37mGET /static/lib/bootstrap.table/1.12.0/bootstrap-table.min.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:50,000}{20044}{Thread-50}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:49] "[37mGET /static/lib/select2/4.0.6/css/select2.min.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:50,019}{8540}{Thread-49}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:50] "[37mGET /static/lib/laydate/5.0.9/laydate.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:50,065}{6476}{Thread-51}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:50] "[37mGET /static/lib/bootstrap.table/1.12.0/bootstrap-table.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:50,085}{17416}{Thread-52}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:50] "[37mGET /static/lib/select2/4.0.6/js/select2.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:50,088}{18752}{Thread-53}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:50] "[37mGET /static/WMP/js/WMP-init.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:50,104}{5848}{Thread-54}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:50] "[37mGET /static/lib/laydate/5.0.9/theme/default/laydate.css?v=5.0.9 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:50,363}{19632}{Thread-55}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:50] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608192590029 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:50,365}{1784}{Thread-56}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:50] "[37mGET /static/lib/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:55,841}{11880}{Thread-45}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:55] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:56,073}{11660}{Thread-57}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:56] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:56,135}{18708}{Thread-58}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:56] "[37mGET /static/lib/bootstrap.treetable/1.0/bootstrap-treetable.min.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:56,156}{12464}{Thread-59}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:56] "[37mGET /static/lib/bootstrap.treetable/1.0/bootstrap-treetable.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:56,298}{17284}{Thread-60}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:56] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:57,658}{76}{Thread-61}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:57] "[37mGET /static/lib/layer/3.1.1/theme/default/loading-1.gif HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:57,675}{19384}{Thread-63}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:57] "[37mGET /static/lib/layer/3.1.1/theme/default/icon.png HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:57,771}{12648}{Thread-62}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:57] "[37mGET /cms/MenuForm?id=0&parentId=0&parentName= HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:57,857}{17440}{Thread-64}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:57] "[37mGET /static/lib/icheck/1.0.2/skins/custom.min.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:57,869}{20420}{Thread-67}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:57] "[37mGET /static/lib/zTree/v3/css/metroStyle/metroStyle.min.css HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:57,883}{12380}{Thread-66}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:57] "[37mGET /static/lib/icheck/1.0.2/icheck.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:57,892}{3472}{Thread-68}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:57] "[37mGET /static/lib/zTree/v3/js/ztree.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:57,899}{16808}{Thread-65}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:57] "[37mGET /static/lib/jquery.validation/1.14.0/jquery.validate.min.js HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:58,094}{3220}{Thread-69}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:58] "[37mGET /static/lib/icheck/1.0.2/skins/minimal/blue.png HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:58,933}{20388}{Thread-70}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:58] "[37mGET /cms/MenuChoose?id=0 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:59,090}{5456}{Thread-71}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:59] "[37mGET /cms/GetMenuTreeListJson HTTP/1.1[0m" 200 -}
+{2020-12-17 16:09:59,119}{19148}{Thread-72}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:09:59] "[37mGET /static/lib/zTree/v3/css/metroStyle/img/metro.png HTTP/1.1[0m" 200 -}
+{2020-12-17 16:22:17,824}{20180}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 16:22:20,336}{6268}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 16:22:20,345}{6268}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 158-291-794}
+{2020-12-17 16:22:20,361}{20064}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 16:22:20,687}{15016}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:22:20] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-17 16:22:22,447}{7040}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:22:22] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-17 16:22:24,607}{1836}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:22:24] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
+{2020-12-17 16:22:24,977}{19552}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:22:24] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608193344753 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:23:19,599}{19252}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 16:23:21,530}{19572}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 16:23:21,535}{19572}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 647-591-876}
+{2020-12-17 16:23:21,548}{19492}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 16:23:28,300}{18136}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:23:28] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-17 16:23:30,112}{18048}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:23:30] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-17 16:23:31,033}{6780}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:23:31] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
+{2020-12-17 16:23:31,501}{19452}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:23:31] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608193411181 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:23:57,214}{9504}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 16:23:59,448}{13864}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 16:23:59,462}{13864}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 292-748-548}
+{2020-12-17 16:23:59,473}{5392}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 16:23:59,818}{18516}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:23:59] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411182 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:26:41,034}{6780}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 16:26:43,184}{15072}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 16:26:43,191}{15072}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 205-072-558}
+{2020-12-17 16:26:43,203}{8184}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 16:44:24,886}{20108}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:44:24] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411183 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:45:14,760}{18752}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 16:45:16,933}{11108}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 16:45:16,938}{11108}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 205-072-558}
+{2020-12-17 16:45:16,952}{16432}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 16:45:18,636}{17972}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:45:18] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411184 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:46:45,855}{19884}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:46:45] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411185 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:51:56,119}{16632}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:51:56] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411186 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:52:09,658}{18460}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:52:09] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411187 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:52:15,302}{5196}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:52:15] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411188 HTTP/1.1[0m" 200 -}
+{2020-12-17 16:52:52,675}{17360}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 16:52:55,213}{20252}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 16:52:55,221}{20252}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 205-072-558}
+{2020-12-17 16:52:55,233}{7264}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 16:52:55,515}{19540}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 16:52:55] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411189 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:00:53,113}{15916}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 17:00:55,319}{10252}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 17:00:55,325}{10252}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 205-072-558}
+{2020-12-17 17:00:55,340}{10388}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 17:00:55,554}{14836}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:00:55] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411190 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:03:23,607}{18460}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:03:23] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411191 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:03:25,673}{10948}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:03:25] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411192 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:03:37,073}{3268}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:03:37] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411193 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:03:38,886}{19792}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:03:38] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411194 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:03:40,757}{7544}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:03:40] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411195 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:03:55,136}{10812}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:03:55] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411196 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:03:57,020}{4900}{Thread-10}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:03:57] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411197 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:03:58,603}{17360}{Thread-11}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:03:58] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411198 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:04:01,053}{15972}{Thread-12}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:04:01] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411199 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:04:03,097}{13408}{Thread-13}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:04:03] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411200 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:04:04,696}{17236}{Thread-14}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:04:04] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608193411201 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:04:06,672}{17956}{Thread-15}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:04:06] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-17 17:04:08,543}{7704}{Thread-16}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:04:08] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-17 17:04:10,669}{12212}{Thread-17}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:04:10] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
+{2020-12-17 17:04:11,022}{13012}{Thread-18}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:04:11] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608195850732 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:04:36,773}{16912}{Thread-19}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:04:36] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850733 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:04:43,692}{10712}{Thread-20}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:04:43] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850734 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:04:45,438}{19884}{Thread-21}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:04:45] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850735 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:04:46,978}{11124}{Thread-22}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:04:46] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850736 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:05:12,589}{8008}{Thread-23}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:05:12] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850737 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:05:14,502}{4032}{Thread-24}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:05:14] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850738 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:06:03,651}{12788}{Thread-25}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:06:03] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850739 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:06:05,347}{19264}{Thread-26}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:06:05] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850740 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:06:07,034}{19260}{Thread-27}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:06:07] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850741 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:06:53,611}{15364}{Thread-28}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:06:53] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850742 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:06:55,053}{10252}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in 'e:\\anaconda3\\envs\\myai\\lib\\site-packages\\numpy\\__init__.py', reloading}
+{2020-12-17 17:06:55,461}{15916}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 17:07:01,053}{18624}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 17:07:03,083}{6900}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 17:07:03,088}{6900}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 205-072-558}
+{2020-12-17 17:07:03,102}{16892}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 17:07:05,086}{15884}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:07:05] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850743 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:07:07,637}{18004}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:07:07] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850744 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:07:09,260}{10848}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:07:09] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850745 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:07:30,855}{19000}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:07:30] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850746 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:07:32,949}{18180}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:07:32] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850747 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:08:39,238}{19932}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:08:39] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850748 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:16:18,946}{15684}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 17:16:20,947}{13512}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 17:16:20,954}{13512}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 205-072-558}
+{2020-12-17 17:16:20,965}{15068}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 17:16:21,289}{17600}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:16:21] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850750 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:16:23,516}{15600}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:16:23] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850751 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:16:25,450}{9160}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:16:25] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850752 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:16:28,045}{13664}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:16:28] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850753 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:16:44,725}{15864}{Thread-6}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:16:44] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850754 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:18:02,384}{6048}{Thread-7}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:18:02] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608195850755 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:18:05,091}{10504}{Thread-8}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:18:05] "[37mGET /cms/MenunIndex HTTP/1.1[0m" 200 -}
+{2020-12-17 17:18:05,380}{16640}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:18:05] "[37mGET /cms/GetMenuListJson HTTP/1.1[0m" 200 -}
+{2020-12-17 17:18:09,607}{5100}{Thread-10}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:18:09] "[37mGET /cms/RoleForm HTTP/1.1[0m" 200 -}
+{2020-12-17 17:18:13,723}{12584}{Thread-11}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:18:13] "[37mGET /cms/MenuForm?id=0&parentId=0&parentName= HTTP/1.1[0m" 200 -}
+{2020-12-17 17:18:14,922}{14408}{Thread-12}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:18:14] "[37mGET /cms/MenuChoose?id=0 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:18:15,077}{1316}{Thread-13}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:18:15] "[37mGET /cms/GetMenuTreeListJson HTTP/1.1[0m" 200 -}
+{2020-12-17 17:19:56,564}{11336}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 17:19:58,619}{20156}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 17:19:58,626}{20156}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 205-072-558}
+{2020-12-17 17:19:58,640}{5140}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 17:19:59,042}{2256}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:19:59] "[37mGET /cms/index HTTP/1.1[0m" 200 -}
+{2020-12-17 17:20:00,912}{20304}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:20:00] "[37mGET /cms/SeverInfo/ HTTP/1.1[0m" 200 -}
+{2020-12-17 17:20:01,467}{17556}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:20:01] "[37mGET /cms/LogIndex HTTP/1.1[0m" 200 -}
+{2020-12-17 17:20:01,791}{14120}{Thread-5}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:20:01] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=&StartTime=&EndTime=&_=1608196801514 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:29:26,687}{4820}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with stat}
+{2020-12-17 17:29:28,477}{17276}{MainThread}{_internal.py}{_internal}{_log}{WARNING}{ * Debugger is active!}
+{2020-12-17 17:29:28,497}{17276}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Debugger PIN: 205-072-558}
+{2020-12-17 17:29:28,508}{20348}{Thread-1}{_internal.py}{_internal}{_log}{INFO}{ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)}
+{2020-12-17 17:29:28,734}{10168}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:29:28] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608196801515 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:29:31,066}{9704}{Thread-3}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:29:31] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608196801516 HTTP/1.1[0m" 200 -}
+{2020-12-17 17:29:36,698}{16584}{Thread-4}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [17/Dec/2020 17:29:36] "[37mGET /cms/GetLogListJson?pageSize=10&pageIndex=1&sort=RoleSort&sortType=Asc&RoleName=&RoleStatus=-1&StartTime=&EndTime=&_=1608196801517 HTTP/1.1[0m" 200 -}
