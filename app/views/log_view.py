@@ -19,6 +19,21 @@ def GetLogListJson():
     if id!='':
         data["Tag"]=1
         data["Message"]="操作成功"
+
+        # logs=SysLog.query.with_entities(
+        #     SysLog.Id.label('Id'),
+        #     SysLog.IpAddress,
+        #     SysLog.IpHome,
+        #     SysLog.AgentBrowser,
+        #     SysLog.OperatingSystem,
+        #     SysLog.LogCategory,
+        #     SysLog.OperatingInfo,
+        #     SysLog.OperationMethod,
+        #     SysLog.Parameter,
+        #     SysLog.Status,
+        #     SysLog.CreateTime
+        # ).all()
+
         logs=SysLog.query.with_entities(
             SysLog.Id.label('Id'),
             SysLog.IpAddress,
@@ -32,6 +47,8 @@ def GetLogListJson():
             SysLog.Status,
             SysLog.CreateTime
         ).all()
+        subqry = db.session.query(SysLog)
+
         data["Data"]=logs
     return jsonify(data)
 
