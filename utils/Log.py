@@ -102,8 +102,8 @@ class Logger(object):
                 logging.getLogger('werkzeug')
  
         ):
-            logger.addHandler(file_handler)
+            # logger.addHandler(file_handler)
             # 向控制台输出日志
-            # logger.addHandler(stream_handler)
+            logger.addHandler(stream_handler)
 
      

@@ -25,6 +25,7 @@ class Entry(AbstractConcreteBase, db.Model):
     ModifyTime = db.Column(db.DateTime, default=datetime.now())
     ModifyUserid=db.Column(db.SmallInteger,nullable=False)
     Status = db.Column(db.SmallInteger,default=1)
+    
     def dobule_to_dict(self):
         result = {}
         for key in self.__mapper__.c.keys():

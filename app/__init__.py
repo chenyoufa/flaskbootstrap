@@ -17,4 +17,4 @@ db = SQLAlchemy(curre_app)
 manager = Manager(curre_app)
 migrate = Migrate(curre_app, db)
 # # 日志初始化
-Logger.init_app(curre_app,db)
+# Logger.init_app(curre_app,db)

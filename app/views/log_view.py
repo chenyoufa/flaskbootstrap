@@ -10,28 +10,30 @@ curre_app.secret_key = 'please-generate-a-random-secret_key'
 @curre_app.route("/cms/LogIndex")
 def LogIndex():
     return render_template('cms/LogIndex.html')
+
 @curre_app.route("/cms/GetLogListJson", methods=['GET'])
 def GetLogListJson():
+    page = request.args.get("pageIndex", type=int)
+    per_page = request.args.get("pageSize", type=int)
     data={'Tag': 0,"Message":"","Data":""}
-    if id!='':
-        data["Tag"]=1
-        data["Message"]="操作成功"
-        logs=SysLog.query.with_entities(
-            SysLog.Id.label('Id'),
-            SysLog.IpAddress,
-            SysLog.IpHome,
-            SysLog.AgentBrowser,
-            SysLog.OperatingSystem,
-            SysLog.LogCategory,
-            SysLog.OperatingInfo,
-            SysLog.OperationMethod,
-            SysLog.Parameter,
-            SysLog.Status,
-            SysLog.CreateTime
-        ).all()
-        print(logs.length)
-        data["Total"]=logs
-        data["Data"]=logs
+    data["Tag"]=1
+    data["Message"]="操作成功"
+    logs=SysLog.query.with_entities(
+        SysLog.Id.label('Id'),
+        SysLog.IpAddress,
+        SysLog.IpHome,
+        SysLog.AgentBrowser,
+        SysLog.OperatingSystem,
+        SysLog.LogCategory,
+        SysLog.OperatingInfo,
+        SysLog.OperationMethod,
+        SysLog.Parameter,
+        SysLog.Status,
+        SysLog.CreateTime
+    )
+    logs=logs.filter_by(Status=1).order_by(SysLog.Id.desc()).paginate(page=page,per_page=per_page)
+    data["Total"]=logs.pages
+    data["Data"]=logs.items
 
     return jsonify(data)
 #菜单新增修改页面
