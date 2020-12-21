@@ -13,7 +13,7 @@ def is_login(func):
         return func(*args,**kwargs)
     return inner
 
-def route(*args, **kwargs):
+def addlog(*args, **kwargs):
     def wrapper(fun):
         @curre_app.route(endpoint=str(uuid.uuid4()), *args, **kwargs)
         def inner():
