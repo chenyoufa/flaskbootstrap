@@ -118,3 +118,25 @@ def DeleteUserJson():
             db.session.delete(menu)
             db.session.commit()
     return jsonify(data)
+
+@curre_app.route('/cms/ResetUserPassword')
+def ResetUserPassword():
+    return render_template("cms/ResetUserPassword.html")
+
+@curre_app.route('/cms/ResetUserPasswordJson',methods=["POST"])
+def ResetUserPasswordJson():
+    if request.method == "POST":
+        data = {'Tag': 0, "Message": "", "Data": ""}
+        form = user_form.UserForm()
+        id = form.Id.data
+        passWord = form.PassWord.data
+        menu = User.query.get(id)
+        if menu.PassWord == passWord:
+            data["Message"] = "未做修改"
+        else:
+            data["Tag"] = 1
+            data["Message"] = "操作成功"
+            print(EncToDec.enPassWord(passWord))
+            menu.PassWord ==  EncToDec.enPassWord(passWord)
+            db.session.commit()
+    return jsonify(data)
