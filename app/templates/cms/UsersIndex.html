@@ -81,7 +81,15 @@
                         return ys.formatDate(value, "yyyy-MM-dd HH:mm:ss");
                     }
                 },
-               { field: 'Operation', title: '操作', width: "15%" },
+                {
+                    title: '操作',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        var actions = [];
+                        actions.push('<a class="btn btn-warning btn-xs" href="#" onclick="showResetPasswordForm(\'' + row.Id + '\')"><i class="fa fa-key"></i>重置</a>');
+                        return actions.join('');
+                    }
+                }
             ],
             queryParams: function (params) {
                 var pagination = $('#gridTable').ysTable('getPagination', params);
@@ -144,5 +152,18 @@
             });
         }
     }
+    function showResetPasswordForm(id) {
+        ys.openDialog({
+            title: "重置密码",
+            content: '/cms/ResetUserPassword' + '?id=' + id,
+            height: "220px",
+            callback: function (index, layero) {
+                var iframeWin = window[layero.find('iframe')[0]['name']];
+                iframeWin.saveForm(index);
+            }
+        });
+    }
+
+
 </script>
 {% endblock %}
