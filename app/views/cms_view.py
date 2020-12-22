@@ -38,3 +38,7 @@ def index():
 @curre_app.route('/cms/Skin')
 def Skin():
     return render_template("cms/Skin.html")
+
+@curre_app.route('/cms/UserDetail')
+def UserDetail():
+    return render_template("cms/UserDetail.html")

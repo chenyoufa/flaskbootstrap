@@ -40,7 +40,9 @@ def login():
             s,t= EncToDec.isNameExisted(userName)
             if EncToDec.check_password_hash(t, password):
                 if session['imageCode'].lower() == captchaCode.lower() :  # 查询有没有这个用户
+                    menu = User.query.with_entities(User.Id).filter(User.UserName==userName).first()
                     session['logged_in'] = userName
+                    session['User_Id'] = menu[0]
                     return jsonify({"index_url":"/cms/index","status":200})
                 else:
                     erro = "captchaCode is not right "

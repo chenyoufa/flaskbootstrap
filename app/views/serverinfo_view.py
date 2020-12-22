@@ -9,7 +9,7 @@ curre_app.secret_key = 'please-generate-a-random-secret_key'
 ######################后台###################################
 
 @AllDecorator.is_login
-@curre_app.route('/cms/SeverInfo/',methods=['GET'])
+@curre_app.route('/cms/ServerInfo/',methods=['GET'])
 def GetServerInfo():
     size_cpu,used_cpu  = ServerInfo.serverinfo().get_cpu_info()
     size_memory,used_memory  = ServerInfo.serverinfo().get_memory_info()
@@ -38,4 +38,4 @@ def GetServerInfo():
         "python_version":python_version
 
     }
-    return render_template("cms/SeverIndex.html",**context)
+    return render_template("cms/ServerIndex.html",**context)

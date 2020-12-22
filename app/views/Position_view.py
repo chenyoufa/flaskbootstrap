@@ -22,8 +22,7 @@ def GetPositionListJson():
         filterList = ConditionQuery.queryList(x1={Position.PositionName: PositionName})
         menu = Position.query.filter(*filterList).paginate(page,per_page)
         data["Total"]=menu.pages
-        print(menu.items)
-        # data["Data"]=to_json()
+        data["Data"]=to_json(menu.items)
     return jsonify(data)
 
 @curre_app.route('/cms/PositionForm')
