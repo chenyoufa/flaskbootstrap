@@ -1,21 +1,23 @@
- 
- {% extends "share/_Index.html" %}
- {% block content %}
+{% extends "share/_Index.html" %}
+{% block content %}
 <div class="container-div">
     <div class="row">
-        <div id="searchDiv" class="col-sm-12 search-collapse">
-            <form>
-                <input type="hidden" id="csrf_token" value="{{ csrf_token() }}" />
+        <form id="form" style="background-color: rgba(255,255,255,0.5);" method="post">
+            <input type="hidden" id="csrf_token" name="csrf_token" value="{{ csrf_token() }}" />
+            <div id="searchDiv" class="col-sm-12 search-collapse">
                 <div class="select-list">
                     <ul>
                         <li>
-                            角色名称：<input id="roleName" col="RoleName" type="text" />
+                            登录名称：<input id="userName" col="UserName" type="text" />
                         </li>
                         <li>
-                            角色状态：<span id="roleStatus" col="RoleStatus"></span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Ip地址：<input id="ipAddress" col="IpAddress" type="text" />
                         </li>
+                        <!-- <li>
+                        登录状态：<span id="logStatus" col="LogStatus"></span>
+                    </li> -->
                         <li class="select-time">
-                            <label>创建时间： </label>
+                            <label>登录时间： </label>
                             <input id="startTime" col="StartTime" type="text" class="time-input" placeholder="开始时间" />
                             <span>-</span>
                             <input id="endTime" col="EndTime" type="text" class="time-input" placeholder="结束时间" />
@@ -26,13 +28,13 @@
                         </li>
                     </ul>
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
         <div class="btn-group-sm" id="toolbar">
-            <a id="btnAdd" class="btn btn-success" onclick="showSaveForm(true)"><i class="fa fa-plus"></i> 新增</a>
-            <a id="btnEdit" class="btn btn-primary disabled" onclick="showSaveForm(false)"><i class="fa fa-edit"></i> 修改</a>
             <a id="btnDelete" class="btn btn-danger disabled" onclick="deleteForm()"><i class="fa fa-remove"></i> 删除</a>
+            <a id="btnDelete" class="btn btn-danger" onclick="removeAllForm()"><i class="fa fa-trash"></i> 清空</a>
         </div>
+
         <div class="col-sm-12 select-table table-striped">
             <table id="gridTable" data-mobile-responsive="true"></table>
         </div>
@@ -43,8 +45,8 @@
     $(function () {
         initGrid();
 
-      
-       $("#roleStatus").ysComboBox({ data: ys.getJson([{ Key: 1, Value: "激活"},{Key: 2, Value: "冻结"}]) });
+
+        $("#roleStatus").ysComboBox({ data: ys.getJson([{ Key: 1, Value: "激活" }, { Key: 2, Value: "冻结" }]) });
 
         laydate.render({ elem: '#startTime', format: 'yyyy-MM-dd' });
         laydate.render({ elem: '#endTime', format: 'yyyy-MM-dd' });
@@ -59,20 +61,19 @@
             columns: [
                 { checkbox: true, visible: true },
                 { field: 'Id', title: 'Id', visible: false },
-                { field: 'UserId', title: '用户', width: "5%",sortable: true },
-                { field: 'IpAddress', title: 'ip地址', width: "5%",sortable: true },
-                { field: 'OperatingInfo', title: '访问地址', width: "15%",sortable: true },
-                { field: 'OperationMethod', title: '访问类型', width: "15%",sortable: true },
-                { field: 'Parameter', title: '请求参数', width: "15%",sortable: true },
-                { field: 'AgentBrowser', title: '浏览器/操作系统', width: "40%",sortable: true },
-                { field: 'LogCategory', title: '日志类型', width: "5%",sortable: true },
-               
+                { field: 'UserId', title: '登录名称', width: "5%", sortable: true },
+                { field: 'IpAddress', title: 'ip地址', width: "5%", sortable: true },
+                { field: 'IpLocation', title: 'Ip位置', width: "15%", sortable: true },
+                { field: 'Browser', title: '浏览器', width: "15%", sortable: true },
+                { field: 'OS', title: '操作系统', width: "15%", sortable: true },
+                { field: 'Remerk', title: '操作信息', width: "5%", sortable: true },
                 {
                     field: 'Status', title: '状态', width: "5%",
                     formatter: function (value, row, index) {
                         if (value == "1") {
                             return '<span class="badge badge-primary">' + "激活" + '</span>';
-                        } else {
+                        }else
+                        {
                             return '<span class="badge badge-warning">' + "冻结" + '</span>';
                         }
                     }
@@ -90,7 +91,7 @@
             }
         });
     }
-
+    
     function searchGrid() {
         $('#gridTable').ysTable('search');
         resetToolbarStatus();
@@ -123,14 +124,14 @@
         if (ys.checkRowDelete(selectedRow)) {
             ys.confirm("确认要删除选中的" + selectedRow.length + "条数据吗？", function () {
                 var ids = ys.getIds(selectedRow);
-                var csrf_token=$("#csrf_token").val()
+                var csrf_token = $("#csrf_token").val()
                 ys.ajax({
-                    url: '/cms/DeleteLogJson?ids=' + ids,
+                    url: '/cms/DeleteLogJson',
                     type: "post",
-                    data:{
-                     ids:ids,
-                     csrf_token:csrf_token
-                  },
+                    data: {
+                        ids: ids,
+                        csrf_token: csrf_token
+                    },
                     success: function (obj) {
                         if (obj.Tag == 1) {
                             ys.msgSuccess(obj.Message);

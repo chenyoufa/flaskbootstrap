@@ -113,16 +113,17 @@ class Menus(Entry):
 
 class SysLog(Entry):
     __tablename__ = "SysLog"
-    UserId  = db.Column(db.Integer,db.ForeignKey('SysUsers.Id'))
-    IpAddress = db.Column(db.String(30),comment="ip地址")
-    IpHome = db.Column(db.String(60),comment="ip归属地")
-    AgentBrowser = db.Column(db.String(200),comment="浏览器")
-    OperatingSystem = db.Column(db.String(60),comment="操作系统")
-    LogCategory = db.Column(db.Integer,primary_key=False,comment="日志类型")#1登录日志，2操作日志
-    OperatingInfo  = db.Column(db.String(200),comment="操作信息")
-    OperationMethod = db.Column(db.String(30),comment="操作方法")
-    TimeConsue = db.Column(db.Integer,primary_key=False,comment="耗时")
-    Parameter = db.Column(db.String(200),comment="请求参数")
+    IpAddress = db.Column(db.String(20),comment="ip地址")
+    IpLocation = db.Column(db.String(50),comment="ip位置")
+    Browser= db.Column(db.String(50),comment="浏览器")
+    OS= db.Column(db.String(50),comment="操作系统")
+    LogType = db.Column(db.Integer,comment="日志类型(暂未用到)")#1登录日志，2操作日志
+    ExecuteUrl  = db.Column(db.String(100),comment="页面地址")
+    ExecuteParam = db.Column(db.String(500),comment="请求参数")
+    ExecuteResult = db.Column(db.String(500),primary_key=False,comment="请求结果")
+    ExecuteTime = db.Column(db.Integer,comment="执行时间")
+    Remark= db.Column(db.String(20))
+
     def __repr__(self):
         return "<SysLog %s>" % (self.Id)
 

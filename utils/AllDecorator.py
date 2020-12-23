@@ -13,28 +13,32 @@ def is_login(func):
         return func(*args,**kwargs)
     return inner
 
-def addlog(*args, **kwargs):
-    def wrapper(fun):
-        @curre_app.route(endpoint=str(uuid.uuid4()), *args, **kwargs)
-        def inner():
-            fun()
-            permission=request.url.replace(request.host,'').replace("https://","").replace("http://","")
-            inslog()
-            return fun()
-        return inner
-    return wrapper
+def AuthorizeFilter(func):
+    @wraps(func)
+    def inner(*args,**kwargs): 
+        # permission=request.url.replace(request.host,'').replace("https://","").replace("http://","")
+        # print("permission:",permission)
+        inslog()
+        return func(*args,**kwargs)
+    return inner
 
- 
+from user_agents import parse
+
 def inslog():
-    user = session.get('logged_in')
+    user = session.get('User_Id')
+    url=request.url
     ip = request.remote_addr
     url=request.url
     method=request.method
     args=request.args.to_dict()
     headers=request.headers
-    Agent=headers["User-Agent"]
-    u = SysLog(CreateUserid=1,ModifyUserid=1,UserId=1, IpAddress=ip,IpHome='', AgentBrowser=Agent,OperatingSystem='',
-    OperationMethod=method,LogCategory=2,OperatingInfo=url,TimeConsue=0,Parameter=str(args))
+    ua_string=headers["User-Agent"]
+    user_agent = parse(ua_string)  # 解析成user_agent
+    bw = user_agent.browser.family  # 判断是什么浏览器
+    os = user_agent.os.family  # 判断是什么操作系统
+ 
+    u = SysLog(CreateUserid=user,ModifyUserid=1,IpAddress=ip,
+    Browser=bw,OS=os,ExecuteUrl=url,ExecuteParam=str(args))
     db.session.add(u)
     db.session.commit()
 
