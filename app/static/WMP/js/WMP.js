@@ -372,6 +372,7 @@ var TabChangeRefresh = false;
         },
         // 格式为 yyyy-MM-dd HH:mm:ss
         formatDate: function (v, format) {
+            var temp=v;
             if (!v) return "";
             var d = v;
             if (typeof v === 'string') {
@@ -397,10 +398,10 @@ var TabChangeRefresh = false;
                     format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
                 }
             }
-            console.log(format)
+            console.log(temp)
             if(format.indexOf('NaN')>=0)
             {
-                var date = new Date('Thu May 12 2017 08:00:00 GMT+0800 (中国标准时间)');  
+                var date = new Date(temp);  
                 format=date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();  
                 //yyyy-MM-dd hh:mm:ss  
             }

@@ -36,7 +36,7 @@ def inslog():
     user_agent = parse(ua_string)  # 解析成user_agent
     bw = user_agent.browser.family  # 判断是什么浏览器
     os = user_agent.os.family  # 判断是什么操作系统
- 
+    print("os:",os)
     u = SysLog(CreateUserid=user,ModifyUserid=1,IpAddress=ip,
     Browser=bw,OS=os,ExecuteUrl=url,ExecuteParam=str(args))
     db.session.add(u)
