@@ -2,27 +2,36 @@ from flask import render_template,request,jsonify
 from app import curre_app,db
 from app.models import User,SysLog,to_json
 from app.forms  import menu_form
-from utils.AllDecorator import AuthorizeFilter,is_login
+from utils.AllDecorator import permission_required,is_login
+from sqlalchemy import desc,asc
 
 curre_app.secret_key = 'please-generate-a-random-secret_key'
 
 
-
+#日志首页|授权访问
 @curre_app.route("/cms/LogIndex")
-@AuthorizeFilter
+@permission_required()
 def LogIndex():
     return render_template('cms/LogIndex.html')
 
+#分页|搜索|排序
 @curre_app.route("/cms/GetLogListJson", methods=['GET'])
 def GetLogListJson():
     page = request.args.get("pageIndex", type=int)
     per_page = request.args.get("pageSize", type=int)
-    data={'Tag': 0,"Message":"","Data":""}
+    userName = request.args.get("UserName")
+    ipAddress = request.args.get("IpAddress")
+    startTime = request.args.get("StartTime")
+    endTime = request.args.get("EndTime")
+    sort = request.args.get("sort")
+    sortType = request.args.get("sortType")
+
+    data={'Tag': 0,"Message":"","Data":"","Total":0}
     data["Tag"]=1
     data["Message"]="操作成功"
-    logs=SysLog.query.with_entities(
+    logs=SysLog.query.join(User,SysLog.CreateUserid==User.Id).with_entities(
         SysLog.Id.label('Id'),
-        SysLog.CreateUserid,
+        User.UserName,
         SysLog.IpAddress,
         SysLog.IpLocation,
         SysLog.Browser,
@@ -35,58 +44,46 @@ def GetLogListJson():
         SysLog.CreateTime,
         SysLog.Remark
     )
-    logs=logs.filter_by(Status=1).order_by(SysLog.Id.desc()).paginate(page=page,per_page=per_page)
-    data["Total"]=logs.pages
+    if len(userName)>0:
+        logs=logs.filter(User.UserName.contains(userName))
+    if len(ipAddress)>0:
+        logs=logs.filter(SysLog.IpAddress.contains(ipAddress))
+    if len(startTime)>0:
+        logs=logs.filter(db.cast(SysLog.CreateTime, db.DATE)>=db.cast(startTime, db.DATE))
+    if len(endTime)>0:
+        logs=logs.filter(db.cast(SysLog.CreateTime, db.DATE)<=db.cast(endTime, db.DATE))
+    if len(sort)>0:
+        if sortType=="asc":
+            logs=logs.order_by(asc(str(sort)))
+        else:
+            logs=logs.order_by(desc(str(sort)))
+
+    logs_length=logs.count()
+    logs=logs.paginate(page=page,per_page=per_page)
+    data["Total"]=logs_length
     data["Data"]=logs.items
-
-    return jsonify(data)
-#菜单新增修改页面
-@curre_app.route("/cms/LogForm")
-def LogForm():
-    return render_template('cms/LogForm.html')
- 
-
-
-@curre_app.route("/cms/AddLogJson", methods=['POST'])
-def AddLogJson():
-    form =menu_form.MenuForm()
-    
-    data={'Tag': 0,"Message":""}
-    if form.validate_on_submit():
-        try:
-            if form.Id.data<=0:
-                menu = Menus(ParentId=form.ParentId.data,MenuName=form.MenuName.data,MenuIcon=form.MenuIcon.data,MenuUrl=form.MenuUrl.data,MenuType=form.MenuType.data,Authorize=form.Authorize.data,Remark=form.Remark.data,MenuSort=form.MenuSort.data,Status=1,CreateUserid=1,ModifyUserid=1)
-                db.session.add(menu)
-            else:
-                menu=Menus.query.get(form.Id.data)
-                menu.ParentId=form.ParentId.data
-                menu.MenuName=form.MenuName.data
-                menu.MenuIcon=form.MenuIcon.data
-                menu.MenuUrl=form.MenuUrl.data
-                menu.MenuType=form.MenuType.data
-                menu.Authorize=form.Authorize.data
-                menu.Remark=form.Remark.data
-                menu.MenuSort=form.MenuSort.data
-            
-            db.session.commit()
-            data["Tag"]=1
-            data["Message"]="操作成功"
-        except Exception as err:
-            data["Tag"]=-1
-            data["Message"]="异常，请刷新页面重新试试"+str(err)
-    else:
-           data["Message"] =  form.errors.popitem()[0]+" "+form.errors.popitem()[1][0]
     return jsonify(data)
 
+#批量删除
 @curre_app.route("/cms/DeleteLogJson", methods=['POST'])
 def DeleteLogJson():
     data={'Tag': 0,"Message":"","Data":""}
-    id=request.form["ids"]
-    print(id)
-    if id!='':
+    _idarr=[]
+    _category=0
+    try:
+        _ids=request.form["ids"]
+        _idarr = _ids.split(',')
+        _category=request.form["category"]
+    except:
+        print(exec)
+    if len(_idarr)>0:
         data["Tag"]=1
         data["Message"]="操作成功"
-        logs=SysLog.query.get(id)
-        db.session.delete(logs)
+        if _category==0:
+            logs_del = SysLog.query.filter(SysLog.Id.in_(_idarr)).all()
+            
+        else:
+            logs_del = SysLog.query.all()
+        [db.session.delete(u) for u in logs_del]
         db.session.commit()
     return jsonify(data)

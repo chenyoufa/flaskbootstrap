@@ -3,6 +3,8 @@ from app import curre_app,db
 from functools import wraps
 import uuid
 from app.models import SysLog
+from user_agents import parse
+
 #装饰器的方法
 def is_login(func):
     @wraps(func)
@@ -13,16 +15,19 @@ def is_login(func):
         return func(*args,**kwargs)
     return inner
 
-def AuthorizeFilter(func):
-    @wraps(func)
-    def inner(*args,**kwargs): 
-        # permission=request.url.replace(request.host,'').replace("https://","").replace("http://","")
-        # print("permission:",permission)
-        inslog()
-        return func(*args,**kwargs)
-    return inner
+ 
+def permission_required():
+    def decorator(func):
+        @wraps(func)
+        def inner(*args,**kwargs): 
+            # permission=request.url.replace(request.host,'').replace("https://","").replace("http://","")
+            # print("permission:",permission)
+            inslog()
+            return func(*args,**kwargs)
+        return inner
+    return decorator
 
-from user_agents import parse
+
 
 def inslog():
     user = session.get('User_Id')

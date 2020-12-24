@@ -56,12 +56,12 @@
         var queryUrl = '/cms/GetLogListJson';
         $('#gridTable').ysTable({
             url: queryUrl,
-            sortName: 'RoleSort',
+            sortName: 'Id',
             sortOrder: 'Asc',
             columns: [
                 { checkbox: true, visible: true },
                 { field: 'Id', title: 'Id', visible: false },
-                { field: 'UserId', title: '登录名称', width: "5%", sortable: true },
+                { field: 'UserName', title: '登录名称', width: "5%", sortable: true },
                 { field: 'IpAddress', title: 'ip地址', width: "5%", sortable: true },
                 { field: 'IpLocation', title: 'Ip位置', width: "15%", sortable: true },
                 { field: 'Browser', title: '浏览器', width: "15%", sortable: true },
@@ -144,6 +144,31 @@
                 });
             });
         }
+    }
+    function removeAllForm() {
+        var selectedRow = $("#gridTable").bootstrapTable("getSelections");
+        ys.confirm("确认要清空表吗？", function () {
+            var ids = ys.getIds(selectedRow);
+            var csrf_token = $("#csrf_token").val()
+            ys.ajax({
+                url: '/cms/DeleteLogJson',
+                type: "post",
+                    data: {
+                        ids: ids,
+                        csrf_token: csrf_token,
+                        category:1
+                    },
+                success: function (obj) {
+                    if (obj.Tag == 1) {
+                        ys.msgSuccess(obj.Message);
+                        searchGrid();
+                    }
+                    else {
+                        ys.msgError(obj.Message);
+                    }
+                }
+            });
+        });
     }
 </script>
 {% endblock %}

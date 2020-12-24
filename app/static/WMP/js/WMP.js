@@ -398,7 +398,7 @@ var TabChangeRefresh = false;
                     format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
                 }
             }
-            console.log(temp)
+            
             if(format.indexOf('NaN')>=0)
             {
                 var date = new Date(temp);  
