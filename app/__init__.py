@@ -16,5 +16,6 @@ csrf = CSRFProtect(curre_app)
 db = SQLAlchemy(curre_app)
 manager = Manager(curre_app)
 migrate = Migrate(curre_app, db)
+curre_app.secret_key = 'please-generate-a-random-secret_key'
 # # 日志初始化
 # Logger.init_app(curre_app,db)

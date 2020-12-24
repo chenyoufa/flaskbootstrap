@@ -1,44 +1,126 @@
 
-from flask import render_template
+from flask import render_template,request
 from app import curre_app,db
-from app.models import User,Role
+from app.models import User,Role,to_json
 from flask import make_response,session,jsonify
 from app.forms  import menu_form,login_form
-
-curre_app.secret_key = 'please-generate-a-random-secret_key'
-
-######################角色 ######################
-# 
+from sqlalchemy import desc,asc
+#角色首页
 @curre_app.route("/cms/RoleIndex")
 def RoleIndex():
     return render_template('cms/RoleIndex.html')
-@curre_app.route("/cms/RoleForm")
-def RoleForm():
-    return render_template('cms/RoleForm.html')
-
+#角色首页列表数据获取
 @curre_app.route("/cms/GetRoleListJson", methods=['GET'])
 def GetRoleListJson():
-    data={'Tag': 0,"Message":"","Data":""}
-    if id!='':
-        data["Tag"]=1
-        data["Message"]="操作成功"
-        role=Role.query.with_entities(Role.Id.label('Id'),
+    page = request.args.get("pageIndex", type=int)
+    per_page = request.args.get("pageSize", type=int)
+    roleName = request.args.get("RoleName")
+    roleStatus = request.args.get("RoleStatus")
+    startTime = request.args.get("StartTime")
+    endTime = request.args.get("EndTime")
+    sort = request.args.get("sort")
+    sortType = request.args.get("sortType")
+    data={'Tag': 0,"Message":"","Data":"","Total":0}
+    data["Tag"]=1
+    data["Message"]="操作成功"
+    roles=Role.query.with_entities(Role.Id.label('Id'),
         Role.Name.label('RoleName'),
         Role.Sort.label('RoleSort'),
         Role.Status.label('RoleStatus'),
         Role.ModifyTime.label('BaseModifyTime'),
-        ).all()
-        data["Data"]=role
-    return jsonify(data)
+        )
+    if len(roleName)>0:
+        roles=roles.filter(Role.Name.contains(roleName))
+    if len(roleStatus)>0 and roleStatus!="-1":
+        print("roleStatus:",roleStatus)
+        roles=roles.filter(Role.Status==int(roleStatus))
+    if len(startTime)>0:
+        roles=roles.filter(db.cast(Role.CreateTime, db.DATE)>=db.cast(startTime, db.DATE))
+    if len(endTime)>0:
+        roles=roles.filter(db.cast(Role.CreateTime, db.DATE)<=db.cast(endTime, db.DATE))
+    if len(sort)>0:
+        if sortType.lower()=="asc":
+            roles=roles.order_by(asc(str(sort)))
+        else:
+            roles=roles.order_by(desc(str(sort)))
 
-@curre_app.route("/cms/DeleteRoleJson", methods=['POST'])
-def DeleteRoleJson():
+    roles_length=roles.count()
+    roles=roles.paginate(page=page,per_page=per_page)
+    data["Total"]=roles_length
+    data["Data"]=roles.items
+    return jsonify(data)
+#角色维护
+@curre_app.route("/cms/RoleForm")
+def RoleForm():
+    return render_template('cms/RoleForm.html')
+
+@curre_app.route("/cms/SaveRoleFormJson", methods=['POST'])
+def SaveRoleFormJson():
+    form =menu_form.MenuForm()  
+    data={'Tag': 0,"Message":""}
+    if form.validate_on_submit():
+        try:
+            if form.Id.data<=0:
+                menu = Menus(ParentId=form.ParentId.data,MenuName=form.MenuName.data,MenuIcon=form.MenuIcon.data,MenuUrl=form.MenuUrl.data,MenuType=form.MenuType.data,Authorize=form.Authorize.data,Remark=form.Remark.data,MenuSort=form.MenuSort.data,Status=1,CreateUserid=1,ModifyUserid=1)
+                db.session.add(menu)
+            else:
+                menu=Menus.query.get(form.Id.data)
+                menu.ParentId=form.ParentId.data
+                menu.MenuName=form.MenuName.data
+                menu.MenuIcon=form.MenuIcon.data
+                menu.MenuUrl=form.MenuUrl.data
+                menu.MenuType=form.MenuType.data
+                menu.Authorize=form.Authorize.data
+                menu.Remark=form.Remark.data
+                menu.MenuSort=form.MenuSort.data
+            
+            db.session.commit()
+            data["Tag"]=1
+            data["Message"]="操作成功"
+        except Exception as err:
+            data["Tag"]=-1
+            data["Message"]="异常，请刷新页面重新试试"+str(err)
+    else:
+           data["Message"] =  form.errors.popitem()[0]+" "+form.errors.popitem()[1][0]
+    return jsonify(data)
+#角色维护数据获取
+@curre_app.route("/cms/GetRoleFormJson", methods=['GET'])
+def GetRoleFormJson():
     data={'Tag': 0,"Message":"","Data":""}
-    id=request.form["ids"]
+    id=request.args.get("id")
     if id!='':
         data["Tag"]=1
         data["Message"]="操作成功"
-        role=Role.query.get(id)
-        db.session.delete(role)
+        roles=Role.query.with_entities(
+            Role.Id,
+            Role.Name.label("RoleName"),
+            Role.Sort.label("RoleSort"),
+            Role.Status.label("RoleStatus"),
+            Role.Remark,
+        ).filter_by(Id=id)
+        print(roles.count())
+        if roles.count()>0:
+            data["Data"]=roles[0] 
+    return jsonify(data)
+#批量删除
+@curre_app.route("/cms/DeleteRoleJson", methods=['POST'])
+def DeleteRoleJson():
+    data={'Tag': 0,"Message":"","Data":""}
+    _idarr=[]
+    _category=0
+    try:
+        _ids=request.form["ids"]
+        _idarr = _ids.split(',')
+        _category=request.form["category"]
+    except:
+        print(exec)
+    if len(_idarr)>0:
+        data["Tag"]=1
+        data["Message"]="操作成功"
+        if _category==0:
+            roles_del = Role.query.filter(Role.Id.in_(_idarr)).all()
+        else:
+            roles_del = Role.query.all()
+        [db.session.delete(u) for u in roles_del]
         db.session.commit()
     return jsonify(data)

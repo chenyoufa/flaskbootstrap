@@ -93,7 +93,7 @@
   function getForm() {
       if (id > 0) {
           ys.ajax({
-              url: '/cms/GetMenuJson' + '?id=' + id,
+              url: '/cms/GetMenuFormJson' + '?id=' + id,
               type: "get",
               success: function (obj) {
                   if (obj.Tag == 1) {

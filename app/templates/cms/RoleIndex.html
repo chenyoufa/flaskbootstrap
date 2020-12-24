@@ -51,7 +51,7 @@
         var queryUrl = '/cms/GetRoleListJson';
         $('#gridTable').ysTable({
             url: queryUrl,
-            sortName: 'RoleSort',
+            sortName: 'Id',
             sortOrder: 'Asc',
             columns: [
                 { checkbox: true, visible: true },
@@ -86,7 +86,8 @@
         $('#gridTable').ysTable('search');
         resetToolbarStatus();
     }
-
+    
+   
     function showSaveForm(bAdd) {
         var id = 0;
         if (!bAdd) {
@@ -100,7 +101,7 @@
         }
         ys.openDialog({
             title: id > 0 ? "编辑角色" : "添加角色",
-            content: '/cms/RoleForm")' + '?id=' + id,
+            content: '/cms/RoleForm' + '?id=' + id,
             width: "780px",
             callback: function (index, layero) {
                 var iframeWin = window[layero.find('iframe')[0]['name']];

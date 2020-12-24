@@ -14,7 +14,7 @@ curre_app.secret_key = 'please-generate-a-random-secret_key'
 def LogIndex():
     return render_template('cms/LogIndex.html')
 
-#分页|搜索|排序
+#日志首页数据分页|搜索|排序|连表|自定义列名
 @curre_app.route("/cms/GetLogListJson", methods=['GET'])
 def GetLogListJson():
     page = request.args.get("pageIndex", type=int)
@@ -57,7 +57,6 @@ def GetLogListJson():
             logs=logs.order_by(asc(str(sort)))
         else:
             logs=logs.order_by(desc(str(sort)))
-
     logs_length=logs.count()
     logs=logs.paginate(page=page,per_page=per_page)
     data["Total"]=logs_length

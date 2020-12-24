@@ -11,7 +11,7 @@ def MenunIndex():
     return render_template('cms/MenunIndex.html')
 #菜单首页json接口
 @curre_app.route('/cms/GetMenuListJson', methods=['GET'])
-def MenuListJson(page=1):
+def GetMenuListJson(page=1):
    
     if request.method == 'POST':
         print('post')
@@ -31,7 +31,7 @@ def MenuListJson(page=1):
 def MenuForm():
     return render_template('cms/MenuForm.html')
  
-@curre_app.route("/cms/GetMenuJson", methods=['GET'])
+@curre_app.route("/cms/GetMenuFormJson", methods=['GET'])
 def GetMenuJson():
     data={'Tag': 0,"Message":"","Data":""}
     id=request.args.get("id")

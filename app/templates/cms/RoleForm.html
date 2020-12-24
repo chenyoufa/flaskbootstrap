@@ -41,7 +41,7 @@
         
         $("#roleStatus").ysRadioBox({ data: ys.getJson([{ Key: 1, Value: "激活"},{Key: 2, Value: "冻结"}]) });
        
-        //loadMenuTree();
+        loadMenuTree();
 
         getForm();
 
@@ -55,7 +55,7 @@
     function loadMenuTree() {
         $('#menuTree').ysTree({
             async: false,
-            url: '@Url.Content("~/SystemManage/Menu/GetMenuTreeListJson")',
+            url: '/cms/GetMenuTreeListJson',
             check: { enable: true },
             expandLevel: 0
         })
@@ -64,7 +64,7 @@
     function getForm() {
         if (id > 0) {
             ys.ajax({
-                url: '/cms/GetRoleJson' + '?id=' + id,
+                url: '/cms/GetRoleFormJson' + '?id=' + id,
                 type: "get",
                 success: function (obj) {
                     if (obj.Tag == 1) {
@@ -87,7 +87,7 @@
             var postData = $("#form").getWebControls({ Id: id });
             postData.MenuIds = $('#menuTree').ysTree("getCheckedNodes");
             ys.ajax({
-                url: '@Url.Content("~/SystemManage/Role/SaveFormJson")',
+                url: 'cms/SaveRoleFormJson")',
                 type: "post",
                 data: postData,
                 success: function (obj) {
