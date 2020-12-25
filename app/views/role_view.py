@@ -1,10 +1,11 @@
 
 from flask import render_template,request
 from app import curre_app,db
-from app.models import User,Role,to_json
-from flask import make_response,session,jsonify
-from app.forms  import menu_form,login_form
+from app.models import User,Role
+from flask import jsonify,session
+from app.forms  import role_form
 from sqlalchemy import desc,asc
+from datetime import datetime
 #角色首页
 @curre_app.route("/cms/RoleIndex")
 def RoleIndex():
@@ -56,24 +57,22 @@ def RoleForm():
 
 @curre_app.route("/cms/SaveRoleFormJson", methods=['POST'])
 def SaveRoleFormJson():
-    form =menu_form.MenuForm()  
+    form =role_form.MenuForm()  
     data={'Tag': 0,"Message":""}
     if form.validate_on_submit():
         try:
             if form.Id.data<=0:
-                menu = Menus(ParentId=form.ParentId.data,MenuName=form.MenuName.data,MenuIcon=form.MenuIcon.data,MenuUrl=form.MenuUrl.data,MenuType=form.MenuType.data,Authorize=form.Authorize.data,Remark=form.Remark.data,MenuSort=form.MenuSort.data,Status=1,CreateUserid=1,ModifyUserid=1)
-                db.session.add(menu)
+                role = Role( Name=form.Name.data,Sort=form.Sort.data,Remark=form.Remark.data,
+                Status=1,CreateUserid=1,ModifyUserid=1)
+                db.session.add(role)
             else:
-                menu=Menus.query.get(form.Id.data)
-                menu.ParentId=form.ParentId.data
-                menu.MenuName=form.MenuName.data
-                menu.MenuIcon=form.MenuIcon.data
-                menu.MenuUrl=form.MenuUrl.data
-                menu.MenuType=form.MenuType.data
-                menu.Authorize=form.Authorize.data
-                menu.Remark=form.Remark.data
-                menu.MenuSort=form.MenuSort.data
-            
+                role=Role.query.get(form.Id.data)
+                role.Name=form.Name.data
+                role.Sort =form.Sort.data
+                role.Remark=form.Remark.data
+                role.ModifyTime=datetime.now
+                role.ModifyUserid=session.get('User_Id')
+
             db.session.commit()
             data["Tag"]=1
             data["Message"]="操作成功"
