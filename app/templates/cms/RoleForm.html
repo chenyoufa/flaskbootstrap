@@ -3,6 +3,7 @@
 {% block content %}
 <div class="wrapper animated fadeInRight">
     <form id="form" class="form-horizontal m">
+        <input type="hidden" id="csrf_token" value="{{ csrf_token() }}" /> 
         <div class="form-group">
             <label class="col-sm-3 control-label ">角色名称<font class="red"> *</font></label>
             <div class="col-sm-8">
@@ -64,7 +65,7 @@
     function getForm() {
         if (id > 0) {
             ys.ajax({
-                url: '/cms/GetRoleFormJson' + '?id=' + id,
+                url: '/cms/GetRoleFormJson?id=' + id,
                 type: "get",
                 success: function (obj) {
                     if (obj.Tag == 1) {
@@ -85,9 +86,9 @@
     function saveForm(index) {
         if ($("#form").validate().form()) {
             var postData = $("#form").getWebControls({ Id: id });
-            postData.MenuIds = $('#menuTree').ysTree("getCheckedNodes");
+            postData.csrf_token=$("#csrf_token").val()
             ys.ajax({
-                url: 'cms/SaveRoleFormJson")',
+                url: '/cms/SaveRoleFormJson',
                 type: "post",
                 data: postData,
                 success: function (obj) {

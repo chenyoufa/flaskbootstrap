@@ -3,10 +3,11 @@ from wtforms import StringField, PasswordField, BooleanField, SubmitField,Intege
 from wtforms.validators import DataRequired, Length
 
 
-class MenuForm(FlaskForm):
+class RoleForm(FlaskForm):
     Id=IntegerField()
-    Name=IntegerField('角色名')
-    Sort=IntegerField('排序')
+    RoleName=StringField('角色名')
+    RoleSort=IntegerField('排序')
+    RoleStatus=IntegerField('状态')
     Remark=StringField('备注')
    
     # submit = SubmitField('提交')

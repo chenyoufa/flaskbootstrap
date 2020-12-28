@@ -57,19 +57,25 @@ def RoleForm():
 
 @curre_app.route("/cms/SaveRoleFormJson", methods=['POST'])
 def SaveRoleFormJson():
-    form =role_form.MenuForm()  
+    form =role_form.RoleForm()  
     data={'Tag': 0,"Message":""}
     if form.validate_on_submit():
         try:
             if form.Id.data<=0:
-                role = Role( Name=form.Name.data,Sort=form.Sort.data,Remark=form.Remark.data,
-                Status=1,CreateUserid=1,ModifyUserid=1)
+
+               
+                role = Role( Name=form.RoleName.data,
+                Sort=form.RoleSort.data,Remark=form.Remark.data,
+                Status=form.RoleStatus.data,CreateUserid=session.get('User_Id'))
+                
                 db.session.add(role)
             else:
                 role=Role.query.get(form.Id.data)
-                role.Name=form.Name.data
-                role.Sort =form.Sort.data
+
+                role.Name=form.RoleName.data
+                role.Sort =form.RoleSort.data
                 role.Remark=form.Remark.data
+                role.Status=form.RoleStatus.data
                 role.ModifyTime=datetime.now
                 role.ModifyUserid=session.get('User_Id')
 
@@ -82,6 +88,7 @@ def SaveRoleFormJson():
     else:
            data["Message"] =  form.errors.popitem()[0]+" "+form.errors.popitem()[1][0]
     return jsonify(data)
+
 #角色维护数据获取
 @curre_app.route("/cms/GetRoleFormJson", methods=['GET'])
 def GetRoleFormJson():
@@ -97,29 +104,26 @@ def GetRoleFormJson():
             Role.Status.label("RoleStatus"),
             Role.Remark,
         ).filter_by(Id=id)
-        print(roles.count())
+    
         if roles.count()>0:
             data["Data"]=roles[0] 
     return jsonify(data)
-#批量删除
+
+#角色单条删除|批量删除
 @curre_app.route("/cms/DeleteRoleJson", methods=['POST'])
 def DeleteRoleJson():
     data={'Tag': 0,"Message":"","Data":""}
     _idarr=[]
-    _category=0
     try:
         _ids=request.form["ids"]
         _idarr = _ids.split(',')
-        _category=request.form["category"]
     except:
         print(exec)
     if len(_idarr)>0:
         data["Tag"]=1
         data["Message"]="操作成功"
-        if _category==0:
-            roles_del = Role.query.filter(Role.Id.in_(_idarr)).all()
-        else:
-            roles_del = Role.query.all()
+        roles_del = Role.query.filter(Role.Id.in_(_idarr)).all()
+        
         [db.session.delete(u) for u in roles_del]
         db.session.commit()
     return jsonify(data)

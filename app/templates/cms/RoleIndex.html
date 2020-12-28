@@ -37,12 +37,11 @@
 </div>
 
 <script type="text/javascript">
+ 
+  var csrf_token="{{ csrf_token() }}";
     $(function () {
         initGrid();
-
-      
        $("#roleStatus").ysComboBox({ data: ys.getJson([{ Key: 1, Value: "激活"},{Key: 2, Value: "冻结"}]) });
-
         laydate.render({ elem: '#startTime', format: 'yyyy-MM-dd' });
         laydate.render({ elem: '#endTime', format: 'yyyy-MM-dd' });
     });
@@ -116,8 +115,12 @@
             ys.confirm("确认要删除选中的" + selectedRow.length + "条数据吗？", function () {
                 var ids = ys.getIds(selectedRow);
                 ys.ajax({
-                    url: '/cms/DeleteRoleJson")' + '?ids=' + ids,
+                    url: '/cms/DeleteRoleJson' ,
                     type: "post",
+                    data:{
+                        ids:ids,
+                        csrf_token:csrf_token
+                    },
                     success: function (obj) {
                         if (obj.Tag == 1) {
                             ys.msgSuccess(obj.Message);
