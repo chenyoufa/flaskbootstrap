@@ -1,10 +1,11 @@
 
 from flask import render_template,request
 from app import curre_app,db
-from app.models import User,Role,to_json
-from flask import make_response,session,jsonify
-from app.forms  import menu_form,login_form
+from app.models import User,Role
+from flask import jsonify,session
+from app.forms  import role_form
 from sqlalchemy import desc,asc
+from datetime import datetime
 #角色首页
 @curre_app.route("/cms/RoleIndex")
 def RoleIndex():
@@ -56,24 +57,28 @@ def RoleForm():
 
 @curre_app.route("/cms/SaveRoleFormJson", methods=['POST'])
 def SaveRoleFormJson():
-    form =menu_form.MenuForm()  
+    form =role_form.RoleForm()  
     data={'Tag': 0,"Message":""}
     if form.validate_on_submit():
         try:
             if form.Id.data<=0:
-                menu = Menus(ParentId=form.ParentId.data,MenuName=form.MenuName.data,MenuIcon=form.MenuIcon.data,MenuUrl=form.MenuUrl.data,MenuType=form.MenuType.data,Authorize=form.Authorize.data,Remark=form.Remark.data,MenuSort=form.MenuSort.data,Status=1,CreateUserid=1,ModifyUserid=1)
-                db.session.add(menu)
+
+               
+                role = Role( Name=form.RoleName.data,
+                Sort=form.RoleSort.data,Remark=form.Remark.data,
+                Status=form.RoleStatus.data,CreateUserid=session.get('User_Id'))
+                
+                db.session.add(role)
             else:
-                menu=Menus.query.get(form.Id.data)
-                menu.ParentId=form.ParentId.data
-                menu.MenuName=form.MenuName.data
-                menu.MenuIcon=form.MenuIcon.data
-                menu.MenuUrl=form.MenuUrl.data
-                menu.MenuType=form.MenuType.data
-                menu.Authorize=form.Authorize.data
-                menu.Remark=form.Remark.data
-                menu.MenuSort=form.MenuSort.data
-            
+                role=Role.query.get(form.Id.data)
+
+                role.Name=form.RoleName.data
+                role.Sort =form.RoleSort.data
+                role.Remark=form.Remark.data
+                role.Status=form.RoleStatus.data
+                role.ModifyTime=datetime.now
+                role.ModifyUserid=session.get('User_Id')
+
             db.session.commit()
             data["Tag"]=1
             data["Message"]="操作成功"
@@ -83,6 +88,7 @@ def SaveRoleFormJson():
     else:
            data["Message"] =  form.errors.popitem()[0]+" "+form.errors.popitem()[1][0]
     return jsonify(data)
+
 #角色维护数据获取
 @curre_app.route("/cms/GetRoleFormJson", methods=['GET'])
 def GetRoleFormJson():
@@ -98,29 +104,26 @@ def GetRoleFormJson():
             Role.Status.label("RoleStatus"),
             Role.Remark,
         ).filter_by(Id=id)
-        print(roles.count())
+    
         if roles.count()>0:
             data["Data"]=roles[0] 
     return jsonify(data)
-#批量删除
+
+#角色单条删除|批量删除
 @curre_app.route("/cms/DeleteRoleJson", methods=['POST'])
 def DeleteRoleJson():
     data={'Tag': 0,"Message":"","Data":""}
     _idarr=[]
-    _category=0
     try:
         _ids=request.form["ids"]
         _idarr = _ids.split(',')
-        _category=request.form["category"]
     except:
         print(exec)
     if len(_idarr)>0:
         data["Tag"]=1
         data["Message"]="操作成功"
-        if _category==0:
-            roles_del = Role.query.filter(Role.Id.in_(_idarr)).all()
-        else:
-            roles_del = Role.query.all()
+        roles_del = Role.query.filter(Role.Id.in_(_idarr)).all()
+        
         [db.session.delete(u) for u in roles_del]
         db.session.commit()
     return jsonify(data)
