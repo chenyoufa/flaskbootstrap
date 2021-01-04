@@ -1,0 +1,7 @@
+{2020-12-21 22:52:43,685}{139861474293504}{Thread-9}{_internal.py}{_internal}{_log}{INFO}{127.0.0.1 - - [21/Dec/2020 22:52:43] "[37mGET /cms/GetLogListJson HTTP/1.1[0m" 200 -}
+{2020-12-21 22:53:08,561}{139861502797568}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in '/home/fage/project/flaskbootstrap/flaskbootstrap-main/utils/Log.py', reloading}
+{2020-12-21 22:53:08,562}{139861502797568}{Thread-2}{_internal.py}{_internal}{_log}{INFO}{ * Detected change in '/home/fage/project/flaskbootstrap/flaskbootstrap-main/utils/Log.py', reloading}
+{2020-12-21 22:53:09,718}{140653905073984}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with inotify reloader}
+{2020-12-21 22:53:50,666}{140653905073984}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with inotify reloader}
+{2020-12-21 22:53:54,038}{140653905073984}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with inotify reloader}
+{2020-12-21 22:54:35,170}{140653905073984}{MainThread}{_internal.py}{_internal}{_log}{INFO}{ * Restarting with inotify reloader}

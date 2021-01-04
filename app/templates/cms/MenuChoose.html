@@ -1,0 +1,27 @@
+{% extends "share/_FormWhite.html" %}
+{% block content %}
+
+<div class="wrapper">
+    <input id="treeId" type="hidden" value="" />
+    <input id="treeName" type="hidden" value="" />
+    <div id="menuTree" class="ztree treeselect"></div>
+</div>
+
+<script type="text/javascript">
+
+    $(function () {
+        $('#menuTree').ysTree({
+            id: "menuTree",
+            url: '/cms/GetMenuTreeListJson',
+            check: { enable: false },
+            expandLevel: 0,
+            callback: { onClick: saveChoose }
+        });
+    });
+
+    function saveChoose(event, treeId, treeNode) {
+        $("#treeId").val(treeNode.id);
+        $("#treeName").val(treeNode.name);
+    }
+</script>
+{% endblock %}

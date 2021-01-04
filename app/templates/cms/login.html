@@ -1,0 +1,92 @@
+{% extends "share/_layout.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="/static/WMP/css/login.css" />
+<script>
+    if (window.top !== window.self) { window.top.location = window.location };
+</script>
+<div class="login-panel">
+    <div class="row section">
+        <div class="col-sm-12">
+            <form id="form" style="background-color: rgba(255,255,255,0.5);"  method="post">
+                <input type="hidden" id="csrf_token" name="csrf_token" value="{{ csrf_token() }}" />
+                <img src="/static/image/logo.png" style="width:80%" />
+                <p class="m-t-md"></p>
+                <input id="userName" name="userName" class="form-control uname" col="UserName" type="text"
+                    placeholder="用户名" value="" />
+                <input id="password" name="password" class="form-control pword m-b" col="Password" type="password"
+                    placeholder="密码" value="" />
+                <div class="row">
+                    <div class="col-xs-6">
+                        <input id="captchaCode" name="captchaCode" type="text" col="CaptchaCode"
+                            class="form-control code" placeholder="验证码" maxlength="4">
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="javascript:void(0);" title="点击更换验证码">
+                            <img id="imgCaptchaCode" class="verify_code"  height="34" src="/auth/imgCode" onclick="this.src='/auth/imgCode?'+ Math.random()">
+                        </a>
+                    </div>
+                </div>
+                <div class="checkbox-custom">
+                    <input id="rememberMe" name="rememberMe" type="checkbox"> <label for="rememberMe">记住我</label>
+                </div>
+                <div id="btn" class="btn btn-success btn-block"  onclick="loginForm()">登录</div>
+                 <div id="hint" class="hint margin-top-30">&nbsp</div>
+
+            </form>
+        </div>
+    </div>
+    <div class="login-footer">
+        <div style="text-align: center;color: white;font-weight:bold">
+            &copy; 2020-@DateTime.Now.Year
+            <a href="https://www.WMPsoft.com" target="_blank" style="color: white;font-size: 14px;">超人不会飞</a>
+            All Rights Reserved.<br>
+            <a href="http://www.beian.miit.gov.cn/" target="_blank" rel="nofollow" style="color: white;font-size: 13px;">Superman can't fly</a><br>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" >
+    function loginForm() {
+        var usernameValue = document.getElementById('userName').value;
+        var passwordValue = document.getElementById('password').value;
+        var captchaCodeValue = document.getElementById('captchaCode').value;
+        var hint = document.getElementById('hint');
+
+        if (usernameValue == '') {
+            hint.innerText = '提示：请输入用户名'
+            return;
+        }else if (passwordValue == '') {
+            hint.innerText = '提示：请输入密码';
+            return;
+        }else if (captchaCodeValue== ''){
+            hint.innerText = '提示：请输入验证码'
+            return;
+        }else{
+             
+            $.ajax({
+                type: 'POST',
+                url: '/cms/login',
+                data:  {
+                    "username": usernameValue,
+                    "password": passwordValue,
+                    "captchaCode":captchaCodeValue,
+                    "csrf_token":$("#csrf_token").val()
+                },
+                dataType: 'json',
+                success: function(ret) {
+                    if (ret.status == 200){
+                        window.location = ret.index_url
+                    }
+                    else {
+                        alert(ret.erros)
+                    }
+                },
+
+
+
+
+            })
+        }
+    }
+</script>
+
+{% endblock %}

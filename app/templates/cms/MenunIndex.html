@@ -1,0 +1,173 @@
+﻿{% extends "share/_layout.html" %}
+{% block content %}
+<script src="/static/lib/bootstrap.treetable/1.0/bootstrap-treetable.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/lib/bootstrap.treetable/1.0/bootstrap-treetable.min.css" />
+
+<div class="container-div">
+  <div class="row">
+      <div id="searchDiv" class="col-sm-12 search-collapse">
+          <form>
+              <input type="hidden" id="csrf_token" value="{{ csrf_token() }}" />
+              <div class="select-list">
+                  <ul>
+                      <li>
+                          菜单名称：<input id="menuName" col="MenuName" type="text" />
+                      </li>
+                      <li>
+                          菜单状态：<span id="menuStatus" col="MenuStatus"></span>
+                      </li>
+                      <li><a class="btn btn-primary btn-sm" onclick="searchTreeGrid()"><i class="fa fa-search"></i>&nbsp;搜索</a></li>
+                  </ul>
+              </div>
+          </form>
+      </div>
+
+      <div class="btn-group-sm" id="toolbar" role="group">
+          <a id="btnAdd" class="btn btn-success" onclick="showSaveForm(true)"><i class="fa fa-plus"></i> 新增</a>
+          <a id="btnEdit" class="btn btn-primary" onclick="showSaveForm(false)"><i class="fa fa-edit"></i> 修改</a>
+          <a id="btnDelete" class="btn btn-danger" onclick="deleteForm()"><i class="fa fa-remove"></i> 删除</a>
+          <a id="btnExpandAll" class="btn btn-info"><i class="fa fa-exchange"></i> 展开/折叠</a>
+      </div>
+      <div class="col-sm-12 select-table table-striped">
+          <table id="gridTable" data-mobile-responsive="true">
+            
+
+          </table>
+      </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var parentId = 0;
+  var id = 0;
+  $(function () {
+      initTreeGrid();
+
+    //  $("#menuStatus").ysComboBox({ data: ys.getJson(@Html.Raw(typeof(StatusEnum).EnumToDictionaryString())) });
+  });
+
+  function initTreeGrid() {
+      var options = {
+          code: "Id",
+          parentCode: "ParentId",
+          expandAll: false,
+          expandFirst: false,
+          toolbar: '#toolbar',
+          expandColumn: '1',
+          url: '/cms/GetMenuListJson',
+          modalName: "菜单",
+          columns: [
+              { field: 'selectItem', radio: true },
+              {
+                  field: 'MenuName', title: '菜单名称', width: '20%', formatter: function (value, row, index) {
+                      if (ys.isNullOrEmpty(row.MenuIcon)) {
+                          return row.MenuName;
+                      } else {
+                          return '<i class="' + row.MenuIcon + '"></i> <span class="nav-label">' + row.MenuName + '</span>';
+                      }
+                  }
+              },
+              {
+                  field: 'MenuType', title: '类型', width: '10%', align: "left",
+                  formatter: function (value, item, index) {
+                      if (item.MenuType == 1) {
+                          return '<span class="label label-success">目录</span>';
+                      }
+                      else if (item.MenuType == 2) {
+                          return '<span class="label label-primary">页面</span>';
+                      }
+                      else if (item.MenuType == 3) {
+                          return '<span class="label label-warning">按钮</span>';
+                      }
+                  }
+              },
+              { field: 'MenuSort', title: '显示顺序', width: '10%', align: "left" },
+              { field: 'MenuUrl', title: '请求地址', width: '35%', align: "left" },
+              { field: 'Authorize', title: '权限标识', width: '15%', align: "left" },
+              {
+                  field: 'Status', title: '状态', width: '10%', align: "left",
+                  formatter: function (value, row, index) {
+                      if (row.Status == 1) {
+                          return '<span class="badge badge-primary">激活</span>';
+                      } else {
+                          return '<span class="badge badge-warning">冻结</span>';
+                      }
+                  }
+              }
+          ],
+          onLoadSuccess: function () {
+              if (id != 0) {
+                  $('#gridTable').ysTreeTable('expandRowById', id);
+              }
+          }
+      };
+      $('#gridTable').ysTreeTable(options);
+  }
+
+  function searchTreeGrid(callBackId) {
+      var param = $("#searchDiv").getWebControls();
+      $('#gridTable').ysTreeTable('search', param);
+      if (callBackId) {
+          id = callBackId;
+      }
+  }
+
+  function showSaveForm(bAdd) {
+      var id = 0;
+      var parentName = '';
+
+      var selectedRow = $("#gridTable").bootstrapTreeTable("getSelections");
+      if (!bAdd) {
+          if (!ys.checkRowEdit(selectedRow)) {
+              return;
+          }
+          id = selectedRow[0].Id;
+      }
+      if (selectedRow.length > 0) {
+          parentId = selectedRow[0].ParentId;
+          var row = $('#gridTable').ysTreeTable('getRowById', parentId);
+          if (row) {
+              parentName = row.MenuName;
+          }
+      }
+
+      ys.openDialog({
+          title: id > 0 ? "编辑菜单" : "添加菜单",
+          content: '/cms/MenuForm' + '?id=' + id + '&parentId=' + parentId + '&parentName=' + encodeURIComponent(parentName),
+          callback: function (index, layero) {
+              var iframeWin = window[layero.find('iframe')[0]['name']];
+              iframeWin.saveForm(index);
+          }
+      });
+  }
+
+  function deleteForm() {
+      var selectedRow = $("#gridTable").bootstrapTreeTable("getSelections");
+      if (ys.checkRowDelete(selectedRow)) {
+          ys.confirm("确认要删除选中的" + selectedRow.length + "条数据吗？", function () {
+              var ids = ys.getIds(selectedRow);
+              var csrf_token=$("#csrf_token").val()
+              ys.ajax({
+                  url: '/cms/DeleteMenuJson',
+                  type: "post",
+                  data:{
+                     ids:ids,
+                     csrf_token:csrf_token
+                  },
+                  error: ys.ajaxError,
+                  success: function (obj) {
+                      if (obj.Tag == 1) {
+                          ys.msgSuccess(obj.Message);
+                          searchTreeGrid();
+                      }
+                      else {
+                          ys.msgError(obj.Message);
+                      }
+                  }
+              });
+          });
+      }
+  }
+</script>
+
+{% endblock %}
